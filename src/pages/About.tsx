@@ -1,11 +1,7 @@
 import imgJagcool from "@/imports/DesktopAbout-1/df120473259736c98a99f56fe1a59483d3f7f361.png";
-import type { Page } from "@/App";
+import { Link } from "react-router-dom";
 
-interface AboutProps {
-  onNavigate: (page: Page) => void;
-}
-
-export default function About({ onNavigate }: AboutProps) {
+export default function About() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter">
       {/* Header */}
@@ -14,16 +10,16 @@ export default function About({ onNavigate }: AboutProps) {
         <div className="md:hidden flex items-center justify-between px-[16px] py-[26px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-[24px] not-italic whitespace-nowrap">Johan Branzell</p>
           <nav className="flex gap-[24px]">
-            <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">Home</button>
-            <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</button>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</Link>
           </nav>
         </div>
         {/* Desktop header */}
         <div className="hidden md:grid grid-cols-3 items-center px-[29px] h-[164px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] not-italic whitespace-nowrap">Johan Branzell</p>
           <nav className="flex gap-[40px] justify-self-center">
-            <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">Home</button>
-            <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</button>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</Link>
           </nav>
         </div>
       </header>

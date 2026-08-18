@@ -1,13 +1,9 @@
 import imgElectrolux2 from "@/imports/DesktopElectrolux/17650428fbd3baabe4879b82041918783a309acc.png";
 import imgElectrolux11 from "@/imports/DesktopElectrolux/5edaf8e63575d5d52f3716be9bf30c5418d7c1c9.png";
 import imgElectrolux4 from "@/imports/DesktopElectrolux/5fde9e8e6ff3864f31bf59ec5901406b54a9c284.png";
-import type { Page } from "@/App";
+import { Link } from "react-router-dom";
 
-interface ElectroluxProps {
-  onNavigate: (page: Page) => void;
-}
-
-export default function Electrolux({ onNavigate }: ElectroluxProps) {
+export default function Electrolux() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter">
       {/* Header */}
@@ -16,16 +12,16 @@ export default function Electrolux({ onNavigate }: ElectroluxProps) {
         <div className="md:hidden flex items-center justify-between px-[16px] py-[26px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-[24px] not-italic whitespace-nowrap">Johan Branzell</p>
           <nav className="flex gap-[24px]">
-            <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-            <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</button>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
         {/* Desktop header */}
         <div className="hidden md:grid grid-cols-3 items-center px-[29px] h-[164px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] not-italic whitespace-nowrap">Johan Branzell</p>
           <nav className="flex gap-[40px] justify-self-center">
-            <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-            <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</button>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
       </header>

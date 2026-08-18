@@ -2,11 +2,7 @@ import imgCover from "@/imports/DesktopSas/375e40c02a591ab8f551aa19fec6959669cd9
 import imgSas1 from "@/imports/DesktopSas/808d4ce7caba98f87a16e002a007a9c5ce840274.png";
 import imgSas2 from "@/imports/DesktopSas/c9222641484c48d657bf56d2745d8c3a50c724ff.png";
 import imgSas3 from "@/imports/DesktopSas/30eb5163fdb3b47db8d1b97ba0113f90c1e8bb63.png";
-import type { Page } from "@/App";
-
-interface Props {
-  onNavigate: (page: Page) => void;
-}
+import { Link } from "react-router-dom";
 
 const roleItems = [
   "– The Seat maps",
@@ -18,7 +14,7 @@ const roleItems = [
   "The work included making sure the site followed WCAG AA 2.1",
 ];
 
-export default function Sas({ onNavigate }: Props) {
+export default function Sas() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter">
       {/* Header */}
@@ -27,16 +23,16 @@ export default function Sas({ onNavigate }: Props) {
         <div className="md:hidden flex items-center justify-between px-[16px] py-[26px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-[24px] not-italic whitespace-nowrap">Johan Branzell</p>
           <nav className="flex gap-[24px]">
-            <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-            <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</button>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
         {/* Desktop header */}
         <div className="hidden md:grid grid-cols-3 items-center px-[29px] h-[164px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] not-italic whitespace-nowrap">Johan Branzell</p>
           <nav className="flex gap-[40px] justify-self-center">
-            <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-            <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</button>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
       </header>

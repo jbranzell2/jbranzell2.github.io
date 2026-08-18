@@ -3,15 +3,11 @@ import imgImg37 from "@/imports/DesktopAlster/655f435d7f61899332d8136e701137eeb5
 import imgImg1001 from "@/imports/DesktopAlster/daa83c54d9abf54aad6d32316adf4b449050990e.png";
 import imgImg351 from "@/imports/DesktopAlster/7c00948506c3c8d7ac2958f3b0c3ec5beac4fba5.png";
 import imgKanske22 from "@/imports/DesktopAlster/f27c7352efc038697f0cd20a9da239fca0b7afc3.png";
-import type { Page } from "@/App";
-
-interface Props {
-  onNavigate: (page: Page) => void;
-}
+import { Link } from "react-router-dom";
 
 const galleryImages = [imgCover, imgImg37, imgImg1001, imgImg351, imgKanske22];
 
-export default function Alster({ onNavigate }: Props) {
+export default function Alster() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter">
 
@@ -20,16 +16,16 @@ export default function Alster({ onNavigate }: Props) {
       <header className="md:hidden flex items-center justify-between px-4 py-[26px]">
         <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-6 whitespace-nowrap">Johan Branzell</p>
         <nav className="flex gap-6">
-          <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-          <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</button>
+          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+          <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</Link>
         </nav>
       </header>
       {/* Desktop */}
       <header className="hidden md:grid grid-cols-3 items-end h-[164px] px-[29px] pb-[52px]">
         <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] whitespace-nowrap">Johan Branzell</p>
         <nav className="flex gap-10 justify-self-center">
-          <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-          <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</button>
+          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+          <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</Link>
         </nav>
       </header>
 

@@ -8,26 +8,22 @@ import imgOden from "@/imports/DesktopHome/1e5076f0f1a1a45573fe96c1dea49d964eddb
 import imgMyndigheten from "@/imports/DesktopHome/1eb61cd289abe618936595a810968c24d166fe57.png";
 import imgFunLight from "@/imports/DesktopHome/aa70d2c2ee2f4832fd6e9a6a22d7a4d0460ce464.png";
 import imgAlster from "@/imports/DesktopHome/9833bb6a6ee2bfd4f0e40724afa6a1fb6edd79cf.png";
-import type { Page } from "@/App";
+import { Link } from "react-router-dom";
 
-const projects: { img: string; label: string; page?: Page }[] = [
-  { img: imgElectrolux, label: "Electrolux", page: "electrolux" },
-  { img: imgSthlm, label: "STHLM Xperience Conference 2023", page: "sthlm" },
-  { img: imgApoteket, label: "Apoteket", page: "apoteket" },
-  { img: imgSas, label: "Sas", page: "sas" },
-  { img: imgRumours, label: "Rumours", page: "rumours" },
-  { img: imgMitel, label: "Mitel", page: "mitel" },
-  { img: imgOden, label: "Oden Business Intelligence", page: "oden" },
-  { img: imgMyndigheten, label: "Myndigheten för delaktighet", page: "myndigheten" },
-  { img: imgFunLight, label: "Fun Light", page: "funlight" },
-  { img: imgAlster, label: "Alster", page: "alster" },
+const projects: { img: string; label: string; path: string }[] = [
+  { img: imgElectrolux, label: "Electrolux", path: "/electrolux" },
+  { img: imgSthlm, label: "STHLM Xperience Conference 2023", path: "/sthlm" },
+  { img: imgApoteket, label: "Apoteket", path: "/apoteket" },
+  { img: imgSas, label: "Sas", path: "/sas" },
+  { img: imgRumours, label: "Rumours", path: "/rumours" },
+  { img: imgMitel, label: "Mitel", path: "/mitel" },
+  { img: imgOden, label: "Oden Business Intelligence", path: "/oden" },
+  { img: imgMyndigheten, label: "Myndigheten för delaktighet", path: "/myndigheten" },
+  { img: imgFunLight, label: "Fun Light", path: "/funlight" },
+  { img: imgAlster, label: "Alster", path: "/alster" },
 ];
 
-interface HomeProps {
-  onNavigate: (page: Page) => void;
-}
-
-export default function Home({ onNavigate }: HomeProps) {
+export default function Home() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter">
       {/* Header */}
@@ -36,16 +32,16 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="md:hidden flex items-center justify-between px-[16px] py-[26px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-[24px] not-italic whitespace-nowrap">Johan Branzell</p>
           <nav className="flex gap-[24px]">
-            <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-            <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</button>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
         {/* Desktop header */}
         <div className="hidden md:grid grid-cols-3 items-center px-[29px] h-[164px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] not-italic whitespace-nowrap">Johan Branzell</p>
           <nav className="flex gap-[40px] justify-self-center">
-            <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-            <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</button>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
       </header>
@@ -55,12 +51,8 @@ export default function Home({ onNavigate }: HomeProps) {
         {/* Mobile: 2 columns */}
         <div className="md:hidden px-[5px]">
           <div className="grid grid-cols-2 gap-x-[4px] gap-y-[24px] items-start">
-            {projects.map(({ img, label, page }) => (
-              <div
-                key={label}
-                className={`group ${page ? "cursor-pointer" : ""}`}
-                onClick={() => page && onNavigate(page)}
-              >
+            {projects.map(({ img, label, path }) => (
+              <Link key={label} to={path} className="group block cursor-pointer">
                 <div className="relative overflow-hidden">
                   <img
                     src={img}
@@ -76,7 +68,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 <p className="font-['Poppins:Light',sans-serif] text-[14px] leading-[25.2px] text-black mt-[14px]">
                   {label}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -84,12 +76,8 @@ export default function Home({ onNavigate }: HomeProps) {
         {/* Desktop: 3 columns */}
         <div className="hidden md:block px-[18px]">
           <div className="grid grid-cols-3 gap-x-[18px]">
-            {projects.map(({ img, label, page }) => (
-              <div
-                key={label}
-                className={`group mb-[32px] ${page ? "cursor-pointer" : ""}`}
-                onClick={() => page && onNavigate(page)}
-              >
+            {projects.map(({ img, label, path }) => (
+              <Link key={label} to={path} className="group mb-[32px] block cursor-pointer">
                 <div className="relative overflow-hidden">
                   <img
                     src={img}
@@ -105,7 +93,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 <p className="font-['Poppins:Light',sans-serif] text-[14px] leading-[25.2px] text-black mt-[15px]">
                   {label}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

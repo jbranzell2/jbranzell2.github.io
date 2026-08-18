@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Electrolux from "./pages/Electrolux";
@@ -12,21 +12,24 @@ import Myndigheten from "./pages/Myndigheten";
 import FunLight from "./pages/FunLight";
 import Alster from "./pages/Alster";
 
-export type Page = "home" | "about" | "electrolux" | "sthlm" | "apoteket" | "sas" | "rumours" | "mitel" | "oden" | "myndigheten" | "funlight" | "alster";
-
 export default function App() {
-  const [page, setPage] = useState<Page>("home");
-
-  if (page === "about") return <About onNavigate={setPage} />;
-  if (page === "electrolux") return <Electrolux onNavigate={setPage} />;
-  if (page === "sthlm") return <SthlmXperience onNavigate={setPage} />;
-  if (page === "apoteket") return <Apoteket onNavigate={setPage} />;
-  if (page === "sas") return <Sas onNavigate={setPage} />;
-  if (page === "rumours") return <Rumours onNavigate={setPage} />;
-  if (page === "mitel") return <Mitel onNavigate={setPage} />;
-  if (page === "oden") return <Oden onNavigate={setPage} />;
-  if (page === "myndigheten") return <Myndigheten onNavigate={setPage} />;
-  if (page === "funlight") return <FunLight onNavigate={setPage} />;
-  if (page === "alster") return <Alster onNavigate={setPage} />;
-  return <Home onNavigate={setPage} />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/electrolux" element={<Electrolux />} />
+        <Route path="/sthlm" element={<SthlmXperience />} />
+        <Route path="/apoteket" element={<Apoteket />} />
+        <Route path="/sas" element={<Sas />} />
+        <Route path="/rumours" element={<Rumours />} />
+        <Route path="/mitel" element={<Mitel />} />
+        <Route path="/oden" element={<Oden />} />
+        <Route path="/myndigheten" element={<Myndigheten />} />
+        <Route path="/funlight" element={<FunLight />} />
+        <Route path="/alster" element={<Alster />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
