@@ -1,38 +1,47 @@
-# figma-make-app
+# johan-branzell-portfolio
 
-React + Vite + Tailwind CSS project running inside Figma Make.
+Johan Branzell's portfolio site — React + Vite + Tailwind CSS v4, deployed to
+GitHub Pages at [jbranzell2.github.io](https://jbranzell2.github.io).
 
-## Development Server
+## Development
 
-A Vite development server is **already running** on `$PORT` (default 8443). You don't need to start it manually.
+```bash
+npm install
+npm run dev      # dev server on http://localhost:8443 (or $PORT)
+npm run build    # production build to dist/
+npm run preview  # preview the production build locally
+```
 
-- Preview URL: The user can access the running app through the preview panel
-- Hot reload: Changes to source files are reflected immediately
+## Deployment
+
+Every push to `main` triggers [.github/workflows/deploy.yml](.github/workflows/deploy.yml),
+which builds the site and publishes it via GitHub Pages — no manual deploy
+step needed. [public/404.html](public/404.html) implements the standard
+[spa-github-pages](https://github.com/rafgraph/spa-github-pages) redirect
+trick so direct loads and refreshes of a route like `/electrolux` work
+correctly on GitHub Pages' static hosting.
 
 ## Project Structure
 
-This is the canonical project structure. Start with task-relevant files below. Only follow imports or inspect other files when required, when a documented path is missing, or when the repository contradicts this guide.
-
-- `src/main.tsx` - React entrypoint; imports `src/index.css` and mounts `src/App.tsx` into the `#root` element
-- `src/App.tsx` - Primary application component and the usual starting point for UI work
-- `src/index.css` - Global CSS entrypoint and Tailwind CSS v4 import
-- `index.html` - Vite HTML shell containing the `#root` element and loading `src/main.tsx`
-- `package.json` - Project dependencies and the Vite build, development, preview, and formatting scripts
-- `vite.config.ts` - Vite configuration with React, Tailwind CSS v4, and Figma Make plugins plus the `@` alias for `src`
-- `.mise.toml` - Toolchain versions for Node.js and pnpm
-
-## Dependencies
-
-- Runtime: React 19 and React DOM 19
-- Styling: Tailwind CSS v4 with the `@tailwindcss/vite` plugin
-- Build tooling: Vite 8, TypeScript 5.7, and `@vitejs/plugin-react`
-- Formatting: oxfmt
+- `src/main.tsx` — React entrypoint; imports `src/index.css` and mounts `src/App.tsx` into the `#root` element
+- `src/App.tsx` — Route table (react-router-dom `BrowserRouter`), one `<Route>` per page
+- `src/pages/*.tsx` — One component per page (Home, About, and one per project)
+- `src/components/Header.tsx` / `Footer.tsx` — Shared header/footer used by every page
+- `src/ScrollToTop.tsx` — Resets scroll position on route change
+- `src/imports/**/*.png` — Image assets (from the original Figma export; the `index.tsx` files that used to accompany them were unused dead code and have been removed)
+- `src/index.css` — Global CSS entrypoint, Tailwind import, and self-hosted `@font-face` rules (`public/fonts/`)
+- `index.html` — Vite HTML shell containing the `#root` element and loading `src/main.tsx`
+- `vite.config.ts` — Vite configuration: React, Tailwind CSS v4, and the `@` alias for `src`
 
 ## Styling
 
-This project uses **Tailwind CSS v4** through the `@tailwindcss/vite` plugin configured in `vite.config.ts`. `src/index.css` imports Tailwind with `@import 'tailwindcss';`. Use Tailwind utility classes directly in JSX and put global CSS or Tailwind v4 theme customization in `src/index.css`. This scaffold does not need a Tailwind config file or PostCSS config.
-
-`src/main.tsx` imports `src/index.css`, so global font wiring belongs in `src/index.css`. Keep CSS `@import` statements first, then add any `@font-face` rules and font-family defaults there.
+This project uses **Tailwind CSS v4** through the `@tailwindcss/vite` plugin
+configured in `vite.config.ts`. `src/index.css` imports Tailwind with
+`@import 'tailwindcss';`. Use Tailwind utility classes directly in JSX and put
+global CSS or theme customization in `src/index.css`. Prefer Tailwind's
+default design-system scale (`px-6`, `text-base`, `gap-4`, …) over arbitrary
+bracket values (`px-[24px]`); only use bracket notation for the custom
+Figma-derived sizes that don't land on that scale.
 
 ## Code quality
 
