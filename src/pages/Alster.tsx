@@ -16,7 +16,7 @@ export default function Alster() {
       <header className="md:hidden flex items-center justify-between px-4 py-[26px]">
         <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-6 whitespace-nowrap">Johan Branzell</p>
         <nav className="flex gap-6">
-          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">Home</Link>
           <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</Link>
         </nav>
       </header>
@@ -24,7 +24,7 @@ export default function Alster() {
       <header className="hidden md:grid grid-cols-3 items-end h-[164px] px-[29px] pb-[52px]">
         <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] whitespace-nowrap">Johan Branzell</p>
         <nav className="flex gap-10 justify-self-center">
-          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">Home</Link>
           <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</Link>
         </nav>
       </header>

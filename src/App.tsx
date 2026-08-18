@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Electrolux from "./pages/Electrolux";
@@ -15,6 +16,7 @@ import Alster from "./pages/Alster";
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
