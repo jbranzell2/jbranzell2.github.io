@@ -25,7 +25,7 @@ const projects: { img: string; label: string; path: string }[] = [
 
 export default function Home() {
   return (
-    <div className="bg-white min-h-screen flex flex-col page-enter">
+    <div className="bg-white min-h-screen flex flex-col page-enter max-w-[1400px] mx-auto">
       {/* Header */}
       <header className="relative shrink-0 w-full">
         {/* Mobile header */}

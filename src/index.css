@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+html, body {
+  background-color: #ffffff;
+}
+
 @keyframes page-enter {
   from { opacity: 0; }
   to   { opacity: 1; }

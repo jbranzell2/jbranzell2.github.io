@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function About() {
   return (
-    <div className="bg-white min-h-screen flex flex-col page-enter">
+    <div className="bg-white min-h-screen flex flex-col page-enter max-w-[1400px] mx-auto">
       {/* Header */}
       <header className="relative shrink-0 w-full">
         {/* Mobile header */}

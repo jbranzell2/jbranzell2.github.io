@@ -9,7 +9,7 @@ const galleryImages = [imgCover, imgImg37, imgImg1001, imgImg351, imgKanske22];
 
 export default function Alster() {
   return (
-    <div className="bg-white min-h-screen flex flex-col page-enter">
+    <div className="bg-white min-h-screen flex flex-col page-enter max-w-[1400px] mx-auto">
 
       {/* ── Header ── */}
       {/* Mobile */}
