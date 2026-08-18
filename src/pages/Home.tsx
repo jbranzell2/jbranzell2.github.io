@@ -35,7 +35,7 @@ export default function Home({ onNavigate }: HomeProps) {
         {/* Mobile header */}
         <div className="md:hidden flex items-center justify-between px-[16px] py-[26px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-[24px] not-italic whitespace-nowrap">Johan Branzell</p>
-          <nav className="flex gap-[16px]">
+          <nav className="flex gap-[24px]">
             <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</button>
             <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">About</button>
           </nav>
@@ -43,7 +43,7 @@ export default function Home({ onNavigate }: HomeProps) {
         {/* Desktop header */}
         <div className="hidden md:grid grid-cols-3 items-center px-[29px] h-[164px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] not-italic whitespace-nowrap">Johan Branzell</p>
-          <nav className="flex gap-[24px] justify-self-center">
+          <nav className="flex gap-[40px] justify-self-center">
             <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</button>
             <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">About</button>
           </nav>
@@ -61,11 +61,18 @@ export default function Home({ onNavigate }: HomeProps) {
                 className={`group ${page ? "cursor-pointer" : ""}`}
                 onClick={() => page && onNavigate(page)}
               >
-                <img
-                  src={img}
-                  alt={label}
-                  className="w-full aspect-square object-cover transition-opacity duration-[400ms] ease-in-out group-hover:opacity-75"
-                />
+                <div className="relative overflow-hidden">
+                  <img
+                    src={img}
+                    alt={label}
+                    className="w-full aspect-square object-cover transition-opacity duration-[400ms] ease-in-out group-hover:opacity-75"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-colors duration-[400ms] ease-in-out">
+                    <p className="font-['Poppins:Medium',sans-serif] text-white text-[16px] leading-[25.2px] text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[400ms] ease-in-out">
+                      {label}
+                    </p>
+                  </div>
+                </div>
                 <p className="font-['Poppins:Light',sans-serif] text-[14px] leading-[25.2px] text-black mt-[14px]">
                   {label}
                 </p>
@@ -83,11 +90,18 @@ export default function Home({ onNavigate }: HomeProps) {
                 className={`group mb-[32px] ${page ? "cursor-pointer" : ""}`}
                 onClick={() => page && onNavigate(page)}
               >
-                <img
-                  src={img}
-                  alt={label}
-                  className="w-full aspect-square object-cover transition-opacity duration-[400ms] ease-in-out group-hover:opacity-75"
-                />
+                <div className="relative overflow-hidden">
+                  <img
+                    src={img}
+                    alt={label}
+                    className="w-full aspect-square object-cover transition-opacity duration-[400ms] ease-in-out group-hover:opacity-75"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-colors duration-[400ms] ease-in-out">
+                    <p className="font-['Poppins:Medium',sans-serif] text-white text-[18px] leading-[28.8px] text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[400ms] ease-in-out">
+                      {label}
+                    </p>
+                  </div>
+                </div>
                 <p className="font-['Poppins:Light',sans-serif] text-[14px] leading-[25.2px] text-black mt-[15px]">
                   {label}
                 </p>
