@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const { pathname } = useLocation();
-  const isHomeActive = pathname !== "/about";
+  const isHomeActive = pathname === "/";
   const isAboutActive = pathname === "/about";
 
   const navLinkClass = (active: boolean) =>
