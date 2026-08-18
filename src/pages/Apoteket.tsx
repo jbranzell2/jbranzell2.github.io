@@ -8,6 +8,7 @@ import imgApoteket7 from "@/imports/DesktopApoteket/7b2685f9475edc49b8a8efd052c1
 import imgApoteket4 from "@/imports/DesktopApoteket/43b68c5c4d0c064ca6309a5c34eb6c6e087d1976.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
 
 export default function Apoteket() {
   return (
@@ -26,9 +27,7 @@ export default function Apoteket() {
 
           {/* Hero image — full bleed */}
           <div className="w-full">
-            <div className="w-full aspect-[390/339]">
-              <img alt="" className="w-full h-full object-cover block" src={imgHero} fetchPriority="high" />
-            </div>
+            <HeroImage variant="mobile" src={imgHero} alt="" />
           </div>
 
           {/* Intro text */}
@@ -198,9 +197,7 @@ export default function Apoteket() {
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.55625rem] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">Apoteket AB has high demands on sales, availability and the need to be visible on the web. My assignment was to collect graphic expressions and components and to continuously update the web to improve the customer experience. During my stay we created a Design System, WCAG AA 2.1 complient.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgHero} fetchPriority="high" />
-            </div>
+            <HeroImage variant="desktop" src={imgHero} alt="" />
           </div>
 
           {/* Tinted section */}

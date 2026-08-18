@@ -12,6 +12,7 @@ import imgFoto from "@/imports/DesktopSthlmXperienceConference2023/b85073b109597
 import imgImg3993 from "@/imports/DesktopSthlmXperienceConference2023/b88f5f6672b61de0994940a8e8d3e46cf8fe985b.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
 
 export default function SthlmXperience() {
   return (
@@ -137,9 +138,7 @@ export default function SthlmXperience() {
                 <p className="font-['Poppins:Light',sans-serif] leading-[2.55625rem] not-italic text-[1.41875rem] text-black w-[461px]">Worked on the branding and all the material for Stockholm Xperience Conference 2023. In a small team we looked at all the branding material, and applied it to everything digital and print.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="Cover" className="absolute inset-0 w-full h-full object-cover" src={imgCover} fetchPriority="high" />
-            </div>
+            <HeroImage variant="desktop" src={imgCover} alt="Cover" />
           </div>
           {/* Tinted */}
           <div className="bg-[#fafafa] py-20 pb-[104px] mt-0 flex justify-center px-6">

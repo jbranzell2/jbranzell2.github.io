@@ -3,6 +3,7 @@ import imgMyndigheten2 from "@/imports/DesktopMyndighetenForDelaktighet/8fe6102b
 import imgMyndigheten1 from "@/imports/DesktopMyndighetenForDelaktighet/d16efd6cc7cee2dbfb6e84db4f66c97b9b3dcc5e.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
 
 export default function Myndigheten() {
   return (
@@ -29,9 +30,7 @@ export default function Myndigheten() {
 
           {/* Cover image — full bleed */}
           <div className="w-full mt-12">
-            <div className="w-full aspect-[390/278]">
-              <img alt="" className="w-full h-full object-cover block" src={imgCover} fetchPriority="high" />
-            </div>
+            <HeroImage variant="mobile" src={imgCover} alt="" mobileAspectClass="aspect-[390/278]" />
           </div>
 
           {/* Screenshot images — full bleed */}
@@ -57,9 +56,7 @@ export default function Myndigheten() {
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">The work included user testing and delivering the final product.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgCover} fetchPriority="high" />
-            </div>
+            <HeroImage variant="desktop" src={imgCover} alt="" />
           </div>
 
           {/* Myndigheten 2 */}

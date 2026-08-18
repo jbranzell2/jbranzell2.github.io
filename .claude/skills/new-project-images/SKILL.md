@@ -1,14 +1,14 @@
 ---
 name: new-project-images
-description: Converts every image for a new portfolio project to AVIF (quality 80) and sets fetchPriority="high" on the project's hero/cover images (its mobile + desktop <img> variants). Use this whenever the user adds a new project to this site — "add a new project", "create a page for X", "I added images for the Y case study", dropping new Figma-exported images into src/imports/<ProjectName>/, or building out a new src/pages/*.tsx project page — even if they don't mention AVIF, image conversion, compression, or fetchpriority by name. Every existing project on this site (Electrolux, Alster, Apoteket, etc.) follows this pattern, so a new one should too — skipping it quietly regresses page load performance and leaves the new project inconsistent with the rest of the site.
+description: Converts every image for a new portfolio project to AVIF (quality 80) and renders its hero/cover image through the shared <HeroImage> component so it gets fetchPriority="high" automatically. Use this whenever the user adds a new project to this site — "add a new project", "create a page for X", "I added images for the Y case study", dropping new Figma-exported images into src/imports/<ProjectName>/, or building out a new src/pages/*.tsx project page — even if they don't mention AVIF, image conversion, compression, or fetchpriority by name. Every existing project on this site (Electrolux, Alster, Apoteket, etc.) follows this pattern, so a new one should too — skipping it quietly regresses page load performance and leaves the new project inconsistent with the rest of the site.
 ---
 
-# New project images: AVIF + fetchpriority
+# New project images: AVIF + hero priority
 
 ## Why this exists
 
 Every project page on this site follows two conventions established across
-the whole codebase (see `src/pages/Electrolux.tsx` or `src/pages/Alster.tsx`
+the whole codebase (see `src/pages/Electrolux.tsx` or `src/pages/Apoteket.tsx`
 for reference):
 
 1. **Images are AVIF**, not the PNG/JPEG that comes straight out of a Figma
@@ -18,11 +18,13 @@ for reference):
    shrinks graphics/screenshots too, with no visible quality loss — this was
    verified by eye against both a photo and a text-heavy screenshot before
    settling on 80 as the default.
-2. **The hero/cover image gets `fetchPriority="high"`.** It's imported once
-   but rendered as two `<img>` tags — one inside a `md:hidden` (mobile)
-   wrapper, one inside a `hidden md:...` (desktop) wrapper — both pointing at
-   the same `src`. Only one is visible per viewport, but both are candidates
-   for LCP (Largest Contentful Paint), so both get the hint.
+2. **The hero/cover image gets `fetchPriority="high"`,** via the shared
+   `src/components/HeroImage.tsx` component rather than a hand-typed
+   attribute. It's imported once but rendered twice — a mobile variant and a
+   desktop variant, in different parts of the page's layout — because only
+   one is visible per viewport but both are candidates for LCP (Largest
+   Contentful Paint), so both need the hint. `HeroImage` bakes that in so a
+   new page can't forget it.
 
 A new project that skips these will still work, it'll just quietly be slower
 to load and inconsistent with everything else on the site. That's the gap
@@ -67,29 +69,40 @@ If the user is adding images to an *existing* project rather than a
 brand-new one, the same five steps apply unchanged — just point the script
 at wherever the new images landed.
 
-## Step 2 — Mark the hero images as high priority
+## Step 2 — Render the hero image through `<HeroImage>`
 
-Find the project's cover/hero image. Look for the two-`<img>` pattern every
-existing project uses — same `src` variable, one instance wrapped in
-`md:hidden`, the other in `hidden md:...` (or similarly named mobile/desktop
-sections). Add `fetchPriority="high"` to **both**, and only those two:
+Find the project's cover/hero image and render it with
+`src/components/HeroImage.tsx` instead of a raw `<img>` — once where the
+mobile hero belongs, once where the desktop hero belongs (they live in
+different parts of the page's layout, not side by side, so this is two call
+sites, not one):
 
 ```tsx
+import HeroImage from "@/components/HeroImage";
+
 {/* Mobile */}
-<img alt="Project app" className="w-full h-full object-cover block" src={imgCover} fetchPriority="high" />
+<HeroImage variant="mobile" src={imgCover} alt="Project app" />
 
 {/* Desktop */}
-<img alt="Project app" className="absolute inset-0 w-full h-full object-cover" src={imgCover} fetchPriority="high" />
+<HeroImage variant="desktop" src={imgCover} alt="Project app" />
 ```
 
-Leave every other image on the page — screenshots, galleries, secondary
-photos — at default priority. `fetchPriority="high"` is a scarce resource;
-marking everything high defeats the point of marking anything high.
+The mobile variant defaults to `aspect-[390/339]`; pass
+`mobileAspectClass="aspect-[390/XXX]"` if the new project's cover image uses a
+different ratio (check the other prop against the actual image dimensions).
+`fetchPriority="high"` is baked into the component — you don't add it
+yourself, and you can't forget it on a new page.
 
-If a project's hero doesn't follow the mobile/desktop two-image pattern
-(e.g. it's a single responsive `<img>` with no breakpoint duplication), set
-`fetchPriority="high"` on that one image instead. The goal is "the LCP
-candidate(s) load first," not "there must always be exactly two."
+Leave every other image on the page — screenshots, galleries, secondary
+photos — as a plain `<img>` at default priority. `fetchPriority="high"` is a
+scarce resource; marking everything high defeats the point of marking
+anything high.
+
+If a project's hero doesn't follow the mobile/desktop two-image pattern (e.g.
+a single responsive `<img>` with no breakpoint duplication, or a bespoke
+layout like `src/pages/Alster.tsx`'s desktop hero), `HeroImage` doesn't fit —
+set `fetchPriority="high"` on that one image by hand instead. The goal is
+"the LCP candidate(s) load first," not "everything must use the component."
 
 ## Verify
 

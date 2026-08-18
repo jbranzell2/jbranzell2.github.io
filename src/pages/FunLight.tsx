@@ -6,6 +6,7 @@ import imgFunlight5 from "@/imports/DesktopFunLight/35b9deacb632ad586910614d7d6d
 import imgFunlight6 from "@/imports/DesktopFunLight/39d178c51738bdf149acfe54e8b3d903b3242f81.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
 
 export default function FunLight() {
   return (
@@ -33,9 +34,7 @@ export default function FunLight() {
 
           {/* Cover image — full bleed */}
           <div className="w-full">
-            <div className="w-full aspect-[390/339]">
-              <img alt="" className="w-full h-full object-cover block" src={imgCover} fetchPriority="high" />
-            </div>
+            <HeroImage variant="mobile" src={imgCover} alt="" />
           </div>
 
           {/* Vision */}
@@ -71,9 +70,7 @@ export default function FunLight() {
                 </div>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgCover} fetchPriority="high" />
-            </div>
+            <HeroImage variant="desktop" src={imgCover} alt="" />
           </div>
 
           {/* Vision band */}

@@ -3,6 +3,7 @@ import imgElectrolux11 from "@/imports/DesktopElectrolux/5edaf8e63575d5d52f3716b
 import imgElectrolux4 from "@/imports/DesktopElectrolux/5fde9e8e6ff3864f31bf59ec5901406b54a9c284.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
 
 export default function Electrolux() {
   return (
@@ -24,9 +25,7 @@ export default function Electrolux() {
               </p>
             </div>
             <div className="w-full mt-8">
-              <div className="w-full aspect-[390/339]">
-                <img alt="Electrolux app" className="w-full h-full object-cover block" src={imgElectrolux2} fetchPriority="high" />
-              </div>
+              <HeroImage variant="mobile" src={imgElectrolux2} alt="Electrolux app" />
             </div>
           </div>
 
@@ -41,9 +40,7 @@ export default function Electrolux() {
                   {`Electrolux was in need for a senior product designer to maintain and further develop their Europe apps. As the responsible designer, Johan provided new design, as well as managing the conversation between product owners, developers and architects for both Electrolux and AEG's teams.`}
                 </p>
               </div>
-              <div className="flex-1 min-w-[390px] relative h-[844px]">
-                <img alt="Electrolux app" className="absolute inset-0 w-full h-full object-cover" src={imgElectrolux2} fetchPriority="high" />
-              </div>
+              <HeroImage variant="desktop" src={imgElectrolux2} alt="Electrolux app" />
             </div>
           </div>
         </div>
@@ -62,7 +59,10 @@ export default function Electrolux() {
           </p>
         </div>
 
-        {/* Screenshots section */}
+        {/* Screenshots section. Rendered at natural size (no aspect-ratio
+            wrapper + object-cover/contain, unlike other pages' galleries)
+            because these two screenshots don't share a common ratio —
+            forcing them into a fixed box previously letterboxed them. */}
         {/* Mobile */}
         <div className="md:hidden flex flex-col gap-3 mt-3 w-full">
           {[imgElectrolux11, imgElectrolux4].map((img, i) => (

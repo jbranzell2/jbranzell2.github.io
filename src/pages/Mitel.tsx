@@ -5,6 +5,7 @@ import imgMitel3 from "@/imports/DesktopMitel/b08ee736cc6012b12547642a76e042dc65
 import imgMitel4 from "@/imports/DesktopMitel/6287313b28a9844ed62bf6b0f2fe79a882564044.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
 
 export default function Mitel() {
   return (
@@ -23,9 +24,7 @@ export default function Mitel() {
 
           {/* Cover image — full bleed */}
           <div className="w-full mt-12">
-            <div className="w-full aspect-[390/339]">
-              <img alt="" className="w-full h-full object-cover block" src={imgCover} fetchPriority="high" />
-            </div>
+            <HeroImage variant="mobile" src={imgCover} alt="" />
           </div>
 
           {/* Description */}
@@ -65,9 +64,7 @@ export default function Mitel() {
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">The work included keeping everyone on the same page and updating their old UI while creating a design system for the future.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgCover} fetchPriority="high" />
-            </div>
+            <HeroImage variant="desktop" src={imgCover} alt="" />
           </div>
 
           {/* Full-width screenshots */}

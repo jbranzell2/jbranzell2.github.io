@@ -5,6 +5,7 @@ import imgImg351 from "@/imports/DesktopAlster/7c00948506c3c8d7ac2958f3b0c3ec5be
 import imgKanske22 from "@/imports/DesktopAlster/f27c7352efc038697f0cd20a9da239fca0b7afc3.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
 
 const galleryImages = [imgCover, imgImg37, imgImg1001, imgImg351, imgKanske22];
 
@@ -38,9 +39,7 @@ export default function Alster() {
 
         {/* ── Mobile cover image ── */}
         <div className="md:hidden mt-12 w-full">
-          <div className="w-full aspect-[390/339]">
-            <img src={imgCover} alt="" className="w-full h-full object-cover block" fetchPriority="high" />
-          </div>
+          <HeroImage variant="mobile" src={imgCover} alt="" />
         </div>
 
         {/* ── Berghs note band ── */}

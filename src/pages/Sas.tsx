@@ -4,6 +4,7 @@ import imgSas2 from "@/imports/DesktopSas/c9222641484c48d657bf56d2745d8c3a50c724
 import imgSas3 from "@/imports/DesktopSas/30eb5163fdb3b47db8d1b97ba0113f90c1e8bb63.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
 
 const roleItems = [
   "– The Seat maps",
@@ -32,9 +33,7 @@ export default function Sas() {
 
           {/* Cover image — full bleed */}
           <div className="w-full mt-4">
-            <div className="w-full aspect-[390/339]">
-              <img alt="" className="w-full h-full object-cover block" src={imgCover} fetchPriority="high" />
-            </div>
+            <HeroImage variant="mobile" src={imgCover} alt="" />
           </div>
 
           {/* Intro */}
@@ -74,9 +73,7 @@ export default function Sas() {
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.55625rem] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">I worked for a year as the visual designer for the payment and booking stream at SAS.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgCover} fetchPriority="high" />
-            </div>
+            <HeroImage variant="desktop" src={imgCover} alt="" />
           </div>
 
           {/* Tinted section */}

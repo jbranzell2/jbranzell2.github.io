@@ -9,6 +9,7 @@ import imgImage9 from "@/imports/DesktopRumours/561f49544f3d143002a22344a9beb91d
 import imgImage10 from "@/imports/DesktopRumours/d7d2279a090e6124df094b83426bc740e99e717d.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
 
 export default function Rumours() {
   return (
@@ -27,9 +28,7 @@ export default function Rumours() {
 
           {/* Image 1 — full bleed */}
           <div className="w-full mt-12">
-            <div className="w-full aspect-[390/278]">
-              <img alt="" className="w-full h-full object-cover block" src={imgImage1} fetchPriority="high" />
-            </div>
+            <HeroImage variant="mobile" src={imgImage1} alt="" mobileAspectClass="aspect-[390/278]" />
           </div>
 
           {/* Description text */}
@@ -69,9 +68,7 @@ export default function Rumours() {
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">The paper could be found in different shops mainly in Stockholm, Göteborg and Malmö</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgImage1} fetchPriority="high" />
-            </div>
+            <HeroImage variant="desktop" src={imgImage1} alt="" />
           </div>
 
           {/* Full-width images */}
