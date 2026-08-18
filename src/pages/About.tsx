@@ -8,18 +8,18 @@ export default function About() {
       <header className="relative shrink-0 w-full">
         {/* Mobile header */}
         <div className="md:hidden flex items-center justify-between px-[16px] py-[28px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-[24px] not-italic whitespace-nowrap">Johan Branzell</p>
+          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[1rem] leading-[1.5rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
           <nav className="flex gap-[24px]">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</Link>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</Link>
           </nav>
         </div>
         {/* Desktop header */}
         <div className="hidden md:grid grid-cols-3 items-center px-[28px] h-[164px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] not-italic whitespace-nowrap">Johan Branzell</p>
+          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[2.05rem] leading-[3.075rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
           <nav className="flex gap-[40px] justify-self-center">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</Link>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</Link>
           </nav>
         </div>
       </header>
@@ -32,14 +32,14 @@ export default function About() {
             <img src={imgJagcool} alt="Johan Branzell" className="w-full md:w-[628px] md:aspect-[628/786] object-cover" />
           </div>
           <div className="md:order-1 md:max-w-[630px] md:shrink-0">
-            <p className="font-['Poppins:Medium',sans-serif] text-black text-[48.4px] md:text-[66.4px] leading-[63.9px] md:leading-[87.6px] not-italic mt-6 md:mt-[70px] whitespace-pre-wrap">
+            <p className="font-['Poppins:Medium',sans-serif] text-black text-[3.025rem] md:text-[4.15rem] leading-[3.99375rem] md:leading-[5.475rem] not-italic mt-6 md:mt-[70px] whitespace-pre-wrap">
               {"My name is "}
               <span className="whitespace-nowrap">Johan Branzell</span>
             </p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[20.3px] md:text-[22.7px] leading-[36.6px] md:leading-[40.9px] not-italic mt-6 md:mt-8 max-w-[630px]">
+            <p className="font-['Poppins:Light',sans-serif] text-black text-[1.26875rem] md:text-[1.41875rem] leading-[2.2875rem] md:leading-[2.55625rem] not-italic mt-6 md:mt-8 max-w-[630px]">
               {"I'm from Karlstad, currently living in Stockholm, Sweden. Here I work as a Product Designer who strives to deliver thought through, user driven and detailed design. I love working on websites, apps, doing animations or print. Or working on anything design related really."}
             </p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[20.3px] md:text-[22.7px] leading-[36.6px] md:leading-[40.9px] not-italic mt-6 md:mt-8 max-w-[630px]">
+            <p className="font-['Poppins:Light',sans-serif] text-black text-[1.26875rem] md:text-[1.41875rem] leading-[2.2875rem] md:leading-[2.55625rem] not-italic mt-6 md:mt-8 max-w-[630px]">
               {"If you want to know more, feel free to drop me a line at "}
               <span className="font-['Poppins:Bold',sans-serif]">johanbranzell@gmail.com</span>
             </p>
@@ -48,34 +48,34 @@ export default function About() {
 
         {/* Experience */}
         <div className="mt-12 md:mt-16 max-w-[630px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[35.4px] md:text-[46.2px] leading-[49.3px] md:leading-[64.4px] not-italic">EXPERIENCE</p>
-          <p className="font-['Poppins:Bold',sans-serif] text-black text-[16px] leading-[28.8px] not-italic mt-4">–</p>
+          <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2125rem] md:text-[2.8875rem] leading-[3.08125rem] md:leading-[4.025rem] not-italic">EXPERIENCE</p>
+          <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic mt-4">–</p>
 
           {/* 2021-2022 + 2020-2021 block */}
           <div className="mt-6">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[16px] leading-[28.8px] not-italic">2021 - 2022</p>
-            <div className="font-['Poppins:Light',sans-serif] text-black text-[16px] not-italic mt-1">
-              <p className="leading-[28.8px] mb-0">Electrolux - Senior Software Product Designer</p>
-              <p className="leading-[28.8px] mb-0">&nbsp;</p>
-              <p className="leading-[28.8px] mb-0">I worked and maintained the Kitchen and Care apps for Elextrolux and Aeg, covering both Android and iOS. The work also included working with different physical products, connecting them to the apps.</p>
-              <p className="leading-[28.8px] mb-0">&nbsp;</p>
-              <p className="font-['Poppins:Bold',sans-serif] leading-[28.8px] mb-0">2020 - 2021</p>
-              <p className="leading-[28.8px] mb-0">&nbsp;</p>
-              <p className="leading-[28.8px] mb-0">Apoteket AB - UX/UI Designer</p>
-              <p className="leading-[28.8px] mb-0">&nbsp;</p>
-              <p className="leading-[28.8px]">Modernised the web expression for apoteket, I also created a better user experience as a whole using various tools and methods, among them a Design system following WCAG 2.1 AA.</p>
+            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic">2021 - 2022</p>
+            <div className="font-['Poppins:Light',sans-serif] text-black text-[1rem] not-italic mt-1">
+              <p className="leading-[1.8rem] mb-0">Electrolux - Senior Software Product Designer</p>
+              <p className="leading-[1.8rem] mb-0">&nbsp;</p>
+              <p className="leading-[1.8rem] mb-0">I worked and maintained the Kitchen and Care apps for Elextrolux and Aeg, covering both Android and iOS. The work also included working with different physical products, connecting them to the apps.</p>
+              <p className="leading-[1.8rem] mb-0">&nbsp;</p>
+              <p className="font-['Poppins:Bold',sans-serif] leading-[1.8rem] mb-0">2020 - 2021</p>
+              <p className="leading-[1.8rem] mb-0">&nbsp;</p>
+              <p className="leading-[1.8rem] mb-0">Apoteket AB - UX/UI Designer</p>
+              <p className="leading-[1.8rem] mb-0">&nbsp;</p>
+              <p className="leading-[1.8rem]">Modernised the web expression for apoteket, I also created a better user experience as a whole using various tools and methods, among them a Design system following WCAG 2.1 AA.</p>
             </div>
           </div>
 
           {/* 2019 */}
           <div className="mt-6">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[16px] leading-[28.8px] not-italic">2019</p>
-            <div className="font-['Poppins:Light',sans-serif] text-black text-[16px] not-italic mt-1">
-              <p className="font-['Poppins:Bold',sans-serif] leading-[28.8px] mb-0">I Worked on various projects such as:</p>
-              <p className="leading-[28.8px] mb-0">Oden Business Intelligence - Animated their promo video</p>
-              <p className="leading-[28.8px] mb-0">PT Studio - Created a graphic brand guide and designed various graphical materials</p>
-              <p className="leading-[28.8px] mb-0">&nbsp;</p>
-              <p className="leading-[28.8px]"><span className="font-['Poppins:Bold',sans-serif]">–</span>{" I also worked with two other clients with upcoming websites in 2020"}</p>
+            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic">2019</p>
+            <div className="font-['Poppins:Light',sans-serif] text-black text-[1rem] not-italic mt-1">
+              <p className="font-['Poppins:Bold',sans-serif] leading-[1.8rem] mb-0">I Worked on various projects such as:</p>
+              <p className="leading-[1.8rem] mb-0">Oden Business Intelligence - Animated their promo video</p>
+              <p className="leading-[1.8rem] mb-0">PT Studio - Created a graphic brand guide and designed various graphical materials</p>
+              <p className="leading-[1.8rem] mb-0">&nbsp;</p>
+              <p className="leading-[1.8rem]"><span className="font-['Poppins:Bold',sans-serif]">–</span>{" I also worked with two other clients with upcoming websites in 2020"}</p>
             </div>
           </div>
 
@@ -91,11 +91,11 @@ export default function About() {
             { year: "2010 – 2011", title: "Hawaii Pacific University", desc: "The year 2010/11 I lived in Hawaii, studying at Hawaii Pacific University. I learned more about business and advertising." },
           ].map(({ year, title, desc }) => (
             <div key={year} className="mt-6">
-              <p className="font-['Poppins:Bold',sans-serif] text-black text-[16px] leading-[28.8px] not-italic">{year}</p>
-              <div className="font-['Poppins:Light',sans-serif] text-black text-[16px] not-italic mt-1">
-                <p className="leading-[28.8px] mb-0">{title}</p>
-                <p className="leading-[28.8px] mb-0">&nbsp;</p>
-                <p className="leading-[28.8px]">{desc}</p>
+              <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic">{year}</p>
+              <div className="font-['Poppins:Light',sans-serif] text-black text-[1rem] not-italic mt-1">
+                <p className="leading-[1.8rem] mb-0">{title}</p>
+                <p className="leading-[1.8rem] mb-0">&nbsp;</p>
+                <p className="leading-[1.8rem]">{desc}</p>
               </div>
             </div>
           ))}
@@ -108,16 +108,16 @@ export default function About() {
       <footer className="relative shrink-0 w-full">
         {/* Mobile */}
         <div className="md:hidden h-[393px] relative">
-          <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[29px] leading-[41.4px] not-italic whitespace-nowrap">Johan Branzell</p>
-          <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[16px] leading-[28.8px] not-italic whitespace-nowrap">E-mail me</p>
-          <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[16px] leading-[28.8px] not-italic whitespace-nowrap">johanbranzell@gmail.com</p>
+          <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[1.8125rem] leading-[2.5875rem] not-italic whitespace-nowrap">Johan Branzell</p>
+          <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">E-mail me</p>
+          <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
         </div>
         {/* Desktop */}
         <div className="hidden md:flex items-center justify-between px-[28px] h-[270px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[36.2px] leading-[51.6px] not-italic whitespace-nowrap">Johan Branzell</p>
+          <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2625rem] leading-[3.225rem] not-italic whitespace-nowrap">Johan Branzell</p>
           <div className="flex flex-col items-end">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[16px] leading-[28.8px] not-italic whitespace-nowrap">E-mail me</p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic whitespace-nowrap">johanbranzell@gmail.com</p>
+            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">E-mail me</p>
+            <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
           </div>
         </div>
       </footer>

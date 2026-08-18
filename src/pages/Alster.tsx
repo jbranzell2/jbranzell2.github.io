@@ -14,18 +14,18 @@ export default function Alster() {
       {/* ── Header ── */}
       {/* Mobile */}
       <header className="md:hidden flex items-center justify-between px-4 py-[28px]">
-        <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-6 whitespace-nowrap">Johan Branzell</p>
+        <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[1rem] leading-6 whitespace-nowrap cursor-pointer">Johan Branzell</Link>
         <nav className="flex gap-6">
-          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">Home</Link>
-          <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</Link>
+          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] cursor-pointer">Home</Link>
+          <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] cursor-pointer">About</Link>
         </nav>
       </header>
       {/* Desktop */}
       <header className="hidden md:grid grid-cols-3 items-end h-[164px] px-[28px] pb-[52px]">
-        <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] whitespace-nowrap">Johan Branzell</p>
+        <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[2.05rem] leading-[3.075rem] whitespace-nowrap cursor-pointer">Johan Branzell</Link>
         <nav className="flex gap-10 justify-self-center">
-          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">Home</Link>
-          <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</Link>
+          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] cursor-pointer">Home</Link>
+          <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] cursor-pointer">About</Link>
         </nav>
       </header>
 
@@ -34,18 +34,18 @@ export default function Alster() {
         {/* ── Hero ── */}
         {/* Mobile */}
         <div className="md:hidden px-6 pt-8">
-          <h1 className="font-['Poppins:Medium',sans-serif] text-black text-[35.4px] leading-[49.3px]">Art Director and Graphic designer for Alster</h1>
-          <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] mt-2">Alster is an ecologic beer from the forests of Wermland. The name is based on a small place, known for being the home of Gustaf Fröding when he grew up. Its location is one where you relax and breath in natures own luxury.</p>
-          <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] mt-4">By making beer with water from the lake Alstern and take the berrys from the forests of Wermland, you can get a unique tasting experience.</p>
-          <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] mt-4">Alster is a beer to enjoy on your own or with great company in a non stressed moment.</p>
+          <h1 className="font-['Poppins:Medium',sans-serif] text-black text-[2.2125rem] leading-[3.08125rem]">Art Director and Graphic designer for Alster</h1>
+          <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] mt-2">Alster is an ecologic beer from the forests of Wermland. The name is based on a small place, known for being the home of Gustaf Fröding when he grew up. Its location is one where you relax and breath in natures own luxury.</p>
+          <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] mt-4">By making beer with water from the lake Alstern and take the berrys from the forests of Wermland, you can get a unique tasting experience.</p>
+          <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] mt-4">Alster is a beer to enjoy on your own or with great company in a non stressed moment.</p>
         </div>
         {/* Desktop */}
         <div className="hidden md:grid md:grid-cols-2 md:gap-12 px-8 pt-[208px] items-start">
           <div>
-            <h1 className="font-['Poppins:Medium',sans-serif] text-black text-[46.2px] leading-[64.4px] max-w-[453px]">Art Director and Graphic designer for Alster</h1>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] mt-2 max-w-[453px]">Alster is an ecologic beer from the forests of Wermland. The name is based on a small place, known for being the home of Gustaf Fröding when he grew up. Its location is one where you relax and breath in natures own luxury.</p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] mt-4 max-w-[453px]">By making beer with water from the lake Alstern and take the berrys from the forests of Wermland, you can get a unique tasting experience.</p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] mt-4 max-w-[453px]">Alster is a beer to enjoy on your own or with great company in a non stressed moment.</p>
+            <h1 className="font-['Poppins:Medium',sans-serif] text-black text-[2.8875rem] leading-[4.025rem] max-w-[453px]">Art Director and Graphic designer for Alster</h1>
+            <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] mt-2 max-w-[453px]">Alster is an ecologic beer from the forests of Wermland. The name is based on a small place, known for being the home of Gustaf Fröding when he grew up. Its location is one where you relax and breath in natures own luxury.</p>
+            <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] mt-4 max-w-[453px]">By making beer with water from the lake Alstern and take the berrys from the forests of Wermland, you can get a unique tasting experience.</p>
+            <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] mt-4 max-w-[453px]">Alster is a beer to enjoy on your own or with great company in a non stressed moment.</p>
           </div>
           <div className="w-full aspect-[715/845]">
             <img src={imgCover} alt="" className="w-full h-full object-cover" />
@@ -61,7 +61,7 @@ export default function Alster() {
 
         {/* ── Berghs note band ── */}
         <div className="bg-[#fafafa] mt-8 md:mt-0 px-6 py-12 flex justify-center md:px-[24px]">
-          <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] max-w-[453px]">This work is part of my final examination work at Berghs School of Communication 2015. I developed the concept, branding, labels, and graphic design.</p>
+          <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] max-w-[453px]">This work is part of my final examination work at Berghs School of Communication 2015. I developed the concept, branding, labels, and graphic design.</p>
         </div>
 
         {/* ── Gallery ── */}
@@ -85,16 +85,16 @@ export default function Alster() {
       {/* ── Footer ── */}
       {/* Mobile */}
       <footer className="md:hidden h-[393px] relative">
-        <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[29px] leading-[41.4px] whitespace-nowrap">Johan Branzell</p>
-        <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[16px] leading-[28.8px] whitespace-nowrap">E-mail me</p>
-        <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[16px] leading-[28.8px] whitespace-nowrap">johanbranzell@gmail.com</p>
+        <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[1.8125rem] leading-[2.5875rem] whitespace-nowrap">Johan Branzell</p>
+        <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[1rem] leading-[1.8rem] whitespace-nowrap">E-mail me</p>
+        <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[1rem] leading-[1.8rem] whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
       </footer>
       {/* Desktop */}
       <footer className="hidden md:flex items-center justify-between px-[28px] h-[270px]">
-        <p className="font-['Poppins:Medium',sans-serif] text-black text-[36.2px] leading-[51.6px] not-italic whitespace-nowrap">Johan Branzell</p>
+        <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2625rem] leading-[3.225rem] not-italic whitespace-nowrap">Johan Branzell</p>
         <div className="flex flex-col items-end">
-          <p className="font-['Poppins:Bold',sans-serif] text-black text-[16px] leading-[28.8px] not-italic whitespace-nowrap">E-mail me</p>
-          <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic whitespace-nowrap">johanbranzell@gmail.com</p>
+          <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">E-mail me</p>
+          <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
         </div>
       </footer>
 

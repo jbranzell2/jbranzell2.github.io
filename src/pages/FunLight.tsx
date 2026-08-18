@@ -13,18 +13,18 @@ export default function FunLight() {
       <header className="relative shrink-0 w-full">
         {/* Mobile header */}
         <div className="md:hidden flex items-center justify-between px-[16px] py-[28px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-[24px] not-italic whitespace-nowrap">Johan Branzell</p>
+          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[1rem] leading-[1.5rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
           <nav className="flex gap-[24px]">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
         {/* Desktop header */}
         <div className="hidden md:grid grid-cols-3 items-center px-[28px] h-[164px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] not-italic whitespace-nowrap">Johan Branzell</p>
+          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[2.05rem] leading-[3.075rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
           <nav className="flex gap-[40px] justify-self-center">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
       </header>
@@ -36,15 +36,15 @@ export default function FunLight() {
         <div className="md:hidden">
           {/* Title */}
           <div className="px-[24px] pt-[32px]">
-            <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[49.3px] not-italic text-[35.4px] text-black w-full">Art Director conecpt for Fun Light</p>
+            <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Art Director conecpt for Fun Light</p>
           </div>
 
           {/* Description */}
           <div className="px-[24px] pt-[8px] pb-[16px]">
-            <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[20.3px] text-black tracking-[-0.0203px] w-full">
-              <p className="leading-[36.6px] mb-0">In this project our class at Berghs created a concept and design for Fun Light with Silver. I was inspired by a trend of healthiness that is currently sweeping over Sweden.</p>
-              <p className="leading-[36.6px] mb-0">The design was meant to say "Fun Light", but still communicating cleanness and healthiness.</p>
-              <p className="leading-[36.6px]">So I made Vitamin Effervescent tablets, in small gum like packages, which you can take anywhere.</p>
+            <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.26875rem] text-black tracking-[-0.0203px] w-full">
+              <p className="leading-[2.2875rem] mb-0">In this project our class at Berghs created a concept and design for Fun Light with Silver. I was inspired by a trend of healthiness that is currently sweeping over Sweden.</p>
+              <p className="leading-[2.2875rem] mb-0">The design was meant to say "Fun Light", but still communicating cleanness and healthiness.</p>
+              <p className="leading-[2.2875rem]">So I made Vitamin Effervescent tablets, in small gum like packages, which you can take anywhere.</p>
             </div>
           </div>
 
@@ -57,10 +57,10 @@ export default function FunLight() {
 
           {/* Vision */}
           <div className="px-[24px] pt-[32px]">
-            <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[20.3px] text-black w-full">
-              <p className="font-['Poppins:Bold',sans-serif] leading-[36.6px] mb-0">Vision</p>
-              <p className="leading-[36.6px] mb-0">To follow the healthy trend, use the already existing position and make</p>
-              <p className="leading-[36.6px]">FUN LIGHT more active by adding a new product.</p>
+            <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.26875rem] text-black w-full">
+              <p className="font-['Poppins:Bold',sans-serif] leading-[2.2875rem] mb-0">Vision</p>
+              <p className="leading-[2.2875rem] mb-0">To follow the healthy trend, use the already existing position and make</p>
+              <p className="leading-[2.2875rem]">FUN LIGHT more active by adding a new product.</p>
             </div>
           </div>
 
@@ -79,12 +79,12 @@ export default function FunLight() {
           {/* Hero row */}
           <div className="flex items-center pl-[32px] gap-[180px] w-full overflow-hidden">
             <div className="flex flex-col py-[64px] shrink-0 max-w-[453px]">
-              <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[64.4px] not-italic text-[46.2px] text-black w-full max-w-[453px]">Art Director conecpt for Fun Light</p>
+              <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">Art Director conecpt for Fun Light</p>
               <div className="pt-[8px]">
-                <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[22.7px] text-black w-full max-w-[453px]">
-                  <p className="leading-[40.9px] mb-0">In this project our class at Berghs created a concept and design for Fun Light with Silver. I was inspired by a trend of healthiness that is currently sweeping over Sweden.</p>
-                  <p className="leading-[40.9px] mb-0">The design was meant to say "Fun Light", but still communicating cleanness and healthiness.</p>
-                  <p className="leading-[40.9px]">So I made Vitamin Effervescent tablets, in small gum like packages, which you can take anywhere.</p>
+                <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">
+                  <p className="leading-[2.55625rem] mb-0">In this project our class at Berghs created a concept and design for Fun Light with Silver. I was inspired by a trend of healthiness that is currently sweeping over Sweden.</p>
+                  <p className="leading-[2.55625rem] mb-0">The design was meant to say "Fun Light", but still communicating cleanness and healthiness.</p>
+                  <p className="leading-[2.55625rem]">So I made Vitamin Effervescent tablets, in small gum like packages, which you can take anywhere.</p>
                 </div>
               </div>
             </div>
@@ -95,10 +95,10 @@ export default function FunLight() {
 
           {/* Vision band */}
           <div className="bg-[#fafafa] flex h-[195px] items-start justify-center py-[48px] px-[24px] w-full">
-            <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[22.7px] text-black w-full max-w-[453px]">
-              <p className="font-['Poppins:Bold',sans-serif] leading-[40.9px] mb-0">Vision</p>
-              <p className="leading-[40.9px] mb-0">To follow the healthy trend, use the already existing position and make</p>
-              <p className="leading-[40.9px]">FUN LIGHT more active by adding a new product.</p>
+            <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">
+              <p className="font-['Poppins:Bold',sans-serif] leading-[2.55625rem] mb-0">Vision</p>
+              <p className="leading-[2.55625rem] mb-0">To follow the healthy trend, use the already existing position and make</p>
+              <p className="leading-[2.55625rem]">FUN LIGHT more active by adding a new product.</p>
             </div>
           </div>
 
@@ -135,16 +135,16 @@ export default function FunLight() {
       <footer className="relative shrink-0 w-full">
         {/* Mobile footer */}
         <div className="md:hidden h-[392px] relative">
-          <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[29px] leading-[41.4px] not-italic whitespace-nowrap">Johan Branzell</p>
-          <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[16px] leading-[28.8px] not-italic whitespace-nowrap">E-mail me</p>
-          <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[16px] leading-[28.8px] not-italic whitespace-nowrap">johanbranzell@gmail.com</p>
+          <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[1.8125rem] leading-[2.5875rem] not-italic whitespace-nowrap">Johan Branzell</p>
+          <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">E-mail me</p>
+          <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
         </div>
         {/* Desktop footer */}
         <div className="hidden md:flex items-center justify-between px-[28px] h-[270px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[36.2px] leading-[51.6px] not-italic whitespace-nowrap">Johan Branzell</p>
+          <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2625rem] leading-[3.225rem] not-italic whitespace-nowrap">Johan Branzell</p>
           <div className="flex flex-col items-end">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[16px] leading-[28.8px] not-italic whitespace-nowrap">E-mail me</p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic whitespace-nowrap">johanbranzell@gmail.com</p>
+            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">E-mail me</p>
+            <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
           </div>
         </div>
       </footer>

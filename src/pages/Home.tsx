@@ -30,18 +30,18 @@ export default function Home() {
       <header className="relative shrink-0 w-full">
         {/* Mobile header */}
         <div className="md:hidden flex items-center justify-between px-[16px] py-[28px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-[24px] not-italic whitespace-nowrap">Johan Branzell</p>
+          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[1rem] leading-[1.5rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
           <nav className="flex gap-[24px]">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
         {/* Desktop header */}
         <div className="hidden md:grid grid-cols-3 items-center px-[28px] h-[164px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] not-italic whitespace-nowrap">Johan Branzell</p>
+          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[2.05rem] leading-[3.075rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
           <nav className="flex gap-[40px] justify-self-center">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic cursor-pointer">About</Link>
+            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
+            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">About</Link>
           </nav>
         </div>
       </header>
@@ -60,12 +60,12 @@ export default function Home() {
                     className="w-full aspect-square object-cover transition-opacity duration-[400ms] ease-in-out group-hover:opacity-75"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-colors duration-[400ms] ease-in-out">
-                    <p className="font-['Poppins:Medium',sans-serif] text-white text-[16px] leading-[25.2px] text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[400ms] ease-in-out">
+                    <p className="font-['Poppins:Medium',sans-serif] text-white text-[1rem] leading-[1.575rem] text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[400ms] ease-in-out">
                       {label}
                     </p>
                   </div>
                 </div>
-                <p className="font-['Poppins:Light',sans-serif] text-[14px] leading-[25.2px] text-black mt-[16px]">
+                <p className="font-['Poppins:Light',sans-serif] text-[0.875rem] leading-[1.575rem] text-black mt-[16px]">
                   {label}
                 </p>
               </Link>
@@ -85,12 +85,12 @@ export default function Home() {
                     className="w-full aspect-square object-cover transition-opacity duration-[400ms] ease-in-out group-hover:opacity-75"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-colors duration-[400ms] ease-in-out">
-                    <p className="font-['Poppins:Medium',sans-serif] text-white text-[18px] leading-[28.8px] text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[400ms] ease-in-out">
+                    <p className="font-['Poppins:Medium',sans-serif] text-white text-[1.125rem] leading-[1.8rem] text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[400ms] ease-in-out">
                       {label}
                     </p>
                   </div>
                 </div>
-                <p className="font-['Poppins:Light',sans-serif] text-[14px] leading-[25.2px] text-black mt-[16px]">
+                <p className="font-['Poppins:Light',sans-serif] text-[0.875rem] leading-[1.575rem] text-black mt-[16px]">
                   {label}
                 </p>
               </Link>
@@ -103,27 +103,27 @@ export default function Home() {
       <footer className="relative shrink-0 w-full">
         {/* Mobile footer */}
         <div className="md:hidden h-[393px] relative">
-          <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[29px] leading-[41.4px] not-italic whitespace-nowrap">
+          <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[1.8125rem] leading-[2.5875rem] not-italic whitespace-nowrap">
             Johan Branzell
           </p>
-          <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[16px] leading-[28.8px] not-italic whitespace-nowrap">
+          <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
             E-mail me
           </p>
-          <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[16px] leading-[28.8px] not-italic whitespace-nowrap">
-            johanbranzell@gmail.com
+          <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
+            <a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a>
           </p>
         </div>
         {/* Desktop footer */}
         <div className="hidden md:flex items-center justify-between px-[28px] h-[270px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[36.2px] leading-[51.6px] not-italic whitespace-nowrap">
+          <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2625rem] leading-[3.225rem] not-italic whitespace-nowrap">
             Johan Branzell
           </p>
           <div className="flex flex-col items-end">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[16px] leading-[28.8px] not-italic whitespace-nowrap">
+            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
               E-mail me
             </p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] not-italic whitespace-nowrap">
-              johanbranzell@gmail.com
+            <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
+              <a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a>
             </p>
           </div>
         </div>
