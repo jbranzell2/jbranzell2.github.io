@@ -12,7 +12,7 @@ export default function About() {
         {/* Photo + intro */}
         <div className="md:flex md:gap-8 md:items-start">
           <div className="md:order-2 md:ml-auto md:shrink-0">
-            <img src={imgJagcool} alt="Johan Branzell" className="w-full md:w-[628px] md:aspect-[628/786] object-cover" />
+            <img src={imgJagcool} alt="Johan Branzell" className="w-full md:w-[628px] md:aspect-[628/786] object-cover" fetchPriority="high" />
           </div>
           <div className="md:order-1 md:max-w-[630px] md:shrink-0">
             <p className="font-['Poppins:Medium',sans-serif] text-black text-[3.025rem] md:text-[4.15rem] leading-[3.99375rem] md:leading-[5.475rem] not-italic mt-6 md:mt-[70px] whitespace-pre-wrap">

@@ -28,7 +28,7 @@ export default function Rumours() {
           {/* Image 1 — full bleed */}
           <div className="w-full mt-12">
             <div className="w-full aspect-[390/278]">
-              <img alt="" className="w-full h-full object-cover block" src={imgImage1} />
+              <img alt="" className="w-full h-full object-cover block" src={imgImage1} fetchPriority="high" />
             </div>
           </div>
 
@@ -70,7 +70,7 @@ export default function Rumours() {
               </div>
             </div>
             <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgImage1} />
+              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgImage1} fetchPriority="high" />
             </div>
           </div>
 

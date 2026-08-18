@@ -24,7 +24,7 @@ export default function Mitel() {
           {/* Cover image — full bleed */}
           <div className="w-full mt-12">
             <div className="w-full aspect-[390/339]">
-              <img alt="" className="w-full h-full object-cover block" src={imgCover} />
+              <img alt="" className="w-full h-full object-cover block" src={imgCover} fetchPriority="high" />
             </div>
           </div>
 
@@ -66,7 +66,7 @@ export default function Mitel() {
               </div>
             </div>
             <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgCover} />
+              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgCover} fetchPriority="high" />
             </div>
           </div>
 

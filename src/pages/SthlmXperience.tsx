@@ -29,7 +29,7 @@ export default function SthlmXperience() {
             <p className="font-['Poppins:Light',sans-serif] leading-[2.2875rem] not-italic text-[1.26875rem] text-black mt-4 w-full">Worked on the branding and all the material for Stockholm Xperience Conference 2023. In a small team we looked at all the branding material, and applied it to everything digital and print.</p>
           </div>
           <div className="pt-6">
-            <img alt="Cover" className="w-full aspect-[390/240] object-cover" src={imgCover} />
+            <img alt="Cover" className="w-full aspect-[390/240] object-cover" src={imgCover} fetchPriority="high" />
           </div>
           {/* Tinted */}
           <div className="bg-[#fafafa] py-6 px-6 mt-0">
@@ -138,7 +138,7 @@ export default function SthlmXperience() {
               </div>
             </div>
             <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="Cover" className="absolute inset-0 w-full h-full object-cover" src={imgCover} />
+              <img alt="Cover" className="absolute inset-0 w-full h-full object-cover" src={imgCover} fetchPriority="high" />
             </div>
           </div>
           {/* Tinted */}

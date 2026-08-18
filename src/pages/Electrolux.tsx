@@ -25,7 +25,7 @@ export default function Electrolux() {
             </div>
             <div className="w-full mt-8">
               <div className="w-full aspect-[390/339]">
-                <img alt="Electrolux app" className="w-full h-full object-cover block" src={imgElectrolux2} />
+                <img alt="Electrolux app" className="w-full h-full object-cover block" src={imgElectrolux2} fetchPriority="high" />
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function Electrolux() {
                 </p>
               </div>
               <div className="flex-1 min-w-[390px] relative h-[844px]">
-                <img alt="Electrolux app" className="absolute inset-0 w-full h-full object-cover" src={imgElectrolux2} />
+                <img alt="Electrolux app" className="absolute inset-0 w-full h-full object-cover" src={imgElectrolux2} fetchPriority="high" />
               </div>
             </div>
           </div>

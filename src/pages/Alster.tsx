@@ -32,14 +32,14 @@ export default function Alster() {
             <p className="font-['Poppins:Light',sans-serif] text-black text-base leading-[1.8rem] mt-4 max-w-[453px]">Alster is a beer to enjoy on your own or with great company in a non stressed moment.</p>
           </div>
           <div className="w-full aspect-[715/845]">
-            <img src={imgCover} alt="" className="w-full h-full object-cover" />
+            <img src={imgCover} alt="" className="w-full h-full object-cover" fetchPriority="high" />
           </div>
         </div>
 
         {/* ── Mobile cover image ── */}
         <div className="md:hidden mt-12 w-full">
           <div className="w-full aspect-[390/339]">
-            <img src={imgCover} alt="" className="w-full h-full object-cover block" />
+            <img src={imgCover} alt="" className="w-full h-full object-cover block" fetchPriority="high" />
           </div>
         </div>
 

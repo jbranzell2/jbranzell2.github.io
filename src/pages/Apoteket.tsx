@@ -27,7 +27,7 @@ export default function Apoteket() {
           {/* Hero image — full bleed */}
           <div className="w-full">
             <div className="w-full aspect-[390/339]">
-              <img alt="" className="w-full h-full object-cover block" src={imgHero} />
+              <img alt="" className="w-full h-full object-cover block" src={imgHero} fetchPriority="high" />
             </div>
           </div>
 
@@ -199,7 +199,7 @@ export default function Apoteket() {
               </div>
             </div>
             <div className="flex-1 min-w-[390px] relative h-[844px]">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgHero} />
+              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgHero} fetchPriority="high" />
             </div>
           </div>
 
