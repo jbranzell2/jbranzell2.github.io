@@ -66,19 +66,13 @@ export default function Electrolux() {
         {/* Mobile */}
         <div className="md:hidden flex flex-col gap-3 mt-3 w-full">
           {[imgElectrolux11, imgElectrolux4].map((img, i) => (
-            <div key={i} className="w-full aspect-[390/188]">
-              <img alt={`Electrolux app screen ${i + 1}`} className="w-full h-full object-cover block" src={img} />
-            </div>
+            <img key={i} alt={`Electrolux app screen ${i + 1}`} className="w-full h-auto block" src={img} />
           ))}
         </div>
         {/* Desktop */}
         <div className="hidden md:flex flex-col gap-8 px-7 pt-[108px] pb-[108px] w-full">
-          <div className="w-full aspect-[3/1] relative">
-            <img alt="Electrolux app screen 1" className="absolute inset-0 w-full h-full object-contain" src={imgElectrolux11} />
-          </div>
-          <div className="w-full aspect-[3/1] relative">
-            <img alt="Electrolux app screen 2" className="absolute inset-0 w-full h-full object-contain" src={imgElectrolux4} />
-          </div>
+          <img alt="Electrolux app screen 1" className="w-full h-auto" src={imgElectrolux11} />
+          <img alt="Electrolux app screen 2" className="w-full h-auto" src={imgElectrolux4} />
         </div>
       </main>
 
