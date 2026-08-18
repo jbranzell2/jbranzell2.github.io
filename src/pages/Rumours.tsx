@@ -21,7 +21,7 @@ export default function Rumours() {
         {/* ── MOBILE layout ── */}
         <div className="md:hidden">
           {/* Title */}
-          <div className="px-[24px] pt-[32px]">
+          <div className="px-6 pt-8">
             <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Art director/Graphic Designer</p>
           </div>
 
@@ -33,14 +33,14 @@ export default function Rumours() {
           </div>
 
           {/* Description text */}
-          <div className="px-[24px] pt-[8px]">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full whitespace-pre-wrap">{`Together with Festivalrykten,  Robin Wellström and I created the concept and all the layout for Rumours.`}</p>
+          <div className="px-6 pt-2">
+            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full whitespace-pre-wrap">{`Together with Festivalrykten,  Robin Wellström and I created the concept and all the layout for Rumours.`}</p>
           </div>
-          <div className="px-[24px] pt-[16px]">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full">The work included everything, maping out formats, the visual identity and all branding.</p>
+          <div className="px-6 pt-4">
+            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">The work included everything, maping out formats, the visual identity and all branding.</p>
           </div>
-          <div className="px-[24px] pt-[16px]">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full">The paper could be found in different shops mainly in Stockholm, Göteborg and Malmö</p>
+          <div className="px-6 pt-4">
+            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">The paper could be found in different shops mainly in Stockholm, Göteborg and Malmö</p>
           </div>
 
           {/* Images 2–10 — full bleed */}
@@ -56,17 +56,17 @@ export default function Rumours() {
         {/* ── DESKTOP layout ── */}
         <div className="hidden md:block">
           {/* Hero row: text left, image right */}
-          <div className="flex items-center pl-[32px] gap-[180px] w-full overflow-hidden">
-            <div className="flex flex-col py-[64px] shrink-0 max-w-[453px]">
+          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
+            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">Art director/Graphic Designer</p>
               <div className="pt-[72px]">
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full max-w-[453px] whitespace-pre-wrap">{`Together with Festivalrykten,  Robin Wellström and I created the concept and all the layout for Rumours.`}</p>
+                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px] whitespace-pre-wrap">{`Together with Festivalrykten,  Robin Wellström and I created the concept and all the layout for Rumours.`}</p>
               </div>
-              <div className="pt-[16px]">
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full max-w-[453px]">The work included everything, maping out formats, the visual identity and all branding.</p>
+              <div className="pt-4">
+                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">The work included everything, maping out formats, the visual identity and all branding.</p>
               </div>
-              <div className="pt-[16px]">
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full max-w-[453px]">The paper could be found in different shops mainly in Stockholm, Göteborg and Malmö</p>
+              <div className="pt-4">
+                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">The paper could be found in different shops mainly in Stockholm, Göteborg and Malmö</p>
               </div>
             </div>
             <div className="flex-1 min-w-[390px] relative h-[844px]">
@@ -76,14 +76,14 @@ export default function Rumours() {
 
           {/* Full-width images */}
           {[
-            { img: imgImage2, pt: "pt-[32px]" },
-            { img: imgImage3, pt: "pt-[56px]" },
-            { img: imgImage4, pt: "pt-[56px]" },
-            { img: imgImage5, pt: "pt-[56px]" },
-            { img: imgImage6, pt: "pt-[56px]" },
-            { img: imgImage7, pt: "pt-[56px]" },
-            { img: imgImage9, pt: "pt-[56px]" },
-            { img: imgImage10, pt: "pt-[56px]" },
+            { img: imgImage2, pt: "pt-8" },
+            { img: imgImage3, pt: "pt-14" },
+            { img: imgImage4, pt: "pt-14" },
+            { img: imgImage5, pt: "pt-14" },
+            { img: imgImage6, pt: "pt-14" },
+            { img: imgImage7, pt: "pt-14" },
+            { img: imgImage9, pt: "pt-14" },
+            { img: imgImage10, pt: "pt-14" },
           ].map(({ img, pt }, i) => (
             <div key={i} className={`px-[32px] ${pt}`}>
               <div className="w-full aspect-[16/9] relative">

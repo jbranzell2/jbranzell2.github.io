@@ -18,12 +18,12 @@ export default function FunLight() {
         {/* ── MOBILE layout ── */}
         <div className="md:hidden">
           {/* Title */}
-          <div className="px-[24px] pt-[32px]">
+          <div className="px-6 pt-8">
             <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Art Director conecpt for Fun Light</p>
           </div>
 
           {/* Description */}
-          <div className="px-[24px] pt-[8px] pb-[16px]">
+          <div className="px-6 pt-2 pb-4">
             <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.26875rem] text-black tracking-[-0.0203px] w-full">
               <p className="leading-[2.2875rem] mb-0">In this project our class at Berghs created a concept and design for Fun Light with Silver. I was inspired by a trend of healthiness that is currently sweeping over Sweden.</p>
               <p className="leading-[2.2875rem] mb-0">The design was meant to say "Fun Light", but still communicating cleanness and healthiness.</p>
@@ -39,7 +39,7 @@ export default function FunLight() {
           </div>
 
           {/* Vision */}
-          <div className="px-[24px] pt-[32px]">
+          <div className="px-6 pt-8">
             <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.26875rem] text-black w-full">
               <p className="font-['Poppins:Bold',sans-serif] leading-[2.2875rem] mb-0">Vision</p>
               <p className="leading-[2.2875rem] mb-0">To follow the healthy trend, use the already existing position and make</p>
@@ -60,10 +60,10 @@ export default function FunLight() {
         {/* ── DESKTOP layout ── */}
         <div className="hidden md:block">
           {/* Hero row */}
-          <div className="flex items-center pl-[32px] gap-[180px] w-full overflow-hidden">
-            <div className="flex flex-col py-[64px] shrink-0 max-w-[453px]">
+          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
+            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">Art Director conecpt for Fun Light</p>
-              <div className="pt-[8px]">
+              <div className="pt-2">
                 <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">
                   <p className="leading-[2.55625rem] mb-0">In this project our class at Berghs created a concept and design for Fun Light with Silver. I was inspired by a trend of healthiness that is currently sweeping over Sweden.</p>
                   <p className="leading-[2.55625rem] mb-0">The design was meant to say "Fun Light", but still communicating cleanness and healthiness.</p>
@@ -77,7 +77,7 @@ export default function FunLight() {
           </div>
 
           {/* Vision band */}
-          <div className="bg-[#fafafa] flex h-[195px] items-start justify-center py-[48px] px-[24px] w-full">
+          <div className="bg-[#fafafa] flex h-[195px] items-start justify-center py-12 px-6 w-full">
             <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">
               <p className="font-['Poppins:Bold',sans-serif] leading-[2.55625rem] mb-0">Vision</p>
               <p className="leading-[2.55625rem] mb-0">To follow the healthy trend, use the already existing position and make</p>
@@ -86,27 +86,27 @@ export default function FunLight() {
           </div>
 
           {/* Gallery images */}
-          <div className="px-[32px] pt-[128px]">
+          <div className="px-8 pt-32">
             <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgFunlight1} />
             </div>
           </div>
-          <div className="px-[32px] pt-[56px]">
+          <div className="px-8 pt-14">
             <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgFunlight2} />
             </div>
           </div>
-          <div className="px-[32px] pt-[56px]">
+          <div className="px-8 pt-14">
             <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgFunlight3} />
             </div>
           </div>
-          <div className="px-[32px] pt-[56px]">
+          <div className="px-8 pt-14">
             <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgFunlight5} />
             </div>
           </div>
-          <div className="px-[32px] pt-[56px]">
+          <div className="px-8 pt-14">
             <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgFunlight6} />
             </div>

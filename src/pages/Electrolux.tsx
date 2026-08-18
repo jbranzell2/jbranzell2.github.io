@@ -15,11 +15,11 @@ export default function Electrolux() {
         <div className="relative">
           {/* Mobile */}
           <div className="md:hidden">
-            <div className="px-[24px] pt-[36px]">
+            <div className="px-6 pt-9">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.99375rem] not-italic text-[3.025rem] text-black w-full">
                 Senior Product Designer at Electrolux
               </p>
-              <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black mt-8 w-full">
+              <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black mt-8 w-full">
                 {`Electrolux was in need for a senior product designer to maintain and further develop their Europe apps. As the responsible designer, Johan provided new design, as well as managing the conversation between product owners, developers and architects for both Electrolux and AEG's teams.`}
               </p>
             </div>
@@ -33,11 +33,11 @@ export default function Electrolux() {
           {/* Desktop */}
           <div className="hidden md:block">
             <div className="flex items-center gap-[180px] w-full overflow-hidden min-h-[600px]">
-              <div className="flex flex-col justify-center py-[64px] pl-[28px] w-[455px] shrink-0">
+              <div className="flex flex-col justify-center py-16 pl-7 w-[455px] shrink-0">
                 <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[5.475rem] not-italic text-[4.15rem] text-black max-w-[455px]">
                   Senior Product Designer at Electrolux
                 </p>
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black max-w-[455px]">
+                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black max-w-[455px]">
                   {`Electrolux was in need for a senior product designer to maintain and further develop their Europe apps. As the responsible designer, Johan provided new design, as well as managing the conversation between product owners, developers and architects for both Electrolux and AEG's teams.`}
                 </p>
               </div>
@@ -50,14 +50,14 @@ export default function Electrolux() {
 
         {/* Tinted section */}
         {/* Mobile */}
-        <div className="md:hidden bg-[#fafafa] py-[52px] px-[24px] w-full">
-          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full">
+        <div className="md:hidden bg-[#fafafa] py-[52px] px-6 w-full">
+          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">
             {`Johan was part of two teams that worked with these apps, Taste and Care, which represent kitchen and care appliances. Parts of the apps could connect with Electrolux and Aeg's machines, so a big challenge was to make it as user-friendly as possible for everyone regardless of model. The apps are in both Android and iOS.`}
           </p>
         </div>
         {/* Desktop */}
-        <div className="hidden md:flex bg-[#fafafa] h-[256px] items-center justify-center px-[24px]">
-          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black max-w-[453px]">
+        <div className="hidden md:flex bg-[#fafafa] h-[256px] items-center justify-center px-6">
+          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black max-w-[453px]">
             {`Johan was part of two teams that worked with these apps, Taste and Care, which represent kitchen and care appliances. Parts of the apps could connect with Electrolux and Aeg's machines, so a big challenge was to make it as user-friendly as possible for everyone regardless of model. The apps are in both Android and iOS.`}
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function Electrolux() {
           ))}
         </div>
         {/* Desktop */}
-        <div className="hidden md:flex flex-col gap-[32px] px-[28px] pt-[108px] pb-[108px] w-full">
+        <div className="hidden md:flex flex-col gap-8 px-7 pt-[108px] pb-[108px] w-full">
           <div className="w-full aspect-[3/1] relative">
             <img alt="Electrolux app screen 1" className="absolute inset-0 w-full h-full object-contain" src={imgElectrolux11} />
           </div>

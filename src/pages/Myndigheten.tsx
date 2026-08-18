@@ -15,16 +15,16 @@ export default function Myndigheten() {
         {/* ── MOBILE layout ── */}
         <div className="md:hidden">
           {/* Title */}
-          <div className="px-[24px] pt-[32px]">
+          <div className="px-6 pt-8">
             <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">UI/UX Designer at Myndigheten för delaktighet</p>
           </div>
 
           {/* Description */}
-          <div className="px-[24px] pt-[8px]">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full">I worked in a team as both interaction designer and graphic designer to create a site that is understandable and follows WCAG3.</p>
+          <div className="px-6 pt-2">
+            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">I worked in a team as both interaction designer and graphic designer to create a site that is understandable and follows WCAG3.</p>
           </div>
-          <div className="px-[24px] pt-[16px]">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full">The work included user testing and delivering the final product.</p>
+          <div className="px-6 pt-4">
+            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">The work included user testing and delivering the final product.</p>
           </div>
 
           {/* Cover image — full bleed */}
@@ -47,14 +47,14 @@ export default function Myndigheten() {
         {/* ── DESKTOP layout ── */}
         <div className="hidden md:block">
           {/* Hero row */}
-          <div className="flex items-center pl-[32px] gap-[180px] w-full overflow-hidden">
-            <div className="flex flex-col py-[64px] shrink-0 max-w-[453px]">
+          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
+            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">UI/UX Designer at Myndigheten för delaktighet</p>
-              <div className="pt-[8px]">
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full max-w-[453px]">I worked in a team as both interaction designer and graphic designer to create a site that is understandable and follows WCAG3.</p>
+              <div className="pt-2">
+                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">I worked in a team as both interaction designer and graphic designer to create a site that is understandable and follows WCAG3.</p>
               </div>
-              <div className="pt-[16px]">
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full max-w-[453px]">The work included user testing and delivering the final product.</p>
+              <div className="pt-4">
+                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">The work included user testing and delivering the final product.</p>
               </div>
             </div>
             <div className="flex-1 min-w-[390px] relative h-[844px]">
@@ -63,14 +63,14 @@ export default function Myndigheten() {
           </div>
 
           {/* Myndigheten 2 */}
-          <div className="px-[32px] pt-[8px]">
+          <div className="px-8 pt-2">
             <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgMyndigheten2} />
             </div>
           </div>
 
           {/* Myndigheten 1 */}
-          <div className="px-[32px] pt-[32px]">
+          <div className="px-8 pt-8">
             <div className="w-full aspect-[10/7] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgMyndigheten1} />
             </div>

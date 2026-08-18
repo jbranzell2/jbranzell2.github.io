@@ -26,7 +26,7 @@ export default function Sas() {
         {/* ── MOBILE layout ── */}
         <div className="md:hidden">
           {/* Title */}
-          <div className="px-[24px] pt-[32px]">
+          <div className="px-6 pt-8">
             <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Digital Designer at Sas - Scandinavian Airlines</p>
           </div>
 
@@ -38,18 +38,18 @@ export default function Sas() {
           </div>
 
           {/* Intro */}
-          <div className="px-[24px] pt-[8px]">
+          <div className="px-6 pt-2">
             <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.2875rem] not-italic text-[1.26875rem] text-black w-full">I worked for a year as the visual designer for the payment and booking stream at SAS.</p>
           </div>
 
           {/* Tinted section */}
-          <div className="bg-[#fafafa] flex flex-col items-start py-[32px] w-full">
-            <div className="pl-[24px]">
-              <p className="[word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full max-w-[453px]">My role included development and management of:</p>
+          <div className="bg-[#fafafa] flex flex-col items-start py-8 w-full">
+            <div className="pl-6">
+              <p className="[word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">My role included development and management of:</p>
             </div>
             {roleItems.map((text, i) => (
-              <div key={i} className="px-[24px] pt-[16px]">
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black w-full">{text}</p>
+              <div key={i} className="px-6 pt-4">
+                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">{text}</p>
               </div>
             ))}
           </div>
@@ -67,10 +67,10 @@ export default function Sas() {
         {/* ── DESKTOP layout ── */}
         <div className="hidden md:block">
           {/* Hero row: text left, image right */}
-          <div className="flex items-center pl-[32px] gap-[180px] w-full overflow-hidden">
-            <div className="flex flex-col py-[64px] shrink-0 max-w-[453px]">
+          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
+            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">Digital Designer at Sas - Scandinavian Airlines</p>
-              <div className="pt-[8px]">
+              <div className="pt-2">
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.55625rem] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">I worked for a year as the visual designer for the payment and booking stream at SAS.</p>
               </div>
             </div>
@@ -80,27 +80,27 @@ export default function Sas() {
           </div>
 
           {/* Tinted section */}
-          <div className="bg-[#fafafa] flex justify-center pb-[64px] pt-[128px] px-[24px] w-full">
+          <div className="bg-[#fafafa] flex justify-center pb-16 pt-32 px-6 w-full">
             <div className="w-full max-w-[453px]">
-              <p className="[word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black">My role included development and management of:</p>
+              <p className="[word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-base text-black">My role included development and management of:</p>
               {roleItems.map((text, i) => (
-                <p key={i} className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-[1rem] text-black mt-[16px]">{text}</p>
+                <p key={i} className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black mt-4">{text}</p>
               ))}
             </div>
           </div>
 
           {/* Full-width images */}
-          <div className="px-[32px] pt-[64px]">
+          <div className="px-8 pt-16">
             <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgSas1} />
             </div>
           </div>
-          <div className="px-[32px]">
+          <div className="px-8">
             <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgSas2} />
             </div>
           </div>
-          <div className="px-[32px]">
+          <div className="px-8">
             <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgSas3} />
             </div>

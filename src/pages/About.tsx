@@ -8,7 +8,7 @@ export default function About() {
       <Header />
 
       {/* Content */}
-      <main className="flex-1 w-full px-[24px] md:px-[29px]">
+      <main className="flex-1 w-full px-6 md:px-[29px]">
         {/* Photo + intro */}
         <div className="md:flex md:gap-8 md:items-start">
           <div className="md:order-2 md:ml-auto md:shrink-0">
@@ -32,12 +32,12 @@ export default function About() {
         {/* Experience */}
         <div className="mt-12 md:mt-16 max-w-[630px]">
           <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2125rem] md:text-[2.8875rem] leading-[3.08125rem] md:leading-[4.025rem] not-italic">EXPERIENCE</p>
-          <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic mt-4">–</p>
+          <p className="font-['Poppins:Bold',sans-serif] text-black text-base leading-[1.8rem] not-italic mt-4">–</p>
 
           {/* 2021-2022 + 2020-2021 block */}
           <div className="mt-6">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic">2021 - 2022</p>
-            <div className="font-['Poppins:Light',sans-serif] text-black text-[1rem] not-italic mt-1">
+            <p className="font-['Poppins:Bold',sans-serif] text-black text-base leading-[1.8rem] not-italic">2021 - 2022</p>
+            <div className="font-['Poppins:Light',sans-serif] text-black text-base not-italic mt-1">
               <p className="leading-[1.8rem] mb-0">Electrolux - Senior Software Product Designer</p>
               <p className="leading-[1.8rem] mb-0">&nbsp;</p>
               <p className="leading-[1.8rem] mb-0">I worked and maintained the Kitchen and Care apps for Elextrolux and Aeg, covering both Android and iOS. The work also included working with different physical products, connecting them to the apps.</p>
@@ -52,8 +52,8 @@ export default function About() {
 
           {/* 2019 */}
           <div className="mt-6">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic">2019</p>
-            <div className="font-['Poppins:Light',sans-serif] text-black text-[1rem] not-italic mt-1">
+            <p className="font-['Poppins:Bold',sans-serif] text-black text-base leading-[1.8rem] not-italic">2019</p>
+            <div className="font-['Poppins:Light',sans-serif] text-black text-base not-italic mt-1">
               <p className="font-['Poppins:Bold',sans-serif] leading-[1.8rem] mb-0">I Worked on various projects such as:</p>
               <p className="leading-[1.8rem] mb-0">Oden Business Intelligence - Animated their promo video</p>
               <p className="leading-[1.8rem] mb-0">PT Studio - Created a graphic brand guide and designed various graphical materials</p>
@@ -74,8 +74,8 @@ export default function About() {
             { year: "2010 – 2011", title: "Hawaii Pacific University", desc: "The year 2010/11 I lived in Hawaii, studying at Hawaii Pacific University. I learned more about business and advertising." },
           ].map(({ year, title, desc }) => (
             <div key={year} className="mt-6">
-              <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic">{year}</p>
-              <div className="font-['Poppins:Light',sans-serif] text-black text-[1rem] not-italic mt-1">
+              <p className="font-['Poppins:Bold',sans-serif] text-black text-base leading-[1.8rem] not-italic">{year}</p>
+              <div className="font-['Poppins:Light',sans-serif] text-black text-base not-italic mt-1">
                 <p className="leading-[1.8rem] mb-0">{title}</p>
                 <p className="leading-[1.8rem] mb-0">&nbsp;</p>
                 <p className="leading-[1.8rem]">{desc}</p>
