@@ -12,5 +12,6 @@ logs/
 .claude-replay.*
 .tmp-*
 
-# Local Claude Code tooling (not part of the app)
-/.claude/
+# Local Claude Code dev-server config (machine-specific, not part of the app).
+# .claude/skills/ IS committed — project skills should travel with the repo.
+/.claude/launch.json
