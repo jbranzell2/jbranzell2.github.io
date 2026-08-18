@@ -1,7 +1,7 @@
-import imgCover from "@/imports/DesktopSas/375e40c02a591ab8f551aa19fec6959669cd9367.png";
-import imgSas1 from "@/imports/DesktopSas/808d4ce7caba98f87a16e002a007a9c5ce840274.png";
-import imgSas2 from "@/imports/DesktopSas/c9222641484c48d657bf56d2745d8c3a50c724ff.png";
-import imgSas3 from "@/imports/DesktopSas/30eb5163fdb3b47db8d1b97ba0113f90c1e8bb63.png";
+import imgCover from "@/imports/DesktopSas/375e40c02a591ab8f551aa19fec6959669cd9367.avif";
+import imgSas1 from "@/imports/DesktopSas/808d4ce7caba98f87a16e002a007a9c5ce840274.avif";
+import imgSas2 from "@/imports/DesktopSas/c9222641484c48d657bf56d2745d8c3a50c724ff.avif";
+import imgSas3 from "@/imports/DesktopSas/30eb5163fdb3b47db8d1b97ba0113f90c1e8bb63.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

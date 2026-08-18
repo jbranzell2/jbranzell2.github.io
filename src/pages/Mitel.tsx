@@ -1,8 +1,8 @@
-import imgCover from "@/imports/DesktopMitel/bed76efbd80d3b03e7717f6b4dcbcf3e80242a1e.png";
-import imgMitel1 from "@/imports/DesktopMitel/a120b2451b5dcf22a4edfaf295db43b4a555c1e3.png";
-import imgMitel2 from "@/imports/DesktopMitel/5b3d70b09b8b03b4785432733dc951aede4000f1.png";
-import imgMitel3 from "@/imports/DesktopMitel/b08ee736cc6012b12547642a76e042dc65688679.png";
-import imgMitel4 from "@/imports/DesktopMitel/6287313b28a9844ed62bf6b0f2fe79a882564044.png";
+import imgCover from "@/imports/DesktopMitel/bed76efbd80d3b03e7717f6b4dcbcf3e80242a1e.avif";
+import imgMitel1 from "@/imports/DesktopMitel/a120b2451b5dcf22a4edfaf295db43b4a555c1e3.avif";
+import imgMitel2 from "@/imports/DesktopMitel/5b3d70b09b8b03b4785432733dc951aede4000f1.avif";
+import imgMitel3 from "@/imports/DesktopMitel/b08ee736cc6012b12547642a76e042dc65688679.avif";
+import imgMitel4 from "@/imports/DesktopMitel/6287313b28a9844ed62bf6b0f2fe79a882564044.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

@@ -1,8 +1,8 @@
-import imgCover from "@/imports/DesktopAlster/4b36b5eca3656d66d6878dd084ec4c12dd416968.png";
-import imgImg37 from "@/imports/DesktopAlster/655f435d7f61899332d8136e701137eeb58ebfab.png";
-import imgImg1001 from "@/imports/DesktopAlster/daa83c54d9abf54aad6d32316adf4b449050990e.png";
-import imgImg351 from "@/imports/DesktopAlster/7c00948506c3c8d7ac2958f3b0c3ec5beac4fba5.png";
-import imgKanske22 from "@/imports/DesktopAlster/f27c7352efc038697f0cd20a9da239fca0b7afc3.png";
+import imgCover from "@/imports/DesktopAlster/4b36b5eca3656d66d6878dd084ec4c12dd416968.avif";
+import imgImg37 from "@/imports/DesktopAlster/655f435d7f61899332d8136e701137eeb58ebfab.avif";
+import imgImg1001 from "@/imports/DesktopAlster/daa83c54d9abf54aad6d32316adf4b449050990e.avif";
+import imgImg351 from "@/imports/DesktopAlster/7c00948506c3c8d7ac2958f3b0c3ec5beac4fba5.avif";
+import imgKanske22 from "@/imports/DesktopAlster/f27c7352efc038697f0cd20a9da239fca0b7afc3.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

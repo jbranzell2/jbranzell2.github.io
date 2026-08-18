@@ -1,4 +1,4 @@
-import imgJagcool from "@/imports/DesktopAbout-1/df120473259736c98a99f56fe1a59483d3f7f361.png";
+import imgJagcool from "@/imports/DesktopAbout-1/df120473259736c98a99f56fe1a59483d3f7f361.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

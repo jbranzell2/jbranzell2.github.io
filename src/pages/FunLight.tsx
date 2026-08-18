@@ -1,9 +1,9 @@
-import imgCover from "@/imports/DesktopFunLight/beefc7b570ae6f76213e1113f373f66b563e15d7.png";
-import imgFunlight1 from "@/imports/DesktopFunLight/d2ed76dbd5826fe88e5c323a8c3041bcb5a26f22.png";
-import imgFunlight2 from "@/imports/DesktopFunLight/05bb160805dd73fb568ad8c11faaefb04d416fcd.png";
-import imgFunlight3 from "@/imports/DesktopFunLight/a8d2235115b26d1da26a612487b3a3a2212c9c8e.png";
-import imgFunlight5 from "@/imports/DesktopFunLight/35b9deacb632ad586910614d7d6dcbce7646deaa.png";
-import imgFunlight6 from "@/imports/DesktopFunLight/39d178c51738bdf149acfe54e8b3d903b3242f81.png";
+import imgCover from "@/imports/DesktopFunLight/beefc7b570ae6f76213e1113f373f66b563e15d7.avif";
+import imgFunlight1 from "@/imports/DesktopFunLight/d2ed76dbd5826fe88e5c323a8c3041bcb5a26f22.avif";
+import imgFunlight2 from "@/imports/DesktopFunLight/05bb160805dd73fb568ad8c11faaefb04d416fcd.avif";
+import imgFunlight3 from "@/imports/DesktopFunLight/a8d2235115b26d1da26a612487b3a3a2212c9c8e.avif";
+import imgFunlight5 from "@/imports/DesktopFunLight/35b9deacb632ad586910614d7d6dcbce7646deaa.avif";
+import imgFunlight6 from "@/imports/DesktopFunLight/39d178c51738bdf149acfe54e8b3d903b3242f81.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

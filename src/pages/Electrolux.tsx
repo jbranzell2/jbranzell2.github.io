@@ -1,6 +1,6 @@
-import imgElectrolux2 from "@/imports/DesktopElectrolux/17650428fbd3baabe4879b82041918783a309acc.png";
-import imgElectrolux11 from "@/imports/DesktopElectrolux/5edaf8e63575d5d52f3716be9bf30c5418d7c1c9.png";
-import imgElectrolux4 from "@/imports/DesktopElectrolux/5fde9e8e6ff3864f31bf59ec5901406b54a9c284.png";
+import imgElectrolux2 from "@/imports/DesktopElectrolux/17650428fbd3baabe4879b82041918783a309acc.avif";
+import imgElectrolux11 from "@/imports/DesktopElectrolux/5edaf8e63575d5d52f3716be9bf30c5418d7c1c9.avif";
+import imgElectrolux4 from "@/imports/DesktopElectrolux/5fde9e8e6ff3864f31bf59ec5901406b54a9c284.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

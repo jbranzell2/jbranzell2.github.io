@@ -1,6 +1,6 @@
-import imgCover from "@/imports/DesktopMyndighetenForDelaktighet/a8b563f1fc6e472abbe4d5332e46150f22228451.png";
-import imgMyndigheten2 from "@/imports/DesktopMyndighetenForDelaktighet/8fe6102b3dcea3c8447c46853ed465e778805cde.png";
-import imgMyndigheten1 from "@/imports/DesktopMyndighetenForDelaktighet/d16efd6cc7cee2dbfb6e84db4f66c97b9b3dcc5e.png";
+import imgCover from "@/imports/DesktopMyndighetenForDelaktighet/a8b563f1fc6e472abbe4d5332e46150f22228451.avif";
+import imgMyndigheten2 from "@/imports/DesktopMyndighetenForDelaktighet/8fe6102b3dcea3c8447c46853ed465e778805cde.avif";
+import imgMyndigheten1 from "@/imports/DesktopMyndighetenForDelaktighet/d16efd6cc7cee2dbfb6e84db4f66c97b9b3dcc5e.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
