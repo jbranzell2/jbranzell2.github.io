@@ -21,7 +21,7 @@ export default function Alster({ onNavigate }: Props) {
         <p className="font-['Poppins:Medium',sans-serif] text-black text-[16px] leading-6 whitespace-nowrap">Johan Branzell</p>
         <nav className="flex gap-6">
           <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-          <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">About</button>
+          <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</button>
         </nav>
       </header>
       {/* Desktop */}
@@ -29,7 +29,7 @@ export default function Alster({ onNavigate }: Props) {
         <p className="font-['Poppins:Medium',sans-serif] text-black text-[32.8px] leading-[49.2px] whitespace-nowrap">Johan Branzell</p>
         <nav className="flex gap-10 justify-self-center">
           <button onClick={() => onNavigate("home")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer underline decoration-1 underline-offset-4">Home</button>
-          <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">About</button>
+          <button onClick={() => onNavigate("about")} className="font-['Poppins:Light',sans-serif] text-black text-[16px] leading-[28.8px] cursor-pointer">About</button>
         </nav>
       </header>
 
