@@ -3,31 +3,15 @@ import imgImg37 from "@/imports/DesktopAlster/655f435d7f61899332d8136e701137eeb5
 import imgImg1001 from "@/imports/DesktopAlster/daa83c54d9abf54aad6d32316adf4b449050990e.png";
 import imgImg351 from "@/imports/DesktopAlster/7c00948506c3c8d7ac2958f3b0c3ec5beac4fba5.png";
 import imgKanske22 from "@/imports/DesktopAlster/f27c7352efc038697f0cd20a9da239fca0b7afc3.png";
-import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const galleryImages = [imgCover, imgImg37, imgImg1001, imgImg351, imgKanske22];
 
 export default function Alster() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter max-w-[1400px] mx-auto">
-
-      {/* ── Header ── */}
-      {/* Mobile */}
-      <header className="md:hidden flex items-center justify-between px-4 py-[28px]">
-        <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[1rem] leading-6 whitespace-nowrap cursor-pointer">Johan Branzell</Link>
-        <nav className="flex gap-6">
-          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] cursor-pointer">Home</Link>
-          <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] cursor-pointer">About</Link>
-        </nav>
-      </header>
-      {/* Desktop */}
-      <header className="hidden md:grid grid-cols-3 items-end h-[164px] px-[28px] pb-[52px]">
-        <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[2.05rem] leading-[3.075rem] whitespace-nowrap cursor-pointer">Johan Branzell</Link>
-        <nav className="flex gap-10 justify-self-center">
-          <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] cursor-pointer">Home</Link>
-          <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] cursor-pointer">About</Link>
-        </nav>
-      </header>
+      <Header variant="alster" />
 
       <main className="flex-1 w-full">
 
@@ -82,22 +66,7 @@ export default function Alster() {
 
       </main>
 
-      {/* ── Footer ── */}
-      {/* Mobile */}
-      <footer className="md:hidden h-[393px] relative">
-        <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[1.8125rem] leading-[2.5875rem] whitespace-nowrap">Johan Branzell</p>
-        <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[1rem] leading-[1.8rem] whitespace-nowrap">E-mail me</p>
-        <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[1rem] leading-[1.8rem] whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
-      </footer>
-      {/* Desktop */}
-      <footer className="hidden md:flex items-center justify-between px-[28px] h-[270px]">
-        <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2625rem] leading-[3.225rem] not-italic whitespace-nowrap">Johan Branzell</p>
-        <div className="flex flex-col items-end">
-          <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">E-mail me</p>
-          <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
-        </div>
-      </footer>
-
+      <Footer />
     </div>
   );
 }

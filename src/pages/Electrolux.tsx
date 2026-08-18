@@ -1,30 +1,13 @@
 import imgElectrolux2 from "@/imports/DesktopElectrolux/17650428fbd3baabe4879b82041918783a309acc.png";
 import imgElectrolux11 from "@/imports/DesktopElectrolux/5edaf8e63575d5d52f3716be9bf30c5418d7c1c9.png";
 import imgElectrolux4 from "@/imports/DesktopElectrolux/5fde9e8e6ff3864f31bf59ec5901406b54a9c284.png";
-import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Electrolux() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter max-w-[1400px] mx-auto">
-      {/* Header */}
-      <header className="relative shrink-0 w-full">
-        {/* Mobile header */}
-        <div className="md:hidden flex items-center justify-between px-[16px] py-[28px]">
-          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[1rem] leading-[1.5rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
-          <nav className="flex gap-[24px]">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">About</Link>
-          </nav>
-        </div>
-        {/* Desktop header */}
-        <div className="hidden md:grid grid-cols-3 items-center px-[28px] h-[164px]">
-          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[2.05rem] leading-[3.075rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
-          <nav className="flex gap-[40px] justify-self-center">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">About</Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Content */}
       <main className="flex-1 w-full">
@@ -99,35 +82,7 @@ export default function Electrolux() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="relative shrink-0 w-full">
-        {/* Mobile */}
-        <div className="md:hidden h-[393px] relative">
-          <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[1.8125rem] leading-[2.5875rem] not-italic whitespace-nowrap">
-            Johan Branzell
-          </p>
-          <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
-            E-mail me
-          </p>
-          <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
-            <a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a>
-          </p>
-        </div>
-        {/* Desktop */}
-        <div className="hidden md:flex items-center justify-between px-[28px] h-[270px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2625rem] leading-[3.225rem] not-italic whitespace-nowrap">
-            Johan Branzell
-          </p>
-          <div className="flex flex-col items-end">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
-              E-mail me
-            </p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
-              <a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a>
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -1,28 +1,11 @@
 import imgJagcool from "@/imports/DesktopAbout-1/df120473259736c98a99f56fe1a59483d3f7f361.png";
-import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function About() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter max-w-[1400px] mx-auto">
-      {/* Header */}
-      <header className="relative shrink-0 w-full">
-        {/* Mobile header */}
-        <div className="md:hidden flex items-center justify-between px-[16px] py-[28px]">
-          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[1rem] leading-[1.5rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
-          <nav className="flex gap-[24px]">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</Link>
-          </nav>
-        </div>
-        {/* Desktop header */}
-        <div className="hidden md:grid grid-cols-3 items-center px-[28px] h-[164px]">
-          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[2.05rem] leading-[3.075rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
-          <nav className="flex gap-[40px] justify-self-center">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer underline decoration-1 underline-offset-4">About</Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Content */}
       <main className="flex-1 w-full px-[24px] md:px-[29px]">
@@ -104,23 +87,7 @@ export default function About() {
         <div className="h-16 md:h-24" />
       </main>
 
-      {/* Footer */}
-      <footer className="relative shrink-0 w-full">
-        {/* Mobile */}
-        <div className="md:hidden h-[393px] relative">
-          <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[1.8125rem] leading-[2.5875rem] not-italic whitespace-nowrap">Johan Branzell</p>
-          <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">E-mail me</p>
-          <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
-        </div>
-        {/* Desktop */}
-        <div className="hidden md:flex items-center justify-between px-[28px] h-[270px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2625rem] leading-[3.225rem] not-italic whitespace-nowrap">Johan Branzell</p>
-          <div className="flex flex-col items-end">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">E-mail me</p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap"><a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a></p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

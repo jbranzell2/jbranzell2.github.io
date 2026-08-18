@@ -9,6 +9,8 @@ import imgMyndigheten from "@/imports/DesktopHome/1eb61cd289abe618936595a810968c
 import imgFunLight from "@/imports/DesktopHome/aa70d2c2ee2f4832fd6e9a6a22d7a4d0460ce464.png";
 import imgAlster from "@/imports/DesktopHome/9833bb6a6ee2bfd4f0e40724afa6a1fb6edd79cf.png";
 import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const projects: { img: string; label: string; path: string }[] = [
   { img: imgElectrolux, label: "Electrolux", path: "/electrolux" },
@@ -26,108 +28,34 @@ const projects: { img: string; label: string; path: string }[] = [
 export default function Home() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter max-w-[1400px] mx-auto">
-      {/* Header */}
-      <header className="relative shrink-0 w-full">
-        {/* Mobile header */}
-        <div className="md:hidden flex items-center justify-between px-[16px] py-[28px]">
-          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[1rem] leading-[1.5rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
-          <nav className="flex gap-[24px]">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">About</Link>
-          </nav>
-        </div>
-        {/* Desktop header */}
-        <div className="hidden md:grid grid-cols-3 items-center px-[28px] h-[164px]">
-          <Link to="/" className="font-['Poppins:Medium',sans-serif] text-black text-[2.05rem] leading-[3.075rem] not-italic whitespace-nowrap cursor-pointer">Johan Branzell</Link>
-          <nav className="flex gap-[40px] justify-self-center">
-            <Link to="/" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer underline decoration-1 underline-offset-4">Home</Link>
-            <Link to="/about" className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic cursor-pointer">About</Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Projects grid */}
-      <main className="flex-1 w-full">
-        {/* Mobile: 2 columns */}
-        <div className="md:hidden px-[4px]">
-          <div className="grid grid-cols-2 gap-x-[4px] gap-y-[24px] items-start">
-            {projects.map(({ img, label, path }) => (
-              <Link key={label} to={path} className="group block cursor-pointer">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={img}
-                    alt={label}
-                    className="w-full aspect-square object-cover transition-opacity duration-[400ms] ease-in-out group-hover:opacity-75"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-colors duration-[400ms] ease-in-out">
-                    <p className="font-['Poppins:Medium',sans-serif] text-white text-[1rem] leading-[1.575rem] text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[400ms] ease-in-out">
-                      {label}
-                    </p>
-                  </div>
+      <main className="flex-1 w-full px-1 md:px-5 md:pb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-1 md:gap-x-5 gap-y-6 md:gap-y-8 items-start">
+          {projects.map(({ img, label, path }) => (
+            <Link key={label} to={path} className="group block cursor-pointer">
+              <div className="relative overflow-hidden">
+                <img
+                  src={img}
+                  alt={label}
+                  className="w-full aspect-square object-cover transition-opacity duration-[400ms] ease-in-out group-hover:opacity-75"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-colors duration-[400ms] ease-in-out">
+                  <p className="font-['Poppins:Medium',sans-serif] text-white text-base md:text-lg leading-[1.575rem] md:leading-[1.8rem] text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[400ms] ease-in-out">
+                    {label}
+                  </p>
                 </div>
-                <p className="font-['Poppins:Light',sans-serif] text-[0.875rem] leading-[1.575rem] text-black mt-[16px]">
-                  {label}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Desktop: 3 columns */}
-        <div className="hidden md:block px-[20px]">
-          <div className="grid grid-cols-3 gap-x-[20px]">
-            {projects.map(({ img, label, path }) => (
-              <Link key={label} to={path} className="group mb-[32px] block cursor-pointer">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={img}
-                    alt={label}
-                    className="w-full aspect-square object-cover transition-opacity duration-[400ms] ease-in-out group-hover:opacity-75"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-colors duration-[400ms] ease-in-out">
-                    <p className="font-['Poppins:Medium',sans-serif] text-white text-[1.125rem] leading-[1.8rem] text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[400ms] ease-in-out">
-                      {label}
-                    </p>
-                  </div>
-                </div>
-                <p className="font-['Poppins:Light',sans-serif] text-[0.875rem] leading-[1.575rem] text-black mt-[16px]">
-                  {label}
-                </p>
-              </Link>
-            ))}
-          </div>
+              </div>
+              <p className="font-['Poppins:Light',sans-serif] text-sm leading-[1.575rem] text-black mt-4">
+                {label}
+              </p>
+            </Link>
+          ))}
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="relative shrink-0 w-full">
-        {/* Mobile footer */}
-        <div className="md:hidden h-[393px] relative">
-          <p className="absolute font-['Poppins:Medium',sans-serif] text-black left-[24px] top-[96px] text-[1.8125rem] leading-[2.5875rem] not-italic whitespace-nowrap">
-            Johan Branzell
-          </p>
-          <p className="absolute font-['Poppins:Bold',sans-serif] text-black left-[24px] top-[168px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
-            E-mail me
-          </p>
-          <p className="absolute font-['Poppins:Light',sans-serif] text-black left-[24px] top-[212px] text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
-            <a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a>
-          </p>
-        </div>
-        {/* Desktop footer */}
-        <div className="hidden md:flex items-center justify-between px-[28px] h-[270px]">
-          <p className="font-['Poppins:Medium',sans-serif] text-black text-[2.2625rem] leading-[3.225rem] not-italic whitespace-nowrap">
-            Johan Branzell
-          </p>
-          <div className="flex flex-col items-end">
-            <p className="font-['Poppins:Bold',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
-              E-mail me
-            </p>
-            <p className="font-['Poppins:Light',sans-serif] text-black text-[1rem] leading-[1.8rem] not-italic whitespace-nowrap">
-              <a href="mailto:johanbranzell@gmail.com" className="hover:opacity-60 transition-opacity duration-[400ms] ease-in-out">johanbranzell@gmail.com</a>
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
