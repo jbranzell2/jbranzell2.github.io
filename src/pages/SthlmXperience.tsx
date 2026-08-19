@@ -210,7 +210,7 @@ export default function SthlmXperience() {
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">¨This also applies to the forms, hands and typography.</p>
               </div>
             </div>
-            <div className="w-full py-10 mt-12">
+            <div className="w-full pt-[72px] pb-10 mt-12">
               <img alt="SXC 6" className="w-full h-auto block" src={imgSxc6} />
             </div>
           </div>
