@@ -139,8 +139,8 @@ export default function Apoteket() {
               <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full md:max-w-[453px]">We decided that each new component should follow the new guidelines, introducing the new design in the new flows, carefully though so it didn{"'"}t feel to unnatrual.</p>
             </div>
           </div>
-          <div className="w-full mt-4 md:mt-12">
-            <img alt="" className="w-full aspect-square object-cover block" src={imgApoteket6} />
+          <div className="w-full mt-4 md:mt-12 pt-12">
+            <img alt="" className="w-full h-auto block" src={imgApoteket6} />
           </div>
         </div>
 
@@ -171,8 +171,8 @@ export default function Apoteket() {
               </div>
             </div>
           </div>
-          <div className="w-full mt-0 md:mt-12">
-            <img alt="" className="w-full aspect-square object-cover block" src={imgApoteket7} />
+          <div className="w-full mt-0 md:mt-12 pt-12">
+            <img alt="" className="w-full h-auto block" src={imgApoteket7} />
           </div>
         </div>
 
