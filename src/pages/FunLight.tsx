@@ -75,7 +75,7 @@ export default function FunLight() {
 
           {/* Vision band */}
           <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] flex h-[195px] items-start justify-center py-12 px-6">
-            <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">
+            <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.41875rem] text-black w-full max-w-[1040px]">
               <p className="font-['Poppins:Bold',sans-serif] leading-[2.55625rem] mb-0">Vision</p>
               <p className="leading-[2.55625rem] mb-0">To follow the healthy trend, use the already existing position and make</p>
               <p className="leading-[2.55625rem]">FUN LIGHT more active by adding a new product.</p>

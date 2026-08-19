@@ -44,7 +44,7 @@ export default function Alster() {
 
         {/* ── Berghs note band ── */}
         <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] mt-8 md:mt-0 px-6 py-12 flex justify-center">
-          <p className="font-['Poppins:Light',sans-serif] text-black text-base leading-[1.8rem] max-w-[453px]">This work is part of my final examination work at Berghs School of Communication 2015. I developed the concept, branding, labels, and graphic design.</p>
+          <p className="font-['Poppins:Light',sans-serif] text-black text-base leading-[1.8rem] w-full max-w-[1040px]">This work is part of my final examination work at Berghs School of Communication 2015. I developed the concept, branding, labels, and graphic design.</p>
         </div>
 
         {/* ── Gallery ── */}

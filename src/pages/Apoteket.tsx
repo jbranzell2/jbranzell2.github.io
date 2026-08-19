@@ -202,7 +202,7 @@ export default function Apoteket() {
 
           {/* Tinted section */}
           <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] flex justify-center py-12 px-6">
-            <div className="w-full max-w-[453px]">
+            <div className="w-full max-w-[1040px]">
               <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black">{`The work took place on an ongoing basis together with product owners, UX designers and developers in Apoteket's online team.`}</p>
               <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black mt-4">It included developing the visual for functionality. Johan also developed components, a design system, so that Apoteket has a mor cohert expression. With this became easier for the entire development team to work more precisely with the visuals around functionality.</p>
               <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black mt-4">{`Johan developed new design for the digital channels with WCAG complient colors that followed in line with Apoteket's other graphical expressions. He was also responsible for the design and customer experience for the checkout.`}</p>

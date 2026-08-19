@@ -54,7 +54,7 @@ export default function Electrolux() {
         </div>
         {/* Desktop */}
         <div className="hidden md:flex bg-[#fafafa] w-screen mx-[calc(50%-50vw)] h-[256px] items-center justify-center px-6">
-          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black max-w-[453px]">
+          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[1040px]">
             {`Johan was part of two teams that worked with these apps, Taste and Care, which represent kitchen and care appliances. Parts of the apps could connect with Electrolux and Aeg's machines, so a big challenge was to make it as user-friendly as possible for everyone regardless of model. The apps are in both Android and iOS.`}
           </p>
         </div>
