@@ -176,7 +176,7 @@ export default function SthlmXperience() {
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">The smallest size we used was Barlow in 16 pixels.</p>
               </div>
             </div>
-            <div className="w-[844px] max-w-full aspect-square relative shrink-0">
+            <div className="flex-1 min-w-[500px] aspect-square relative">
               <img alt="SXC 2" className="absolute inset-0 w-full h-full object-cover" src={imgSxc2} />
             </div>
           </div>
