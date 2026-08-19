@@ -41,31 +41,10 @@ export default function Sas() {
             <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.2875rem] not-italic text-[1.26875rem] text-black w-full">I worked for a year as the visual designer for the payment and booking stream at SAS.</p>
           </div>
 
-          {/* Tinted section */}
-          <div className="bg-[#fafafa] flex flex-col items-start py-8 w-full">
-            <div className="pl-6">
-              <p className="[word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">My role included development and management of:</p>
-            </div>
-            {roleItems.map((text, i) => (
-              <div key={i} className="px-6 pt-4">
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">{text}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Gallery images — full bleed */}
-          <div className="flex flex-col gap-3 mt-3 w-full">
-            {[imgSas1, imgSas2, imgSas3].map((img, i) => (
-              <div key={i} className="w-full aspect-[390/234]">
-                <img alt="" className="w-full h-full object-cover block" src={img} />
-              </div>
-            ))}
-          </div>
         </div>
 
-        {/* ── DESKTOP layout ── */}
+        {/* ── DESKTOP layout: Hero row ── */}
         <div className="hidden md:block">
-          {/* Hero row: text left, image right */}
           <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
             <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">Digital Designer at Sas - Scandinavian Airlines</p>
@@ -75,33 +54,31 @@ export default function Sas() {
             </div>
             <HeroImage variant="desktop" src={imgCover} alt="" />
           </div>
+        </div>
 
-          {/* Tinted section */}
-          <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] flex justify-center pb-16 pt-32 px-6">
-            <div className="w-full max-w-[1040px]">
-              <p className="[word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-base text-black">My role included development and management of:</p>
-              {roleItems.map((text, i) => (
-                <p key={i} className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black mt-4">{text}</p>
-              ))}
-            </div>
+        {/* ── Tinted section ── */}
+        <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] flex flex-col items-start py-8 md:py-0 md:items-center md:flex-row md:justify-center md:pb-16 md:pt-32 md:px-6">
+          <div className="md:w-full md:max-w-[1040px]">
+            <p className="pl-6 md:pl-0 [word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px] md:max-w-none">My role included development and management of:</p>
+            {roleItems.map((text) => (
+              <p key={text} className="px-6 md:px-0 pt-4 md:pt-0 md:mt-4 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">{text}</p>
+            ))}
           </div>
+        </div>
 
-          {/* Full-width images */}
-          <div className="px-8 pt-16">
-            <div className="w-full aspect-[16/9] relative">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgSas1} />
+        {/* ── Full-width images ── */}
+        <div className="w-full">
+          {[
+            { img: imgSas1, pt: "md:pt-16" },
+            { img: imgSas2, pt: "" },
+            { img: imgSas3, pt: "" },
+          ].map(({ img, pt }) => (
+            <div key={img} className={`mt-3 md:mt-0 md:px-8 ${pt}`}>
+              <div className="w-full aspect-[390/234] md:aspect-[16/9]">
+                <img alt="" className="w-full h-full object-cover block" src={img} />
+              </div>
             </div>
-          </div>
-          <div className="px-8">
-            <div className="w-full aspect-[16/9] relative">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgSas2} />
-            </div>
-          </div>
-          <div className="px-8">
-            <div className="w-full aspect-[16/9] relative">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgSas3} />
-            </div>
-          </div>
+          ))}
         </div>
       </main>
 
