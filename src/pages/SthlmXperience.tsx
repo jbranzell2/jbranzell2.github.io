@@ -115,32 +115,32 @@ export default function SthlmXperience() {
           </div>
           {/* Sxc6 */}
           <div className="pt-10 pb-4">
-            <img alt="SXC 6" className="w-full aspect-[390/240] object-cover" src={imgSxc6} />
+            <img alt="SXC 6" className="w-full aspect-square object-cover" src={imgSxc6} />
           </div>
           {/* Event photos */}
           <div className="w-full">
-            <div className="w-full aspect-[390/234]">
+            <div className="w-full aspect-[4/3]">
               <img alt="Event photo 1" className="w-full h-full object-cover block" src={imgImg3981} />
             </div>
           </div>
           <div className="w-full mt-3">
-            <div className="w-full aspect-[390/234]">
+            <div className="w-full aspect-[4/3]">
               <img alt="Event photo 2" className="w-full h-full object-cover block" src={imgImg3973} />
             </div>
           </div>
           <div className="flex gap-1 mt-3 w-full">
-            <div className="flex-1 aspect-[1/1.33]">
+            <div className="flex-1 aspect-[3/4]">
               <img alt="Event photo 3" className="w-full h-full object-cover block" src={imgImg3974} />
             </div>
-            <div className="flex-1 aspect-[1/1.33]">
+            <div className="flex-1 aspect-[3/4]">
               <img alt="Event photo 4" className="w-full h-full object-cover block" src={imgImg3978} />
             </div>
-            <div className="flex-1 aspect-[1/1.33]">
+            <div className="flex-1 aspect-[3/4]">
               <img alt="Event photo 5" className="w-full h-full object-cover block" src={imgFoto} />
             </div>
           </div>
           <div className="w-full mt-3">
-            <div className="w-full aspect-[390/234]">
+            <div className="w-full aspect-[3/4]">
               <img alt="Event photo 6" className="w-full h-full object-cover block" src={imgImg3993} />
             </div>
           </div>
@@ -212,16 +212,16 @@ export default function SthlmXperience() {
           </div>
           {/* Event photos */}
           <div className="px-8 flex flex-col gap-12">
-            <div className="w-full aspect-[16/9] relative">
+            <div className="w-full aspect-[4/3] relative">
               <img alt="Event photo 1" className="absolute inset-0 w-full h-full object-cover" src={imgImg3981} />
             </div>
-            <div className="w-full aspect-[16/9] relative">
+            <div className="w-full aspect-[4/3] relative">
               <img alt="Event photo 2" className="absolute inset-0 w-full h-full object-cover" src={imgImg3973} />
             </div>
-            <img alt="Event photo 3" className="w-full aspect-[16/9] object-cover" src={imgImg3974} />
-            <img alt="Event photo 4" className="w-full aspect-[16/9] object-cover" src={imgImg3978} />
-            <img alt="Event photo 5" className="w-full aspect-[16/9] object-cover" src={imgFoto} />
-            <div className="w-full aspect-[16/9] relative">
+            <img alt="Event photo 3" className="w-full aspect-[3/4] object-cover" src={imgImg3974} />
+            <img alt="Event photo 4" className="w-full aspect-[3/4] object-cover" src={imgImg3978} />
+            <img alt="Event photo 5" className="w-full aspect-[3/4] object-cover" src={imgFoto} />
+            <div className="w-full aspect-[3/4] relative">
               <img alt="Event photo 6" className="absolute inset-0 w-full h-full object-cover" src={imgImg3993} />
             </div>
           </div>

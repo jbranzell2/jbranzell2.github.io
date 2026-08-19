@@ -73,7 +73,7 @@ export default function Apoteket() {
           </div>
 
           {/* Apoteket 1 image */}
-          <div className="w-full aspect-[390/292]">
+          <div className="w-full aspect-square">
             <img alt="" className="w-full h-full object-cover block" src={imgApoteket1} />
           </div>
 
@@ -97,7 +97,7 @@ export default function Apoteket() {
           </div>
 
           {/* Apoteket 2 image */}
-          <div className="w-full aspect-[390/392]">
+          <div className="w-full aspect-square">
             <img alt="" className="w-full h-full object-cover block" src={imgApoteket2} />
           </div>
 
@@ -113,7 +113,7 @@ export default function Apoteket() {
           </div>
 
           {/* Apoteket 3 image */}
-          <div className="w-full mt-4 aspect-[390/339]">
+          <div className="w-full mt-4 aspect-square">
             <img alt="" className="w-full h-full object-cover block" src={imgApoteket3} />
           </div>
 
@@ -132,7 +132,7 @@ export default function Apoteket() {
           </div>
 
           {/* Apoteket 6 image */}
-          <div className="w-full mt-4 aspect-[390/214]">
+          <div className="w-full mt-4 aspect-square">
             <img alt="" className="w-full h-full object-cover block" src={imgApoteket6} />
           </div>
 
@@ -148,7 +148,7 @@ export default function Apoteket() {
           </div>
 
           {/* Apoteket 5 image */}
-          <div className="w-full mt-2 aspect-[390/376]">
+          <div className="w-full mt-2 aspect-square">
             <img alt="" className="w-full h-full object-cover block" src={imgApoteket5} />
           </div>
 
@@ -164,7 +164,7 @@ export default function Apoteket() {
           </div>
 
           {/* Apoteket 7 image */}
-          <div className="w-full aspect-[390/199]">
+          <div className="w-full aspect-square">
             <img alt="" className="w-full h-full object-cover block" src={imgApoteket7} />
           </div>
 

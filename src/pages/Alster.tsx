@@ -7,7 +7,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroImage from "@/components/HeroImage";
 
-const galleryImages = [imgCover, imgImg37, imgImg1001, imgImg351, imgKanske22];
+const galleryImages = [
+  { src: imgCover, aspect: "aspect-[2500/1667]" },
+  { src: imgImg37, aspect: "aspect-[2500/1652]" },
+  { src: imgImg1001, aspect: "aspect-[16/9]" },
+  { src: imgImg351, aspect: "aspect-[2500/1924]" },
+  { src: imgKanske22, aspect: "aspect-[2500/1924]" },
+];
 
 export default function Alster() {
   return (
@@ -25,16 +31,14 @@ export default function Alster() {
           <p className="font-['Poppins:Light',sans-serif] text-black text-base leading-[1.8rem] mt-4">Alster is a beer to enjoy on your own or with great company in a non stressed moment.</p>
         </div>
         {/* Desktop */}
-        <div className="hidden md:grid md:grid-cols-2 md:gap-12 px-8 pt-52 items-start">
-          <div>
+        <div className="hidden md:flex items-center pl-8 gap-[180px] w-full overflow-hidden">
+          <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
             <h1 className="font-['Poppins:Medium',sans-serif] text-black text-[2.8875rem] leading-[4.025rem] max-w-[453px]">Art Director and Graphic designer for Alster</h1>
             <p className="font-['Poppins:Light',sans-serif] text-black text-base leading-[1.8rem] mt-2 max-w-[453px]">Alster is an ecologic beer from the forests of Wermland. The name is based on a small place, known for being the home of Gustaf Fröding when he grew up. Its location is one where you relax and breath in natures own luxury.</p>
             <p className="font-['Poppins:Light',sans-serif] text-black text-base leading-[1.8rem] mt-4 max-w-[453px]">By making beer with water from the lake Alstern and take the berrys from the forests of Wermland, you can get a unique tasting experience.</p>
             <p className="font-['Poppins:Light',sans-serif] text-black text-base leading-[1.8rem] mt-4 max-w-[453px]">Alster is a beer to enjoy on your own or with great company in a non stressed moment.</p>
           </div>
-          <div className="w-full aspect-[715/845]">
-            <img src={imgCover} alt="" className="w-full h-full object-cover" fetchPriority="high" />
-          </div>
+          <HeroImage variant="desktop" src={imgCover} alt="" />
         </div>
 
         {/* ── Mobile cover image ── */}
@@ -50,16 +54,16 @@ export default function Alster() {
         {/* ── Gallery ── */}
         {/* Mobile: true full-bleed — div stretches to container width, img fills div */}
         <div className="md:hidden flex flex-col gap-3 mt-3 w-full">
-          {galleryImages.map((img, i) => (
-            <div key={i} className="w-full aspect-[390/234]">
-              <img src={img} alt="" className="w-full h-full object-cover block" />
+          {galleryImages.map(({ src, aspect }, i) => (
+            <div key={i} className={`w-full ${aspect}`}>
+              <img src={src} alt="" className="w-full h-full object-cover block" />
             </div>
           ))}
         </div>
         {/* Desktop: full-width with generous spacing */}
         <div className="hidden md:flex flex-col gap-24 px-8 pt-24 pb-24">
-          {galleryImages.map((img, i) => (
-            <img key={i} src={img} alt="" className="w-full aspect-[1382/844] object-cover" />
+          {galleryImages.map(({ src, aspect }, i) => (
+            <img key={i} src={src} alt="" className={`w-full ${aspect} object-cover`} />
           ))}
         </div>
 

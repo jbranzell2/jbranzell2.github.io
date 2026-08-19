@@ -68,7 +68,7 @@ export default function Myndigheten() {
 
           {/* Myndigheten 1 */}
           <div className="px-8 pt-8">
-            <div className="w-full aspect-[10/7] relative">
+            <div className="w-full aspect-[16/9] relative">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgMyndigheten1} />
             </div>
           </div>

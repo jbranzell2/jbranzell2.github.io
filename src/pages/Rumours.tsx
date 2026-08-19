@@ -73,17 +73,17 @@ export default function Rumours() {
 
           {/* Full-width images */}
           {[
-            { img: imgImage2, pt: "pt-8" },
-            { img: imgImage3, pt: "pt-14" },
-            { img: imgImage4, pt: "pt-14" },
-            { img: imgImage5, pt: "pt-14" },
-            { img: imgImage6, pt: "pt-14" },
-            { img: imgImage7, pt: "pt-14" },
-            { img: imgImage9, pt: "pt-14" },
-            { img: imgImage10, pt: "pt-14" },
-          ].map(({ img, pt }, i) => (
+            { img: imgImage2, pt: "pt-8", aspect: "aspect-[1328/1032]" },
+            { img: imgImage3, pt: "pt-14", aspect: "aspect-[1510/1104]" },
+            { img: imgImage4, pt: "pt-14", aspect: "aspect-[1598/1160]" },
+            { img: imgImage5, pt: "pt-14", aspect: "aspect-[1258/915]" },
+            { img: imgImage6, pt: "pt-14", aspect: "aspect-[1424/1057]" },
+            { img: imgImage7, pt: "pt-14", aspect: "aspect-[2422/1821]" },
+            { img: imgImage9, pt: "pt-14", aspect: "aspect-square" },
+            { img: imgImage10, pt: "pt-14", aspect: "aspect-[1451/1109]" },
+          ].map(({ img, pt, aspect }, i) => (
             <div key={i} className={`px-[32px] ${pt}`}>
-              <div className="w-full aspect-[16/9] relative">
+              <div className={`w-full ${aspect} relative`}>
                 <img alt="" className="absolute inset-0 w-full h-full object-cover" src={img} />
               </div>
             </div>
