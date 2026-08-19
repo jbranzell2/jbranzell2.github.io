@@ -210,7 +210,7 @@ export default function Apoteket() {
           </div>
 
           {/* The Challenge row */}
-          <div className="flex flex-col px-8 pt-[88px] w-full">
+          <div className="flex flex-col items-center px-8 pt-[88px] w-full">
             <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">The Challenge</p>
               {[
