@@ -233,7 +233,7 @@ export default function Apoteket() {
           </div>
 
           {/* Initial Exploration row */}
-          <div className="flex flex-col px-8 pt-[136px] w-full">
+          <div className="flex flex-col items-center px-8 pt-[136px] w-full">
             <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">Initial Exploration</p>
               <div className="pt-8">
@@ -263,7 +263,7 @@ export default function Apoteket() {
           </div>
 
           {/* The Design System row */}
-          <div className="flex flex-col px-8 pt-[136px] w-full">
+          <div className="flex flex-col items-center px-8 pt-[136px] w-full">
             <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">The Design System</p>
               <div className="pt-8">
@@ -279,7 +279,7 @@ export default function Apoteket() {
           </div>
 
           {/* Brand guidelines row */}
-          <div className="flex flex-col px-8 pt-24 w-full">
+          <div className="flex flex-col items-center px-8 pt-24 w-full">
             <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">The website didn{"'"}t follow the brand guidelines</p>
               <div className="pt-4">
@@ -298,7 +298,7 @@ export default function Apoteket() {
           </div>
 
           {/* Creating consistency row */}
-          <div className="flex flex-col px-8 pt-44 w-full">
+          <div className="flex flex-col items-center px-8 pt-44 w-full">
             <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">Creating consistenty</p>
               <div className="pt-8">
@@ -314,7 +314,7 @@ export default function Apoteket() {
           </div>
 
           {/* The checkout row */}
-          <div className="flex flex-col px-8 pt-[136px] w-full">
+          <div className="flex flex-col items-center px-8 pt-[136px] w-full">
             <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">The checkout</p>
               <div className="pt-8">
@@ -330,7 +330,7 @@ export default function Apoteket() {
           </div>
 
           {/* How We Implemented row */}
-          <div className="flex flex-col px-8 pt-[136px] w-full">
+          <div className="flex flex-col items-center px-8 pt-[136px] w-full">
             <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">How We Implemented New Design</p>
               <div className="pt-4">
