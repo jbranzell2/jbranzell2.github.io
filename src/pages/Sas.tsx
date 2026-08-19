@@ -77,7 +77,7 @@ export default function Sas() {
           </div>
 
           {/* Tinted section */}
-          <div className="bg-[#fafafa] flex justify-center pb-16 pt-32 px-6 w-full">
+          <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] flex justify-center pb-16 pt-32 px-6">
             <div className="w-full max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-base text-black">My role included development and management of:</p>
               {roleItems.map((text, i) => (

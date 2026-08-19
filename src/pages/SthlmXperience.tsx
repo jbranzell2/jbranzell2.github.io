@@ -141,7 +141,7 @@ export default function SthlmXperience() {
             <HeroImage variant="desktop" src={imgCover} alt="Cover" />
           </div>
           {/* Tinted */}
-          <div className="bg-[#fafafa] py-20 pb-[104px] mt-0 flex justify-center px-6">
+          <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] py-20 pb-[104px] mt-0 flex justify-center px-6">
             <div className="">
               <div className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full max-w-[453px]">
                 <p className="leading-[1.8rem] mb-0">The STHLM Xperience Conference, hosted by Zington, is an engaging event featuring lectures, hands-on advice, and interactive workshops, all designed to commemorate World Usability Day. Each year, the conference aligns with the theme set forth by the World Usability Day Committee. In 2023, the theme was "Collaboration and Cooperation".</p>
