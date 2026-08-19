@@ -73,16 +73,16 @@ export default function SthlmXperience() {
           </div>
           {/* Typography */}
           <div className="px-6 pt-8">
-            <p className="font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full text-center">Typography</p>
+            <p className="font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Typography</p>
           </div>
           <div className="px-6 pt-6">
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full text-center">We chose Futura for our headers, and Barlow for smaller texts.</p>
+            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">We chose Futura for our headers, and Barlow for smaller texts.</p>
           </div>
           <div className="px-6 pt-4">
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full text-center">My initial thought was that they looked kind of similar and it would cause a problem, but it turned out great!</p>
+            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">My initial thought was that they looked kind of similar and it would cause a problem, but it turned out great!</p>
           </div>
           <div className="px-6 pt-4">
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full text-center">The smallest size we used was Barlow in 16 pixels.</p>
+            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">The smallest size we used was Barlow in 16 pixels.</p>
           </div>
           {/* Sxc2 */}
           <div className="pt-6">
@@ -166,7 +166,7 @@ export default function SthlmXperience() {
           </div>
           {/* Typography row */}
           <div className="flex flex-col px-8 pt-24 w-full">
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-left">
               <p className="font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-[461px]">Typography</p>
               <div className="pt-8">
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">We chose Futura for our headers, and Barlow for smaller texts.</p>
