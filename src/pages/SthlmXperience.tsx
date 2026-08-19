@@ -36,7 +36,7 @@ export default function SthlmXperience() {
           <div className="bg-[#fafafa] py-6 px-6 mt-0">
             <div className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full">
               <p className="leading-[1.8rem] mb-0">The STHLM Xperience Conference, hosted by Zington, is an engaging event featuring lectures, hands-on advice, and interactive workshops, all designed to commemorate World Usability Day. Each year, the conference aligns with the theme set forth by the World Usability Day Committee. In 2023, the theme was "Collaboration and Cooperation".</p>
-              <p className="leading-[1.8rem]">{`. Together we shaped the conference's branding and all of the material. Our primary focus was to uphold the established conference branding guidelines while incorporating design elements that portrayed the year's essence.`}</p>
+              <p className="leading-[1.8rem]">{`Together we shaped the conference's branding and all of the material. Our primary focus was to uphold the established conference branding guidelines while incorporating design elements that portrayed the year's essence.`}</p>
             </div>
           </div>
           {/* Sxc1 */}
@@ -145,7 +145,7 @@ export default function SthlmXperience() {
             <div className="">
               <div className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full max-w-[1040px]">
                 <p className="leading-[1.8rem] mb-0">The STHLM Xperience Conference, hosted by Zington, is an engaging event featuring lectures, hands-on advice, and interactive workshops, all designed to commemorate World Usability Day. Each year, the conference aligns with the theme set forth by the World Usability Day Committee. In 2023, the theme was "Collaboration and Cooperation".</p>
-                <p className="leading-[1.8rem]">{`. Together we shaped the conference's branding and all of the material. Our primary focus was to uphold the established conference branding guidelines while incorporating design elements that portrayed the year's essence.`}</p>
+                <p className="leading-[1.8rem]">{`Together we shaped the conference's branding and all of the material. Our primary focus was to uphold the established conference branding guidelines while incorporating design elements that portrayed the year's essence.`}</p>
               </div>
             </div>
           </div>
