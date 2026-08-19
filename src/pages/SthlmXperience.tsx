@@ -163,8 +163,8 @@ export default function SthlmXperience() {
             </p>
           </div>
           {/* Typography row */}
-          <div className="flex items-center pl-8 gap-[180px] pt-24 w-full overflow-hidden">
-            <div className="flex flex-col items-start pt-52 shrink-0">
+          <div className="flex flex-col px-8 pt-24 w-full">
+            <div className="flex flex-col items-start">
               <p className="font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-[461px]">Typography</p>
               <div className="pt-8">
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">We chose Futura for our headers, and Barlow for smaller texts.</p>
@@ -176,7 +176,7 @@ export default function SthlmXperience() {
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">The smallest size we used was Barlow in 16 pixels.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[500px] aspect-square relative">
+            <div className="w-full aspect-square relative mt-12">
               <img alt="SXC 2" className="absolute inset-0 w-full h-full object-cover" src={imgSxc2} />
             </div>
           </div>
@@ -193,8 +193,8 @@ export default function SthlmXperience() {
             </div>
           </div>
           {/* Social media row */}
-          <div className="flex items-center pl-8 gap-[180px] pt-[120px] w-full overflow-hidden">
-            <div className="flex flex-col items-start py-16 shrink-0 justify-center">
+          <div className="flex flex-col px-8 pt-[120px] w-full">
+            <div className="flex flex-col items-start">
               <p className="font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-[461px]">Social media</p>
               <div className="pt-10">
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">To work with all the colours and get it really playful, we early on created a system for when and what should be released.</p>
@@ -206,7 +206,7 @@ export default function SthlmXperience() {
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">¨This also applies to the forms, hands and typography.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
+            <div className="w-full aspect-square relative mt-12">
               <img alt="SXC 6" className="absolute inset-0 w-full h-full object-cover" src={imgSxc6} />
             </div>
           </div>

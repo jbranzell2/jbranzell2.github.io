@@ -210,8 +210,8 @@ export default function Apoteket() {
           </div>
 
           {/* The Challenge row */}
-          <div className="flex items-center pl-8 gap-[180px] pt-[88px] w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
+          <div className="flex flex-col px-8 pt-[88px] w-full">
+            <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">The Challenge</p>
               {[
                 { text: "The site had a lot of Inconsistent behaviors and graphical expressions", pt: "pt-10" },
@@ -227,14 +227,14 @@ export default function Apoteket() {
                 </div>
               ))}
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
+            <div className="w-full aspect-square relative mt-12">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgApoteket1} />
             </div>
           </div>
 
           {/* Initial Exploration row */}
-          <div className="flex items-center pl-8 gap-[180px] pt-[136px] w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
+          <div className="flex flex-col px-8 pt-[136px] w-full">
+            <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">Initial Exploration</p>
               <div className="pt-8">
                 <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full max-w-[453px]">
@@ -257,14 +257,14 @@ export default function Apoteket() {
                 </div>
               ))}
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
+            <div className="w-full aspect-square relative mt-12">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgApoteket2} />
             </div>
           </div>
 
           {/* The Design System row */}
-          <div className="flex items-center pl-8 gap-[180px] pt-[136px] w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
+          <div className="flex flex-col px-8 pt-[136px] w-full">
+            <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">The Design System</p>
               <div className="pt-8">
                 <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full max-w-[453px]">
@@ -273,14 +273,14 @@ export default function Apoteket() {
                 </div>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
+            <div className="w-full aspect-square relative mt-12">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgApoteket3} />
             </div>
           </div>
 
           {/* Brand guidelines row */}
-          <div className="flex items-center pl-8 gap-[180px] pt-24 w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
+          <div className="flex flex-col px-8 pt-24 w-full">
+            <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">The website didn{"'"}t follow the brand guidelines</p>
               <div className="pt-4">
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">Apoteket had a beautiful new graphic profile which unfortunately neither the website or app followed.</p>
@@ -292,14 +292,14 @@ export default function Apoteket() {
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">We decided that each new component should follow the new guidelines, introducing the new design in the new flows, carefully though so it didn{"'"}t feel to unnatrual.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
+            <div className="w-full aspect-square relative mt-12">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgApoteket6} />
             </div>
           </div>
 
           {/* Creating consistency row */}
-          <div className="flex items-center pl-8 gap-[180px] pt-44 w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
+          <div className="flex flex-col px-8 pt-44 w-full">
+            <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">Creating consistenty</p>
               <div className="pt-8">
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">One of the challenges was that there was a lot of different expressions on the website. The Design System could easily take height for this.</p>
@@ -308,14 +308,14 @@ export default function Apoteket() {
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">We made it easy to get an overview of all the components so that the website could keep it{"'"}s structure and consistent behaviour.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
+            <div className="w-full aspect-square relative mt-12">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgApoteket5} />
             </div>
           </div>
 
           {/* The checkout row */}
-          <div className="flex items-center pl-8 gap-[180px] pt-[136px] w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
+          <div className="flex flex-col px-8 pt-[136px] w-full">
+            <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">The checkout</p>
               <div className="pt-8">
                 <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full max-w-[453px]">
@@ -324,14 +324,14 @@ export default function Apoteket() {
                 </div>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
+            <div className="w-full aspect-square relative mt-12">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgApoteket7} />
             </div>
           </div>
 
           {/* How We Implemented row */}
-          <div className="flex items-center pl-8 gap-[180px] pt-[136px] w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
+          <div className="flex flex-col px-8 pt-[136px] w-full">
+            <div className="flex flex-col max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-full max-w-[453px]">How We Implemented New Design</p>
               <div className="pt-4">
                 <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black tracking-[-0.016px] w-full max-w-[453px]">
@@ -342,7 +342,7 @@ export default function Apoteket() {
                 </div>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
+            <div className="w-full aspect-square relative mt-12">
               <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgApoteket4} />
             </div>
           </div>
