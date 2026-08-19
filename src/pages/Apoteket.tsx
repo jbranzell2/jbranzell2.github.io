@@ -72,7 +72,7 @@ export default function Apoteket() {
               ))}
             </div>
           </div>
-          <div className="w-full mt-0 md:mt-12">
+          <div className="w-full mt-8 md:mt-12">
             <img alt="" className="w-full h-auto block" src={imgApoteket1} />
           </div>
         </div>
