@@ -117,7 +117,9 @@ export default function SthlmXperience() {
           </div>
           {/* Sxc6 */}
           <div className="pt-10 pb-4">
-            <img alt="SXC 6" className="w-full aspect-square object-cover" src={imgSxc6} />
+            <div className="py-10">
+              <img alt="SXC 6" className="w-full h-auto block" src={imgSxc6} />
+            </div>
           </div>
           {/* Event photos */}
           <div className="w-full">
@@ -208,8 +210,8 @@ export default function SthlmXperience() {
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">¨This also applies to the forms, hands and typography.</p>
               </div>
             </div>
-            <div className="w-full aspect-square relative mt-12">
-              <img alt="SXC 6" className="absolute inset-0 w-full h-full object-cover" src={imgSxc6} />
+            <div className="w-full py-10 mt-12">
+              <img alt="SXC 6" className="w-full h-auto block" src={imgSxc6} />
             </div>
           </div>
           {/* Event photos */}
