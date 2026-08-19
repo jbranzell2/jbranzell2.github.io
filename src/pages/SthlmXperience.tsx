@@ -32,13 +32,31 @@ export default function SthlmXperience() {
           <div className="pt-6">
             <img alt="Cover" className="w-full aspect-[390/240] object-cover" src={imgCover} fetchPriority="high" />
           </div>
-          {/* Tinted */}
-          <div className="bg-[#fafafa] py-6 px-6 mt-0">
-            <div className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full">
-              <p className="leading-[1.8rem] mb-0">The STHLM Xperience Conference, hosted by Zington, is an engaging event featuring lectures, hands-on advice, and interactive workshops, all designed to commemorate World Usability Day. Each year, the conference aligns with the theme set forth by the World Usability Day Committee. In 2023, the theme was "Collaboration and Cooperation".</p>
-              <p className="leading-[1.8rem]">{`Together we shaped the conference's branding and all of the material. Our primary focus was to uphold the established conference branding guidelines while incorporating design elements that portrayed the year's essence.`}</p>
+        </div>
+
+        {/* ── DESKTOP layout: Hero row ── */}
+        <div className="hidden md:block">
+          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
+            <div className="flex flex-col items-start py-16 shrink-0 max-w-[453px]">
+              <p className="font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-[461px]">Shaping Stockholm Xperience Conference 2023</p>
+              <div className="pt-12">
+                <p className="font-['Poppins:Light',sans-serif] leading-[2.55625rem] not-italic text-[1.41875rem] text-black w-[461px]">Worked on the branding and all the material for Stockholm Xperience Conference 2023. In a small team we looked at all the branding material, and applied it to everything digital and print.</p>
+              </div>
             </div>
+            <HeroImage variant="desktop" src={imgCover} alt="Cover" />
           </div>
+        </div>
+
+        {/* ── Tinted (shared, responsive) ── */}
+        <div className="bg-[#fafafa] py-6 px-6 mt-0 md:w-screen md:mx-[calc(50%-50vw)] md:py-20 md:pb-[104px] md:flex md:justify-center">
+          <div className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full md:max-w-[1040px]">
+            <p className="leading-[1.8rem] mb-0">The STHLM Xperience Conference, hosted by Zington, is an engaging event featuring lectures, hands-on advice, and interactive workshops, all designed to commemorate World Usability Day. Each year, the conference aligns with the theme set forth by the World Usability Day Committee. In 2023, the theme was "Collaboration and Cooperation".</p>
+            <p className="leading-[1.8rem]">{`Together we shaped the conference's branding and all of the material. Our primary focus was to uphold the established conference branding guidelines while incorporating design elements that portrayed the year's essence.`}</p>
+          </div>
+        </div>
+
+        {/* ── MOBILE layout (continued) ── */}
+        <div className="md:hidden">
           {/* Sxc1 */}
           <div className="w-full pt-12">
             <div className="w-full aspect-[390/188]">
@@ -128,27 +146,8 @@ export default function SthlmXperience() {
           </div>
         </div>
 
-        {/* ── DESKTOP layout ── */}
+        {/* ── DESKTOP layout (continued) ── */}
         <div className="hidden md:block">
-          {/* Hero row */}
-          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
-            <div className="flex flex-col items-start py-16 shrink-0 max-w-[453px]">
-              <p className="font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-[461px]">Shaping Stockholm Xperience Conference 2023</p>
-              <div className="pt-12">
-                <p className="font-['Poppins:Light',sans-serif] leading-[2.55625rem] not-italic text-[1.41875rem] text-black w-[461px]">Worked on the branding and all the material for Stockholm Xperience Conference 2023. In a small team we looked at all the branding material, and applied it to everything digital and print.</p>
-              </div>
-            </div>
-            <HeroImage variant="desktop" src={imgCover} alt="Cover" />
-          </div>
-          {/* Tinted */}
-          <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] py-20 pb-[104px] mt-0 flex justify-center px-6">
-            <div className="">
-              <div className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full max-w-[1040px]">
-                <p className="leading-[1.8rem] mb-0">The STHLM Xperience Conference, hosted by Zington, is an engaging event featuring lectures, hands-on advice, and interactive workshops, all designed to commemorate World Usability Day. Each year, the conference aligns with the theme set forth by the World Usability Day Committee. In 2023, the theme was "Collaboration and Cooperation".</p>
-                <p className="leading-[1.8rem]">{`Together we shaped the conference's branding and all of the material. Our primary focus was to uphold the established conference branding guidelines while incorporating design elements that portrayed the year's essence.`}</p>
-              </div>
-            </div>
-          </div>
           {/* Sxc1 full width */}
           <div className="px-8 pt-12">
             <div className="w-full aspect-[19/10] relative">
