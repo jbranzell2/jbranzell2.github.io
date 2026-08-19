@@ -86,7 +86,7 @@ export default function SthlmXperience() {
           </div>
           {/* Sxc2 */}
           <div className="pt-6">
-            <img alt="SXC 2" className="w-full aspect-[390/240] object-cover" src={imgSxc2} />
+            <img alt="SXC 2" className="w-full aspect-square object-cover" src={imgSxc2} />
           </div>
           {/* Sxc4 */}
           <div className="w-full">
@@ -176,7 +176,7 @@ export default function SthlmXperience() {
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">The smallest size we used was Barlow in 16 pixels.</p>
               </div>
             </div>
-            <div className="flex-1 min-w-[390px] relative h-[844px]">
+            <div className="w-[844px] max-w-full aspect-square relative shrink-0">
               <img alt="SXC 2" className="absolute inset-0 w-full h-full object-cover" src={imgSxc2} />
             </div>
           </div>
