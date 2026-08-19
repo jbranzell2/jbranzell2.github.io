@@ -52,18 +52,11 @@ export default function Alster() {
         </div>
 
         {/* ── Gallery ── */}
-        {/* Mobile: true full-bleed — div stretches to container width, img fills div */}
-        <div className="md:hidden flex flex-col gap-3 mt-3 w-full">
-          {galleryImages.map(({ src, aspect }, i) => (
-            <div key={i} className={`w-full ${aspect}`}>
+        <div className="flex flex-col gap-3 md:gap-24 mt-3 md:mt-0 md:px-8 md:pt-24 md:pb-24 w-full">
+          {galleryImages.map(({ src, aspect }) => (
+            <div key={src} className={`w-full ${aspect}`}>
               <img src={src} alt="" className="w-full h-full object-cover block" />
             </div>
-          ))}
-        </div>
-        {/* Desktop: full-width with generous spacing */}
-        <div className="hidden md:flex flex-col gap-24 px-8 pt-24 pb-24">
-          {galleryImages.map(({ src, aspect }, i) => (
-            <img key={i} src={src} alt="" className={`w-full ${aspect} object-cover`} />
           ))}
         </div>
 
