@@ -14,6 +14,21 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroImage from "@/components/HeroImage";
 
+const BODY_TEXT = "font-['Poppins:Light',sans-serif] not-italic text-base text-black leading-[1.8rem]";
+const TEXT_BLOCK_WRAPPER = "font-['Poppins:Light',sans-serif] not-italic text-base text-black leading-[0]";
+
+const typographyParagraphs = [
+  { text: "We chose Futura for our headers, and Barlow for smaller texts.", pt: "pt-6 md:pt-8" },
+  { text: "My initial thought was that they looked kind of similar and it would cause a problem, but it turned out great!", pt: "pt-4" },
+  { text: "The smallest size we used was Barlow in 16 pixels.", pt: "pt-4" },
+];
+
+const socialMediaParagraphs = [
+  { text: "To work with all the colours and get it really playful, we early on created a system for when and what should be released.", pt: "pt-4 md:pt-10" },
+  { text: "We tried to use the colours differently but in an order that would make them seem more random and playful.", pt: "pt-4 md:pt-8" },
+  { text: "¨This also applies to the forms, hands and typography.", pt: "pt-4 md:pt-0" },
+];
+
 export default function SthlmXperience() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter max-w-[1400px] mx-auto">
@@ -49,185 +64,93 @@ export default function SthlmXperience() {
 
         {/* ── Tinted (shared, responsive) ── */}
         <div className="bg-[#fafafa] py-6 px-6 mt-0 md:w-screen md:mx-[calc(50%-50vw)] md:py-20 md:pb-[104px] md:flex md:justify-center">
-          <div className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full md:max-w-[1040px]">
+          <div className={`${TEXT_BLOCK_WRAPPER} w-full md:max-w-[1040px]`}>
             <p className="leading-[1.8rem] mb-0">The STHLM Xperience Conference, hosted by Zington, is an engaging event featuring lectures, hands-on advice, and interactive workshops, all designed to commemorate World Usability Day. Each year, the conference aligns with the theme set forth by the World Usability Day Committee. In 2023, the theme was "Collaboration and Cooperation".</p>
             <p className="leading-[1.8rem]">{`Together we shaped the conference's branding and all of the material. Our primary focus was to uphold the established conference branding guidelines while incorporating design elements that portrayed the year's essence.`}</p>
           </div>
         </div>
 
-        {/* ── MOBILE layout (continued) ── */}
-        <div className="md:hidden">
-          {/* Colors text */}
-          <div className="px-6 pt-12">
-            <p className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full">
-              <span className="leading-[1.8rem]">{`We thought more playful colors are more collaborative, and we put alot of work into finding the correct ones that worked well. Also, we chose colors that could work together, with a few rules, and still bli fine the `}</span>
-              <span className="font-['Poppins:Bold',sans-serif] leading-[1.8rem]">WCAG 2.1 AA</span>
-              <span className="leading-[1.8rem]">{` standards.`}</span>
-            </p>
-          </div>
-          {/* Sxc1 */}
-          <div className="w-full pt-12">
-            <div className="w-full aspect-[390/188]">
-              <img alt="SXC 1" className="w-full h-full object-cover block" src={imgSxc1} />
-            </div>
-          </div>
-          {/* Typography */}
-          <div className="px-6 pt-12">
-            <p className="font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Typography</p>
-          </div>
-          <div className="px-6 pt-6">
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">We chose Futura for our headers, and Barlow for smaller texts.</p>
-          </div>
-          <div className="px-6 pt-4">
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">My initial thought was that they looked kind of similar and it would cause a problem, but it turned out great!</p>
-          </div>
-          <div className="px-6 pt-4">
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">The smallest size we used was Barlow in 16 pixels.</p>
-          </div>
-          {/* Sxc2 */}
-          <div className="pt-12">
-            <div className="py-10">
-              <img alt="SXC 2" className="w-full h-auto block" src={imgSxc2} />
-            </div>
-          </div>
-          {/* Sxc4 */}
-          <div className="w-full pt-12">
-            <div className="w-full aspect-[390/188]">
-              <img alt="SXC 4" className="w-full h-full object-cover block" src={imgSxc4} />
-            </div>
-          </div>
-          {/* Sxc5 */}
-          <div className="w-full pt-12">
-            <div className="w-full aspect-[390/188]">
-              <img alt="SXC 5" className="w-full h-full object-cover block" src={imgSxc5} />
-            </div>
-          </div>
-          {/* Social media */}
-          <div className="px-6 pt-12">
-            <p className="font-['Poppins:Medium',sans-serif] leading-[2.5875rem] not-italic text-[1.8125rem] text-black w-full">Social media</p>
-          </div>
-          <div className="px-6 pt-4">
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">To work with all the colours and get it really playful, we early on created a system for when and what should be released.</p>
-          </div>
-          <div className="px-6 pt-4">
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">We tried to use the colours differently but in an order that would make them seem more random and playful.</p>
-          </div>
-          <div className="px-6 pt-4">
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">¨This also applies to the forms, hands and typography.</p>
-          </div>
-          {/* Sxc6 */}
-          <div className="pt-12">
-            <div className="py-10">
-              <img alt="SXC 6" className="w-full h-auto block" src={imgSxc6} />
-            </div>
-          </div>
-          {/* Event photos */}
-          <div className="w-full pt-12">
-            <div className="w-full aspect-[4/3]">
-              <img alt="Event photo 1" className="w-full h-full object-cover block" src={imgImg3981} />
-            </div>
-          </div>
-          <div className="w-full mt-3">
-            <div className="w-full aspect-[4/3]">
-              <img alt="Event photo 2" className="w-full h-full object-cover block" src={imgImg3973} />
-            </div>
-          </div>
-          <div className="flex gap-1 mt-3 w-full">
-            <div className="flex-1 aspect-[3/4]">
-              <img alt="Event photo 3" className="w-full h-full object-cover block" src={imgImg3974} />
-            </div>
-            <div className="flex-1 aspect-[3/4]">
-              <img alt="Event photo 4" className="w-full h-full object-cover block" src={imgImg3978} />
-            </div>
-            <div className="flex-1 aspect-[3/4]">
-              <img alt="Event photo 5" className="w-full h-full object-cover block" src={imgFoto} />
-            </div>
-          </div>
-          <div className="w-full mt-3">
-            <div className="w-full aspect-[3/4]">
-              <img alt="Event photo 6" className="w-full h-full object-cover block" src={imgImg3993} />
-            </div>
+        {/* ── Colors text ── */}
+        <div className="px-6 pt-12 md:flex md:justify-center md:pt-24">
+          <p className={`${TEXT_BLOCK_WRAPPER} w-full md:max-w-[453px]`}>
+            <span className="leading-[1.8rem]">{`We thought more playful colors are more collaborative, and we put alot of work into finding the correct ones that worked well. Also, we chose colors that could work together, with a few rules, and still bli fine the `}</span>
+            <span className="font-['Poppins:Bold',sans-serif] leading-[1.8rem]">WCAG 2.1 AA</span>
+            <span className="leading-[1.8rem]">{` standards.`}</span>
+          </p>
+        </div>
+
+        {/* ── Sxc1 ── */}
+        <div className="w-full pt-12 md:px-8 md:pt-24">
+          <div className="w-full aspect-[390/188] md:aspect-[19/10]">
+            <img alt="SXC 1" className="w-full h-full object-cover block" src={imgSxc1} />
           </div>
         </div>
 
-        {/* ── DESKTOP layout (continued) ── */}
-        <div className="hidden md:block">
-          {/* Colors text */}
-          <div className="flex justify-center px-6 pt-24">
-            <p className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full max-w-[453px]">
-              <span className="leading-[1.8rem]">{`We thought more playful colors are more collaborative, and we put alot of work into finding the correct ones that worked well. Also, we chose colors that could work together, with a few rules, and still bli fine the `}</span>
-              <span className="font-['Poppins:Bold',sans-serif] leading-[1.8rem]">WCAG 2.1 AA</span>
-              <span className="leading-[1.8rem]">{` standards.`}</span>
-            </p>
-          </div>
-          {/* Sxc1 full width */}
-          <div className="px-8 pt-24">
-            <div className="w-full aspect-[19/10] relative">
-              <img alt="SXC 1" className="absolute inset-0 w-full h-full object-cover" src={imgSxc1} />
-            </div>
-          </div>
-          {/* Typography row */}
-          <div className="flex flex-col px-8 pt-24 w-full">
-            <div className="flex flex-col items-center text-left">
-              <p className="font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-[461px]">Typography</p>
-              <div className="pt-8">
-                <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">We chose Futura for our headers, and Barlow for smaller texts.</p>
+        {/* ── Typography row ── */}
+        <div className="flex flex-col items-start md:items-center pt-12 md:pt-24 md:px-8 w-full">
+          <div className="flex flex-col text-left">
+            <p className="px-6 md:px-0 font-['Poppins:Medium',sans-serif] leading-[3.08125rem] md:leading-[4.025rem] not-italic text-[2.2125rem] md:text-[2.8875rem] text-black w-full md:w-[461px]">Typography</p>
+            {typographyParagraphs.map(({ text, pt }) => (
+              <div key={text} className={`px-6 md:px-0 ${pt}`}>
+                <p className={`${BODY_TEXT} w-full md:w-[461px]`}>{text}</p>
               </div>
-              <div className="pt-4">
-                <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">My initial thought was that they looked kind of similar and it would cause a problem, but it turned out great!</p>
+            ))}
+          </div>
+          <div className="w-full pt-[88px] md:pt-[120px] pb-10">
+            <img alt="SXC 2" className="w-full h-auto block" src={imgSxc2} />
+          </div>
+        </div>
+
+        {/* ── Sxc4 ── */}
+        <div className="w-full pt-12 md:px-8 md:pt-24">
+          <div className="w-full aspect-[390/188] md:aspect-[19/10]">
+            <img alt="SXC 4" className="w-full h-full object-cover block" src={imgSxc4} />
+          </div>
+        </div>
+
+        {/* ── Sxc5 ── */}
+        <div className="w-full pt-12 md:px-8 md:pt-24">
+          <div className="w-full aspect-[390/188] md:aspect-[19/10]">
+            <img alt="SXC 5" className="w-full h-full object-cover block" src={imgSxc5} />
+          </div>
+        </div>
+
+        {/* ── Social media row ── */}
+        <div className="flex flex-col items-start md:items-center pt-12 md:pt-24 md:px-8 w-full">
+          <div className="flex flex-col text-left">
+            <p className="px-6 md:px-0 font-['Poppins:Medium',sans-serif] leading-[2.5875rem] md:leading-[3.225rem] not-italic text-[1.8125rem] md:text-[2.2625rem] text-black w-full md:w-[461px]">Social media</p>
+            {socialMediaParagraphs.map(({ text, pt }) => (
+              <div key={text} className={`px-6 md:px-0 ${pt}`}>
+                <p className={`${BODY_TEXT} w-full md:w-[461px]`}>{text}</p>
               </div>
-              <div className="pt-4">
-                <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">The smallest size we used was Barlow in 16 pixels.</p>
-              </div>
+            ))}
+          </div>
+          <div className="w-full pt-[88px] md:pt-[120px] pb-10">
+            <img alt="SXC 6" className="w-full h-auto block" src={imgSxc6} />
+          </div>
+        </div>
+
+        {/* ── Event photos ── */}
+        <div className="w-full pt-12 md:px-8 md:pt-24">
+          <div className="w-full aspect-[4/3]">
+            <img alt="Event photo 1" className="w-full h-full object-cover block" src={imgImg3981} />
+          </div>
+          <div className="w-full aspect-[4/3] mt-3 md:mt-12">
+            <img alt="Event photo 2" className="w-full h-full object-cover block" src={imgImg3973} />
+          </div>
+          <div className="flex md:block gap-1 mt-3 md:mt-12">
+            <div className="flex-1 md:w-full aspect-[3/4]">
+              <img alt="Event photo 3" className="w-full h-full object-cover block" src={imgImg3974} />
             </div>
-            <div className="w-full pt-[72px] pb-10 mt-12">
-              <img alt="SXC 2" className="w-full h-auto block" src={imgSxc2} />
+            <div className="flex-1 md:w-full aspect-[3/4] md:mt-12">
+              <img alt="Event photo 4" className="w-full h-full object-cover block" src={imgImg3978} />
+            </div>
+            <div className="flex-1 md:w-full aspect-[3/4] md:mt-12">
+              <img alt="Event photo 5" className="w-full h-full object-cover block" src={imgFoto} />
             </div>
           </div>
-          {/* Sxc4 */}
-          <div className="px-8 pt-24">
-            <div className="w-full aspect-[19/10] relative">
-              <img alt="SXC 4" className="absolute inset-0 w-full h-full object-cover" src={imgSxc4} />
-            </div>
-          </div>
-          {/* Sxc5 */}
-          <div className="px-8 pt-24">
-            <div className="w-full aspect-[19/10] relative">
-              <img alt="SXC 5" className="absolute inset-0 w-full h-full object-cover" src={imgSxc5} />
-            </div>
-          </div>
-          {/* Social media row */}
-          <div className="flex flex-col px-8 pt-24 w-full">
-            <div className="flex flex-col items-center text-left">
-              <p className="font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-[461px]">Social media</p>
-              <div className="pt-10">
-                <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">To work with all the colours and get it really playful, we early on created a system for when and what should be released.</p>
-              </div>
-              <div className="pt-8">
-                <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">We tried to use the colours differently but in an order that would make them seem more random and playful.</p>
-              </div>
-              <div className="pt-0">
-                <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">¨This also applies to the forms, hands and typography.</p>
-              </div>
-            </div>
-            <div className="w-full pt-[72px] pb-10 mt-12">
-              <img alt="SXC 6" className="w-full h-auto block" src={imgSxc6} />
-            </div>
-          </div>
-          {/* Event photos */}
-          <div className="px-8 pt-24 flex flex-col gap-12">
-            <div className="w-full aspect-[4/3] relative">
-              <img alt="Event photo 1" className="absolute inset-0 w-full h-full object-cover" src={imgImg3981} />
-            </div>
-            <div className="w-full aspect-[4/3] relative">
-              <img alt="Event photo 2" className="absolute inset-0 w-full h-full object-cover" src={imgImg3973} />
-            </div>
-            <img alt="Event photo 3" className="w-full aspect-[3/4] object-cover" src={imgImg3974} />
-            <img alt="Event photo 4" className="w-full aspect-[3/4] object-cover" src={imgImg3978} />
-            <img alt="Event photo 5" className="w-full aspect-[3/4] object-cover" src={imgFoto} />
-            <div className="w-full aspect-[3/4] relative">
-              <img alt="Event photo 6" className="absolute inset-0 w-full h-full object-cover" src={imgImg3993} />
-            </div>
+          <div className="w-full aspect-[3/4] mt-3 md:mt-12">
+            <img alt="Event photo 6" className="w-full h-full object-cover block" src={imgImg3993} />
           </div>
         </div>
 
