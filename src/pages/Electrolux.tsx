@@ -46,15 +46,8 @@ export default function Electrolux() {
         </div>
 
         {/* Tinted section */}
-        {/* Mobile */}
-        <div className="md:hidden bg-[#fafafa] py-[52px] px-6 w-full">
-          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">
-            {`Johan was part of two teams that worked with these apps, Taste and Care, which represent kitchen and care appliances. Parts of the apps could connect with Electrolux and Aeg's machines, so a big challenge was to make it as user-friendly as possible for everyone regardless of model. The apps are in both Android and iOS.`}
-          </p>
-        </div>
-        {/* Desktop */}
-        <div className="hidden md:flex bg-[#fafafa] w-screen mx-[calc(50%-50vw)] h-[256px] items-center justify-center px-6">
-          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[1040px]">
+        <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] px-6 py-[52px] md:py-0 md:h-[256px] md:flex md:items-center md:justify-center">
+          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full md:max-w-[1040px]">
             {`Johan was part of two teams that worked with these apps, Taste and Care, which represent kitchen and care appliances. Parts of the apps could connect with Electrolux and Aeg's machines, so a big challenge was to make it as user-friendly as possible for everyone regardless of model. The apps are in both Android and iOS.`}
           </p>
         </div>
@@ -63,16 +56,10 @@ export default function Electrolux() {
             wrapper + object-cover/contain, unlike other pages' galleries)
             because these two screenshots don't share a common ratio —
             forcing them into a fixed box previously letterboxed them. */}
-        {/* Mobile */}
-        <div className="md:hidden flex flex-col gap-3 mt-3 w-full">
+        <div className="flex flex-col gap-3 md:gap-8 mt-3 md:mt-0 md:px-7 md:pt-[108px] md:pb-[108px] w-full">
           {[imgElectrolux11, imgElectrolux4].map((img, i) => (
-            <img key={i} alt={`Electrolux app screen ${i + 1}`} className="w-full h-auto block" src={img} />
+            <img key={img} alt={`Electrolux app screen ${i + 1}`} className="w-full h-auto block" src={img} />
           ))}
-        </div>
-        {/* Desktop */}
-        <div className="hidden md:flex flex-col gap-8 px-7 pt-[108px] pb-[108px] w-full">
-          <img alt="Electrolux app screen 1" className="w-full h-auto" src={imgElectrolux11} />
-          <img alt="Electrolux app screen 2" className="w-full h-auto" src={imgElectrolux4} />
         </div>
       </main>
 
