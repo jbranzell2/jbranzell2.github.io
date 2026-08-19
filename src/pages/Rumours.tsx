@@ -42,19 +42,10 @@ export default function Rumours() {
             <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">The paper could be found in different shops mainly in Stockholm, Göteborg and Malmö</p>
           </div>
 
-          {/* Images 2–10 — full bleed */}
-          <div className="flex flex-col gap-3 mt-3 w-full">
-            {[imgImage2, imgImage3, imgImage4, imgImage5, imgImage6, imgImage7, imgImage9, imgImage10].map((img, i) => (
-              <div key={i} className="w-full aspect-[390/280]">
-                <img alt="" className="w-full h-full object-cover block" src={img} />
-              </div>
-            ))}
-          </div>
         </div>
 
-        {/* ── DESKTOP layout ── */}
+        {/* ── DESKTOP layout: Hero row ── */}
         <div className="hidden md:block">
-          {/* Hero row: text left, image right */}
           <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
             <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">Art director/Graphic Designer</p>
@@ -70,21 +61,23 @@ export default function Rumours() {
             </div>
             <HeroImage variant="desktop" src={imgImage1} alt="" />
           </div>
+        </div>
 
-          {/* Full-width images */}
+        {/* ── Full-width images — mobile: uniform crop; desktop: each image's own ratio ── */}
+        <div className="w-full">
           {[
-            { img: imgImage2, pt: "pt-8", aspect: "aspect-[1328/1032]" },
-            { img: imgImage3, pt: "pt-14", aspect: "aspect-[1510/1104]" },
-            { img: imgImage4, pt: "pt-14", aspect: "aspect-[1598/1160]" },
-            { img: imgImage5, pt: "pt-14", aspect: "aspect-[1258/915]" },
-            { img: imgImage6, pt: "pt-14", aspect: "aspect-[1424/1057]" },
-            { img: imgImage7, pt: "pt-14", aspect: "aspect-[2422/1821]" },
-            { img: imgImage9, pt: "pt-14", aspect: "aspect-square" },
-            { img: imgImage10, pt: "pt-14", aspect: "aspect-[1451/1109]" },
-          ].map(({ img, pt, aspect }, i) => (
-            <div key={i} className={`px-[32px] ${pt}`}>
-              <div className={`w-full ${aspect} relative`}>
-                <img alt="" className="absolute inset-0 w-full h-full object-cover" src={img} />
+            { img: imgImage2, pt: "md:pt-8", aspect: "md:aspect-[1328/1032]" },
+            { img: imgImage3, pt: "md:pt-14", aspect: "md:aspect-[1510/1104]" },
+            { img: imgImage4, pt: "md:pt-14", aspect: "md:aspect-[1598/1160]" },
+            { img: imgImage5, pt: "md:pt-14", aspect: "md:aspect-[1258/915]" },
+            { img: imgImage6, pt: "md:pt-14", aspect: "md:aspect-[1424/1057]" },
+            { img: imgImage7, pt: "md:pt-14", aspect: "md:aspect-[2422/1821]" },
+            { img: imgImage9, pt: "md:pt-14", aspect: "md:aspect-square" },
+            { img: imgImage10, pt: "md:pt-14", aspect: "md:aspect-[1451/1109]" },
+          ].map(({ img, pt, aspect }) => (
+            <div key={img} className={`mt-3 md:mt-0 md:px-8 ${pt}`}>
+              <div className={`w-full aspect-[390/280] ${aspect}`}>
+                <img alt="" className="w-full h-full object-cover block" src={img} />
               </div>
             </div>
           ))}
