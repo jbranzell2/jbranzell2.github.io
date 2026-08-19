@@ -33,19 +33,10 @@ export default function Myndigheten() {
             <HeroImage variant="mobile" src={imgCover} alt="" mobileAspectClass="aspect-[390/278]" />
           </div>
 
-          {/* Screenshot images — full bleed */}
-          <div className="flex flex-col gap-3 mt-3 w-full">
-            {[imgMyndigheten2, imgMyndigheten1].map((img, i) => (
-              <div key={i} className="w-full aspect-[390/210]">
-                <img alt="" className="w-full h-full object-cover block" src={img} />
-              </div>
-            ))}
-          </div>
         </div>
 
-        {/* ── DESKTOP layout ── */}
+        {/* ── DESKTOP layout: Hero row ── */}
         <div className="hidden md:block">
-          {/* Hero row */}
           <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
             <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">UI/UX Designer at Myndigheten för delaktighet</p>
@@ -58,20 +49,20 @@ export default function Myndigheten() {
             </div>
             <HeroImage variant="desktop" src={imgCover} alt="" />
           </div>
+        </div>
 
-          {/* Myndigheten 2 */}
-          <div className="px-8 pt-2">
-            <div className="w-full aspect-[16/9] relative">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgMyndigheten2} />
+        {/* ── Screenshot images ── */}
+        <div className="w-full">
+          {[
+            { img: imgMyndigheten2, pt: "md:pt-2" },
+            { img: imgMyndigheten1, pt: "md:pt-8" },
+          ].map(({ img, pt }) => (
+            <div key={img} className={`mt-3 md:mt-0 md:px-8 ${pt}`}>
+              <div className="w-full aspect-[390/210] md:aspect-[16/9]">
+                <img alt="" className="w-full h-full object-cover block" src={img} />
+              </div>
             </div>
-          </div>
-
-          {/* Myndigheten 1 */}
-          <div className="px-8 pt-8">
-            <div className="w-full aspect-[16/9] relative">
-              <img alt="" className="absolute inset-0 w-full h-full object-cover" src={imgMyndigheten1} />
-            </div>
-          </div>
+          ))}
         </div>
       </main>
 
