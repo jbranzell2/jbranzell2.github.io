@@ -57,12 +57,6 @@ export default function SthlmXperience() {
 
         {/* ── MOBILE layout (continued) ── */}
         <div className="md:hidden">
-          {/* Sxc1 */}
-          <div className="w-full pt-12">
-            <div className="w-full aspect-[390/188]">
-              <img alt="SXC 1" className="w-full h-full object-cover block" src={imgSxc1} />
-            </div>
-          </div>
           {/* Colors text */}
           <div className="px-6 pt-12">
             <p className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full">
@@ -70,6 +64,12 @@ export default function SthlmXperience() {
               <span className="font-['Poppins:Bold',sans-serif] leading-[1.8rem]">WCAG 2.1 AA</span>
               <span className="leading-[1.8rem]">{` standards.`}</span>
             </p>
+          </div>
+          {/* Sxc1 */}
+          <div className="w-full pt-12">
+            <div className="w-full aspect-[390/188]">
+              <img alt="SXC 1" className="w-full h-full object-cover block" src={imgSxc1} />
+            </div>
           </div>
           {/* Typography */}
           <div className="px-6 pt-8">
@@ -150,12 +150,6 @@ export default function SthlmXperience() {
 
         {/* ── DESKTOP layout (continued) ── */}
         <div className="hidden md:block">
-          {/* Sxc1 full width */}
-          <div className="px-8 pt-12">
-            <div className="w-full aspect-[19/10] relative">
-              <img alt="SXC 1" className="absolute inset-0 w-full h-full object-cover" src={imgSxc1} />
-            </div>
-          </div>
           {/* Colors text */}
           <div className="flex justify-center px-6 pt-28">
             <p className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full max-w-[453px]">
@@ -163,6 +157,12 @@ export default function SthlmXperience() {
               <span className="font-['Poppins:Bold',sans-serif] leading-[1.8rem]">WCAG 2.1 AA</span>
               <span className="leading-[1.8rem]">{` standards.`}</span>
             </p>
+          </div>
+          {/* Sxc1 full width */}
+          <div className="px-8 pt-12">
+            <div className="w-full aspect-[19/10] relative">
+              <img alt="SXC 1" className="absolute inset-0 w-full h-full object-cover" src={imgSxc1} />
+            </div>
           </div>
           {/* Typography row */}
           <div className="flex flex-col px-8 pt-24 w-full">
