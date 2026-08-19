@@ -53,7 +53,7 @@ export default function Apoteket() {
         <p className="md:hidden px-6 pt-4 pb-8 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">{`Johan developed new design for the digital channels with WCAG complient colors that followed in line with Apoteket's other graphical expressions. He was also responsible for the design and customer experience for the checkout.`}</p>
 
         {/* ── The Challenge row ── */}
-        <div className="flex flex-col items-start md:items-center pt-2 md:pt-[88px] pb-2 md:pb-0 md:px-8 w-full">
+        <div className="flex flex-col items-start md:items-center pt-12 md:pt-24 md:px-8 w-full">
           <div className="flex flex-col md:max-w-[453px]">
             <p className="pl-6 md:pl-0 [word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[2.5875rem] md:leading-[3.225rem] not-italic text-[1.8125rem] md:text-[2.2625rem] text-black w-full md:max-w-[453px]">The Challenge</p>
             <div className="flex flex-col w-full mt-4 md:mt-0">
@@ -78,7 +78,7 @@ export default function Apoteket() {
         </div>
 
         {/* ── Initial Exploration row ── */}
-        <div className="flex flex-col items-start md:items-center pt-6 md:pt-[136px] md:px-8 w-full">
+        <div className="flex flex-col items-start md:items-center pt-12 md:pt-24 md:px-8 w-full">
           <div className="flex flex-col md:max-w-[453px]">
             <p className="px-6 md:px-0 [word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[2.5875rem] md:leading-[3.225rem] not-italic text-[1.8125rem] md:text-[2.2625rem] text-black w-full md:max-w-[453px]">Initial Exploration</p>
             <div className="px-6 md:px-0 mt-0 md:mt-8">
@@ -110,7 +110,7 @@ export default function Apoteket() {
         </div>
 
         {/* ── The Design System row ── */}
-        <div className="flex flex-col items-start md:items-center pt-6 md:pt-[136px] md:px-8 w-full">
+        <div className="flex flex-col items-start md:items-center pt-12 md:pt-24 md:px-8 w-full">
           <div className="flex flex-col md:max-w-[453px]">
             <p className="px-6 md:px-0 [word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[2.5875rem] md:leading-[3.225rem] not-italic text-[1.8125rem] md:text-[2.2625rem] text-black w-full md:max-w-[453px]">The Design System</p>
             <div className="px-6 md:px-0 pt-6 md:pt-8">
@@ -126,7 +126,7 @@ export default function Apoteket() {
         </div>
 
         {/* ── Brand guidelines row ── */}
-        <div className="flex flex-col items-start md:items-center pt-6 md:pt-24 md:px-8 w-full">
+        <div className="flex flex-col items-start md:items-center pt-12 md:pt-24 md:px-8 w-full">
           <div className="flex flex-col md:max-w-[453px]">
             <p className="px-6 md:px-0 [word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[2.5875rem] md:leading-[3.225rem] not-italic text-[1.8125rem] md:text-[2.2625rem] text-black w-full md:max-w-[453px]">The website didn{"'"}t follow the brand guidelines</p>
             <div className="px-6 md:px-0 pt-2 md:pt-4">
@@ -145,7 +145,7 @@ export default function Apoteket() {
         </div>
 
         {/* ── Creating consistency row ── */}
-        <div className="flex flex-col items-start md:items-center pt-6 md:pt-44 md:px-8 w-full">
+        <div className="flex flex-col items-start md:items-center pt-12 md:pt-24 md:px-8 w-full">
           <div className="flex flex-col md:max-w-[453px]">
             <p className="px-6 md:px-0 [word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[2.5875rem] md:leading-[3.225rem] not-italic text-[1.8125rem] md:text-[2.2625rem] text-black w-full md:max-w-[453px]">Creating consistenty</p>
             <div className="px-6 md:px-0 pt-6 md:pt-8">
@@ -161,7 +161,7 @@ export default function Apoteket() {
         </div>
 
         {/* ── The checkout row ── */}
-        <div className="flex flex-col items-start md:items-center pt-4 md:pt-[136px] md:px-8 w-full">
+        <div className="flex flex-col items-start md:items-center pt-12 md:pt-24 md:px-8 w-full">
           <div className="flex flex-col md:max-w-[453px]">
             <p className="px-6 md:px-0 [word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[2.5875rem] md:leading-[3.225rem] not-italic text-[1.8125rem] md:text-[2.2625rem] text-black w-full md:max-w-[453px]">The checkout</p>
             <div className="pl-6 md:pl-0 mt-0 md:mt-8">
@@ -177,7 +177,7 @@ export default function Apoteket() {
         </div>
 
         {/* ── How We Implemented row ── */}
-        <div className="flex flex-col items-start md:items-center pt-8 md:pt-[136px] md:px-8 w-full">
+        <div className="flex flex-col items-start md:items-center pt-12 md:pt-24 md:px-8 w-full">
           <div className="flex flex-col md:max-w-[453px]">
             <p className="px-6 md:px-0 [word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[2.5875rem] md:leading-[3.225rem] not-italic text-[1.8125rem] md:text-[2.2625rem] text-black w-full md:max-w-[453px]">How We Implemented New Design</p>
             <div className="px-6 md:px-0 pt-2 md:pt-4">
