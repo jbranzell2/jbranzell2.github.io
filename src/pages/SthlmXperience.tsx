@@ -196,7 +196,7 @@ export default function SthlmXperience() {
           </div>
           {/* Social media row */}
           <div className="flex flex-col px-8 pt-[120px] w-full">
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-center text-left">
               <p className="font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-[461px]">Social media</p>
               <div className="pt-10">
                 <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[461px]">To work with all the colours and get it really playful, we early on created a system for when and what should be released.</p>
