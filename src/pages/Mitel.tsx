@@ -38,19 +38,10 @@ export default function Mitel() {
             <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black tracking-[-0.016px] w-full">The work included keeping everyone on the same page and updating their old UI while creating a design system for the future.</p>
           </div>
 
-          {/* Screenshot images — full bleed */}
-          <div className="flex flex-col gap-3 mt-3 w-full">
-            {[imgMitel1, imgMitel2, imgMitel3, imgMitel4].map((img, i) => (
-              <div key={i} className="w-full aspect-[390/205]">
-                <img alt="" className="w-full h-full object-cover block" src={img} />
-              </div>
-            ))}
-          </div>
         </div>
 
-        {/* ── DESKTOP layout ── */}
+        {/* ── DESKTOP layout: Hero row ── */}
         <div className="hidden md:block">
-          {/* Hero row */}
           <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
             <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
               <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">UX/UI Designer at Mitel</p>
@@ -66,17 +57,19 @@ export default function Mitel() {
             </div>
             <HeroImage variant="desktop" src={imgCover} alt="" />
           </div>
+        </div>
 
-          {/* Full-width screenshots */}
+        {/* ── Screenshot images ── */}
+        <div className="w-full">
           {[
-            { img: imgMitel1, pt: "pt-8" },
-            { img: imgMitel2, pt: "pt-14" },
-            { img: imgMitel3, pt: "pt-14" },
-            { img: imgMitel4, pt: "pt-14" },
-          ].map(({ img, pt }, i) => (
-            <div key={i} className={`px-[32px] ${pt}`}>
-              <div className="w-full aspect-[16/9] relative">
-                <img alt="" className="absolute inset-0 w-full h-full object-cover" src={img} />
+            { img: imgMitel1, pt: "md:pt-8" },
+            { img: imgMitel2, pt: "md:pt-14" },
+            { img: imgMitel3, pt: "md:pt-14" },
+            { img: imgMitel4, pt: "md:pt-14" },
+          ].map(({ img, pt }) => (
+            <div key={img} className={`mt-3 md:mt-0 md:px-8 ${pt}`}>
+              <div className="w-full aspect-[390/205] md:aspect-[16/9]">
+                <img alt="" className="w-full h-full object-cover block" src={img} />
               </div>
             </div>
           ))}
