@@ -72,7 +72,7 @@ export default function SthlmXperience() {
             </div>
           </div>
           {/* Typography */}
-          <div className="px-6 pt-8">
+          <div className="px-6 pt-12">
             <p className="font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Typography</p>
           </div>
           <div className="px-6 pt-6">
@@ -85,25 +85,25 @@ export default function SthlmXperience() {
             <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">The smallest size we used was Barlow in 16 pixels.</p>
           </div>
           {/* Sxc2 */}
-          <div className="pt-6">
+          <div className="pt-12">
             <div className="py-10">
               <img alt="SXC 2" className="w-full h-auto block" src={imgSxc2} />
             </div>
           </div>
           {/* Sxc4 */}
-          <div className="w-full">
+          <div className="w-full pt-12">
             <div className="w-full aspect-[390/188]">
               <img alt="SXC 4" className="w-full h-full object-cover block" src={imgSxc4} />
             </div>
           </div>
           {/* Sxc5 */}
-          <div className="w-full mt-3">
+          <div className="w-full pt-12">
             <div className="w-full aspect-[390/188]">
               <img alt="SXC 5" className="w-full h-full object-cover block" src={imgSxc5} />
             </div>
           </div>
           {/* Social media */}
-          <div className="px-6 pt-6">
+          <div className="px-6 pt-12">
             <p className="font-['Poppins:Medium',sans-serif] leading-[2.5875rem] not-italic text-[1.8125rem] text-black w-full">Social media</p>
           </div>
           <div className="px-6 pt-4">
@@ -116,13 +116,13 @@ export default function SthlmXperience() {
             <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">¨This also applies to the forms, hands and typography.</p>
           </div>
           {/* Sxc6 */}
-          <div className="pt-10 pb-4">
+          <div className="pt-12">
             <div className="py-10">
               <img alt="SXC 6" className="w-full h-auto block" src={imgSxc6} />
             </div>
           </div>
           {/* Event photos */}
-          <div className="w-full">
+          <div className="w-full pt-12">
             <div className="w-full aspect-[4/3]">
               <img alt="Event photo 1" className="w-full h-full object-cover block" src={imgImg3981} />
             </div>
@@ -153,7 +153,7 @@ export default function SthlmXperience() {
         {/* ── DESKTOP layout (continued) ── */}
         <div className="hidden md:block">
           {/* Colors text */}
-          <div className="flex justify-center px-6 pt-28">
+          <div className="flex justify-center px-6 pt-24">
             <p className="font-['Poppins:Light',sans-serif] leading-[0] not-italic text-base text-black w-full max-w-[453px]">
               <span className="leading-[1.8rem]">{`We thought more playful colors are more collaborative, and we put alot of work into finding the correct ones that worked well. Also, we chose colors that could work together, with a few rules, and still bli fine the `}</span>
               <span className="font-['Poppins:Bold',sans-serif] leading-[1.8rem]">WCAG 2.1 AA</span>
@@ -161,7 +161,7 @@ export default function SthlmXperience() {
             </p>
           </div>
           {/* Sxc1 full width */}
-          <div className="px-8 pt-12">
+          <div className="px-8 pt-24">
             <div className="w-full aspect-[19/10] relative">
               <img alt="SXC 1" className="absolute inset-0 w-full h-full object-cover" src={imgSxc1} />
             </div>
@@ -185,19 +185,19 @@ export default function SthlmXperience() {
             </div>
           </div>
           {/* Sxc4 */}
-          <div className="px-8 pt-12">
+          <div className="px-8 pt-24">
             <div className="w-full aspect-[19/10] relative">
               <img alt="SXC 4" className="absolute inset-0 w-full h-full object-cover" src={imgSxc4} />
             </div>
           </div>
           {/* Sxc5 */}
-          <div className="px-8 pt-12">
+          <div className="px-8 pt-24">
             <div className="w-full aspect-[19/10] relative">
               <img alt="SXC 5" className="absolute inset-0 w-full h-full object-cover" src={imgSxc5} />
             </div>
           </div>
           {/* Social media row */}
-          <div className="flex flex-col px-8 pt-[120px] w-full">
+          <div className="flex flex-col px-8 pt-24 w-full">
             <div className="flex flex-col items-center text-left">
               <p className="font-['Poppins:Medium',sans-serif] leading-[3.225rem] not-italic text-[2.2625rem] text-black w-[461px]">Social media</p>
               <div className="pt-10">
@@ -215,7 +215,7 @@ export default function SthlmXperience() {
             </div>
           </div>
           {/* Event photos */}
-          <div className="px-8 flex flex-col gap-12">
+          <div className="px-8 pt-24 flex flex-col gap-12">
             <div className="w-full aspect-[4/3] relative">
               <img alt="Event photo 1" className="absolute inset-0 w-full h-full object-cover" src={imgImg3981} />
             </div>
