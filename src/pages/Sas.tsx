@@ -4,7 +4,8 @@ import imgSas2 from "@/imports/DesktopSas/c9222641484c48d657bf56d2745d8c3a50c724
 import imgSas3 from "@/imports/DesktopSas/30eb5163fdb3b47db8d1b97ba0113f90c1e8bb63.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import HeroImage from "@/components/HeroImage";
+import Hero from "@/components/Hero";
+import TintedSection from "@/components/TintedSection";
 
 const roleItems = [
   "– The Seat maps",
@@ -24,47 +25,26 @@ export default function Sas() {
       {/* Content */}
       <main className="flex-1 w-full">
 
-        {/* ── MOBILE layout ── */}
-        <div className="md:hidden">
-          {/* Title */}
-          <div className="px-6 pt-8">
-            <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Digital Designer at Sas - Scandinavian Airlines</p>
-          </div>
-
-          {/* Cover image — full bleed */}
-          <div className="w-full mt-4">
-            <HeroImage variant="mobile" src={imgCover} alt="" />
-          </div>
-
-          {/* Intro */}
-          <div className="px-6 pt-2">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.2875rem] not-italic text-[1.26875rem] text-black w-full">I worked for a year as the visual designer for the payment and booking stream at SAS.</p>
-          </div>
-
-        </div>
-
-        {/* ── DESKTOP layout: Hero row ── */}
-        <div className="hidden md:block">
-          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
-              <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">Digital Designer at Sas - Scandinavian Airlines</p>
-              <div className="pt-2">
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.55625rem] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">I worked for a year as the visual designer for the payment and booking stream at SAS.</p>
-              </div>
+        {/* ── Hero ── */}
+        <Hero
+          title="Digital Designer at Sas - Scandinavian Airlines"
+          image={imgCover}
+          imageAlt=""
+          mobileImageClass="mt-4"
+          intro={
+            <div className="px-6 pt-2 md:px-0">
+              <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.2875rem] md:leading-[2.55625rem] not-italic text-[1.26875rem] md:text-[1.41875rem] text-black w-full max-w-[453px]">I worked for a year as the visual designer for the payment and booking stream at SAS.</p>
             </div>
-            <HeroImage variant="desktop" src={imgCover} alt="" />
-          </div>
-        </div>
+          }
+        />
 
         {/* ── Tinted section ── */}
-        <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] flex flex-col items-start py-8 md:py-0 md:items-center md:flex-row md:justify-center md:pb-16 md:pt-32 md:px-6">
-          <div className="md:w-full md:max-w-[1040px]">
-            <p className="pl-6 md:pl-0 [word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px] md:max-w-none">My role included development and management of:</p>
-            {roleItems.map((text) => (
-              <p key={text} className="px-6 md:px-0 pt-4 md:pt-0 md:mt-4 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">{text}</p>
-            ))}
-          </div>
-        </div>
+        <TintedSection className="bg-[#fafafa] py-8 md:py-0 md:pb-16 md:pt-32">
+          <p className="pl-6 md:pl-0 [word-break:break-word] font-['Poppins:Bold',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px] md:max-w-none">My role included development and management of:</p>
+          {roleItems.map((text) => (
+            <p key={text} className="px-6 md:px-0 pt-4 md:pt-0 md:mt-4 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">{text}</p>
+          ))}
+        </TintedSection>
 
         {/* ── Full-width images ── */}
         <div className="w-full">

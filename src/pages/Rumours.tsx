@@ -9,7 +9,7 @@ import imgImage9 from "@/imports/DesktopRumours/561f49544f3d143002a22344a9beb91d
 import imgImage10 from "@/imports/DesktopRumours/d7d2279a090e6124df094b83426bc740e99e717d.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import HeroImage from "@/components/HeroImage";
+import Hero from "@/components/Hero";
 
 export default function Rumours() {
   return (
@@ -19,49 +19,27 @@ export default function Rumours() {
       {/* Content */}
       <main className="flex-1 w-full">
 
-        {/* ── MOBILE layout ── */}
-        <div className="md:hidden">
-          {/* Title */}
-          <div className="px-6 pt-8">
-            <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Art director/Graphic Designer</p>
-          </div>
-
-          {/* Image 1 — full bleed */}
-          <div className="w-full mt-12">
-            <HeroImage variant="mobile" src={imgImage1} alt="" mobileAspectClass="aspect-[390/278]" />
-          </div>
-
-          {/* Description text */}
-          <div className="px-6 pt-2">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full whitespace-pre-wrap">{`Together with Festivalrykten,  Robin Wellström and I created the concept and all the layout for Rumours.`}</p>
-          </div>
-          <div className="px-6 pt-4">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">The work included everything, maping out formats, the visual identity and all branding.</p>
-          </div>
-          <div className="px-6 pt-4">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">The paper could be found in different shops mainly in Stockholm, Göteborg and Malmö</p>
-          </div>
-
-        </div>
-
-        {/* ── DESKTOP layout: Hero row ── */}
-        <div className="hidden md:block">
-          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
-              <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">Art director/Graphic Designer</p>
-              <div className="pt-[72px]">
+        {/* ── Hero ── */}
+        <Hero
+          title="Art director/Graphic Designer"
+          image={imgImage1}
+          imageAlt=""
+          mobileImageClass="mt-12"
+          mobileAspectClass="aspect-[390/278]"
+          intro={
+            <>
+              <div className="px-6 pt-2 md:px-0 md:pt-[72px]">
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px] whitespace-pre-wrap">{`Together with Festivalrykten,  Robin Wellström and I created the concept and all the layout for Rumours.`}</p>
               </div>
-              <div className="pt-4">
+              <div className="px-6 pt-4 md:px-0">
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">The work included everything, maping out formats, the visual identity and all branding.</p>
               </div>
-              <div className="pt-4">
+              <div className="px-6 pt-4 md:px-0">
                 <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">The paper could be found in different shops mainly in Stockholm, Göteborg and Malmö</p>
               </div>
-            </div>
-            <HeroImage variant="desktop" src={imgImage1} alt="" />
-          </div>
-        </div>
+            </>
+          }
+        />
 
         {/* ── Full-width images — mobile: uniform crop; desktop: each image's own ratio ── */}
         <div className="w-full">

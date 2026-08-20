@@ -4,6 +4,7 @@ import imgElectrolux4 from "@/imports/DesktopElectrolux/5fde9e8e6ff3864f31bf59ec
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroImage from "@/components/HeroImage";
+import TintedSection from "@/components/TintedSection";
 
 export default function Electrolux() {
   return (
@@ -46,11 +47,11 @@ export default function Electrolux() {
         </div>
 
         {/* Tinted section */}
-        <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] px-6 py-[52px] md:py-0 md:h-[256px] md:flex md:items-center md:justify-center">
-          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full md:max-w-[1040px]">
+        <TintedSection className="bg-[#fafafa] py-[52px] md:py-0 md:h-[256px]">
+          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">
             {`Johan was part of two teams that worked with these apps, Taste and Care, which represent kitchen and care appliances. Parts of the apps could connect with Electrolux and Aeg's machines, so a big challenge was to make it as user-friendly as possible for everyone regardless of model. The apps are in both Android and iOS.`}
           </p>
-        </div>
+        </TintedSection>
 
         {/* Screenshots section. Rendered at natural size (no aspect-ratio
             wrapper + object-cover/contain, unlike other pages' galleries)

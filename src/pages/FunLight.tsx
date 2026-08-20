@@ -6,7 +6,7 @@ import imgFunlight5 from "@/imports/DesktopFunLight/35b9deacb632ad586910614d7d6d
 import imgFunlight6 from "@/imports/DesktopFunLight/39d178c51738bdf149acfe54e8b3d903b3242f81.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import HeroImage from "@/components/HeroImage";
+import Hero from "@/components/Hero";
 
 const galleryImages = [
   { src: imgFunlight1, pt: "md:pt-32" },
@@ -24,39 +24,24 @@ export default function FunLight() {
       {/* Content */}
       <main className="flex-1 w-full">
 
-        {/* ── Hero (mobile: title / description / image stacked; desktop: title+description beside image) ── */}
-        <div className="md:hidden">
-          <div className="px-6 pt-8">
-            <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.08125rem] not-italic text-[2.2125rem] text-black w-full">Art Director conecpt for Fun Light</p>
-          </div>
-          <div className="px-6 pt-2 pb-4">
-            <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.26875rem] text-black tracking-[-0.0203px] w-full">
-              <p className="leading-[2.2875rem] mb-0">In this project our class at Berghs created a concept and design for Fun Light with Silver. I was inspired by a trend of healthiness that is currently sweeping over Sweden.</p>
-              <p className="leading-[2.2875rem] mb-0">The design was meant to say "Fun Light", but still communicating cleanness and healthiness.</p>
-              <p className="leading-[2.2875rem]">So I made Vitamin Effervescent tablets, in small gum like packages, which you can take anywhere.</p>
-            </div>
-          </div>
-          <div className="w-full">
-            <HeroImage variant="mobile" src={imgCover} alt="" />
-          </div>
-        </div>
-        <div className="hidden md:block">
-          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
-              <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[4.025rem] not-italic text-[2.8875rem] text-black w-full max-w-[453px]">Art Director conecpt for Fun Light</p>
-              <div className="pt-2">
-                <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">
-                  <p className="leading-[2.55625rem] mb-0">In this project our class at Berghs created a concept and design for Fun Light with Silver. I was inspired by a trend of healthiness that is currently sweeping over Sweden.</p>
-                  <p className="leading-[2.55625rem] mb-0">The design was meant to say "Fun Light", but still communicating cleanness and healthiness.</p>
-                  <p className="leading-[2.55625rem]">So I made Vitamin Effervescent tablets, in small gum like packages, which you can take anywhere.</p>
-                </div>
+        {/* ── Hero ── */}
+        <Hero
+          title="Art Director conecpt for Fun Light"
+          image={imgCover}
+          imageAlt=""
+          order="intro-first"
+          intro={
+            <div className="px-6 pt-2 pb-4 md:px-0 md:pb-0">
+              <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.26875rem] md:text-[1.41875rem] text-black tracking-[-0.0203px] md:tracking-normal w-full max-w-[453px]">
+                <p className="leading-[2.2875rem] md:leading-[2.55625rem] mb-0">In this project our class at Berghs created a concept and design for Fun Light with Silver. I was inspired by a trend of healthiness that is currently sweeping over Sweden.</p>
+                <p className="leading-[2.2875rem] md:leading-[2.55625rem] mb-0">The design was meant to say "Fun Light", but still communicating cleanness and healthiness.</p>
+                <p className="leading-[2.2875rem] md:leading-[2.55625rem]">So I made Vitamin Effervescent tablets, in small gum like packages, which you can take anywhere.</p>
               </div>
             </div>
-            <HeroImage variant="desktop" src={imgCover} alt="" />
-          </div>
-        </div>
+          }
+        />
 
-        {/* ── Vision band ── */}
+        {/* ── Vision band (custom: needs md:items-start, which TintedSection doesn't expose — it bakes in md:items-center) ── */}
         <div className="px-6 pt-8 md:pt-0 md:bg-[#fafafa] md:w-screen md:mx-[calc(50%-50vw)] md:flex md:h-[195px] md:items-start md:justify-center md:py-12">
           <div className="[word-break:break-word] font-['Poppins:Light',sans-serif] not-italic text-[1.26875rem] md:text-[1.41875rem] text-black w-full md:max-w-[1040px]">
             <p className="font-['Poppins:Bold',sans-serif] leading-[2.2875rem] md:leading-[2.55625rem] mb-0">Vision</p>

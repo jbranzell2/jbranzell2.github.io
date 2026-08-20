@@ -8,7 +8,8 @@ import imgApoteket7 from "@/imports/DesktopApoteket/7b2685f9475edc49b8a8efd052c1
 import imgApoteket4 from "@/imports/DesktopApoteket/43b68c5c4d0c064ca6309a5c34eb6c6e087d1976.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import HeroImage from "@/components/HeroImage";
+import Hero from "@/components/Hero";
+import TintedSection from "@/components/TintedSection";
 
 export default function Apoteket() {
   return (
@@ -18,38 +19,27 @@ export default function Apoteket() {
       {/* Content */}
       <main className="flex-1 w-full">
 
-        {/* ── Hero (mobile: title / image / intro stacked; desktop: title+intro beside image) ── */}
-        <div className="md:hidden">
-          <div className="px-6 pt-8">
-            <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.99375rem] not-italic text-[3.025rem] text-black w-full">UI/UX Designer at Apoteket</p>
-          </div>
-          <div className="w-full">
-            <HeroImage variant="mobile" src={imgHero} alt="" />
-          </div>
-          <div className="px-6 pt-4">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.2875rem] not-italic text-[1.26875rem] text-black w-full">Apoteket AB has high demands on sales, availability and the need to be visible on the web. My assignment was to collect graphic expressions and components and to continuously update the web to improve the customer experience. During my stay we created a Design System, WCAG AA 2.1 complient.</p>
-          </div>
-        </div>
-        <div className="hidden md:block">
-          <div className="flex items-center pl-8 gap-[180px] w-full overflow-hidden">
-            <div className="flex flex-col py-16 shrink-0 max-w-[453px]">
-              <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[5.475rem] not-italic text-[4.15rem] text-black w-[512px]">UI/UX Designer at Apoteket</p>
-              <div className="pt-8">
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.55625rem] not-italic text-[1.41875rem] text-black w-full max-w-[453px]">Apoteket AB has high demands on sales, availability and the need to be visible on the web. My assignment was to collect graphic expressions and components and to continuously update the web to improve the customer experience. During my stay we created a Design System, WCAG AA 2.1 complient.</p>
-              </div>
+        {/* ── Hero ── */}
+        <Hero
+          size="large"
+          title="UI/UX Designer at Apoteket"
+          image={imgHero}
+          imageAlt=""
+          intro={
+            <div className="px-6 pt-4 md:px-0 md:pt-8">
+              <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[2.2875rem] md:leading-[2.55625rem] not-italic text-[1.26875rem] md:text-[1.41875rem] text-black w-full md:max-w-[453px]">
+                Apoteket AB has high demands on sales, availability and the need to be visible on the web. My assignment was to collect graphic expressions and components and to continuously update the web to improve the customer experience. During my stay we created a Design System, WCAG AA 2.1 complient.
+              </p>
             </div>
-            <HeroImage variant="desktop" src={imgHero} alt="" />
-          </div>
-        </div>
+          }
+        />
 
         {/* ── Tinted section ── */}
-        <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] flex flex-col items-start py-8 md:items-center md:flex-row md:justify-center md:py-12 md:px-6">
-          <div className="w-full md:max-w-[1040px]">
-            <p className="pl-6 md:pl-0 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black tracking-[-0.016px] md:tracking-normal w-full">{`The work took place on an ongoing basis together with product owners, UX designers and developers in Apoteket's online team.`}</p>
-            <p className="px-6 md:px-0 pt-12 md:pt-4 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px] md:max-w-none">It included developing the visual for functionality. Johan also developed components, a design system, so that Apoteket has a mor cohert expression. With this became easier for the entire development team to work more precisely with the visuals around functionality.</p>
-            <p className="hidden md:block md:pt-4 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black">{`Johan developed new design for the digital channels with WCAG complient colors that followed in line with Apoteket's other graphical expressions. He was also responsible for the design and customer experience for the checkout.`}</p>
-          </div>
-        </div>
+        <TintedSection className="bg-[#fafafa] py-8 md:py-12">
+          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black tracking-[-0.016px] md:tracking-normal w-full">{`The work took place on an ongoing basis together with product owners, UX designers and developers in Apoteket's online team.`}</p>
+          <p className="pt-12 md:pt-4 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px] md:max-w-none">It included developing the visual for functionality. Johan also developed components, a design system, so that Apoteket has a mor cohert expression. With this became easier for the entire development team to work more precisely with the visuals around functionality.</p>
+          <p className="hidden md:block md:pt-4 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black">{`Johan developed new design for the digital channels with WCAG complient colors that followed in line with Apoteket's other graphical expressions. He was also responsible for the design and customer experience for the checkout.`}</p>
+        </TintedSection>
         <p className="md:hidden px-6 pt-4 pb-8 [word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">{`Johan developed new design for the digital channels with WCAG complient colors that followed in line with Apoteket's other graphical expressions. He was also responsible for the design and customer experience for the checkout.`}</p>
 
         {/* ── The Challenge row ── */}

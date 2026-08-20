@@ -6,6 +6,7 @@ import imgKanske22 from "@/imports/DesktopAlster/f27c7352efc038697f0cd20a9da239f
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroImage from "@/components/HeroImage";
+import TintedSection from "@/components/TintedSection";
 
 const galleryImages = [
   { src: imgCover, aspect: "aspect-[2500/1667]" },
@@ -47,9 +48,9 @@ export default function Alster() {
         </div>
 
         {/* ── Berghs note band ── */}
-        <div className="bg-[#fafafa] w-screen mx-[calc(50%-50vw)] mt-8 md:mt-0 px-6 py-12 flex justify-center">
-          <p className="font-['Poppins:Light',sans-serif] text-black text-base leading-[1.8rem] w-full max-w-[1040px]">This work is part of my final examination work at Berghs School of Communication 2015. I developed the concept, branding, labels, and graphic design.</p>
-        </div>
+        <TintedSection className="bg-[#fafafa] mt-8 md:mt-0 py-12">
+          <p className="font-['Poppins:Light',sans-serif] text-black text-base leading-[1.8rem] w-full">This work is part of my final examination work at Berghs School of Communication 2015. I developed the concept, branding, labels, and graphic design.</p>
+        </TintedSection>
 
         {/* ── Gallery ── */}
         <div className="flex flex-col gap-3 md:gap-24 mt-3 md:mt-0 md:px-8 md:pt-24 md:pb-24 w-full">

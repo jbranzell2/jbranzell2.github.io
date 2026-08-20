@@ -34,8 +34,8 @@ export default function Elements() {
           <p className="font-['Poppins:Bold',sans-serif] text-black text-base leading-[1.8rem] not-italic">Tinted section</p>
         </div>
         <div className="pt-4">
-          <TintedSection>
-            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black">This is the grey full-bleed band used for supporting copy — role, tools, or context that deserves a bit more visual weight than the plain white background. Pass any content as children.</p>
+          <TintedSection className="bg-[#fafafa] py-8 md:py-12">
+            <p className="font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black">This is the grey full-bleed band used for supporting copy — role, tools, or context that deserves a bit more visual weight than the plain white background. Pass any content as children. Background, spacing, and height are supplied by the caller via className, since real bands vary in those a fair bit page to page.</p>
           </TintedSection>
         </div>
 
