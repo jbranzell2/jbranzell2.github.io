@@ -40,6 +40,11 @@ interface HeroProps {
    *  HeroImage's own default, but a couple crop noticeably shorter
    *  (e.g. "aspect-[390/278]"). Passed straight through to HeroImage. */
   mobileAspectClass?: string;
+  /** Override the desktop cover image's box — most pages keep HeroImage's
+   *  default fixed h-[844px], but a source image far from that portrait
+   *  shape needs its own aspect ratio instead to avoid a hard crop.
+   *  Passed straight through to HeroImage. */
+  desktopAspectClass?: string;
 }
 
 /**
@@ -60,6 +65,7 @@ export default function Hero({
   order = "image-first",
   mobileImageClass = "",
   mobileAspectClass,
+  desktopAspectClass,
 }: HeroProps) {
   const t = TITLE_SIZE[size];
   const desktopWidth = titleWidthClass ?? t.desktopWidth;
@@ -94,7 +100,7 @@ export default function Hero({
             <h1 className={`[word-break:break-word] font-['Poppins:Medium',sans-serif] not-italic text-black ${t.desktop} ${desktopWidth}`}>{title}</h1>
             {intro}
           </div>
-          <HeroImage variant="desktop" src={image} alt={imageAlt} />
+          <HeroImage variant="desktop" src={image} alt={imageAlt} desktopAspectClass={desktopAspectClass} />
         </div>
       </div>
     </>

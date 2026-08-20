@@ -31,6 +31,8 @@ export default function Oden() {
           title="Designer/Animator at Oden Business Intelligence"
           image={imgOden}
           imageAlt="Oden Business Intelligence"
+          mobileAspectClass="aspect-[1500/1069]"
+          desktopAspectClass="aspect-[1500/1069]"
           intro={
             <div className="px-6 pt-2 md:px-0 md:pt-8">
               <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">Animated an introduction movie to Oden Business Intelligence.</p>
