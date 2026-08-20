@@ -21,7 +21,7 @@ export default function Electrolux() {
           order="intro-first"
           mobileImageClass="mt-8"
           intro={
-            <div className="px-6 pt-8 md:px-0 md:pt-0">
+            <div className="px-6 pt-8 md:px-0">
               <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">
                 {`Electrolux was in need for a senior product designer to maintain and further develop their Europe apps. As the responsible designer, Johan provided new design, as well as managing the conversation between product owners, developers and architects for both Electrolux and AEG's teams.`}
               </p>
