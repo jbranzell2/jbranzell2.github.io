@@ -1,5 +1,8 @@
+import imgOden from "@/imports/DesktopHome/1e5076f0f1a1a45573fe96c1dea49d964eddbc9c.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import TintedSection from "@/components/TintedSection";
 
 function VimeoEmbed({ className }: { className?: string }) {
   return (
@@ -30,25 +33,27 @@ export default function Oden() {
       {/* Content */}
       <main className="flex-1 w-full">
 
-        {/* Title */}
-        <div className="pl-6 pt-14 md:pt-24 md:flex md:justify-center md:px-6">
-          <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.99375rem] md:leading-[5.475rem] not-italic text-[3.025rem] md:text-[4.15rem] text-black w-[343px] md:w-full md:max-w-[453px]">Designer/Animator at Oden Business Intelligence</p>
-        </div>
+        {/* ── Hero ── */}
+        <Hero
+          title="Designer/Animator at Oden Business Intelligence"
+          image={imgOden}
+          imageAlt="Oden Business Intelligence"
+          intro={
+            <div className="px-6 pt-2 md:px-0 md:pt-8">
+              <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">Animated a introduction movie to Oden Bussiness Intelligence. The work included</p>
+            </div>
+          }
+        />
 
-        {/* Description */}
-        <div className="pl-6 mt-8 md:mt-0 md:flex md:justify-center md:px-6 md:pt-8">
-          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[343px] md:w-full md:max-w-[453px]">Animated a introduction movie to Oden Bussiness Intelligence. The work included</p>
-        </div>
+        {/* ── Tinted section ── */}
+        <TintedSection className="bg-[#fafafa] py-8 md:py-12">
+          {bullets.map((text, i) => (
+            <p key={text} className={`[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full ${i === 0 ? "" : "mt-4"}`}>{text}</p>
+          ))}
+        </TintedSection>
 
-        {/* Bullets */}
-        {bullets.map((text) => (
-          <div key={text} className="pl-6 md:flex md:justify-center md:px-6 md:pt-4">
-            <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-[343px] md:w-full md:max-w-[453px]">{text}</p>
-          </div>
-        ))}
-
-        {/* Video */}
-        <div className="pl-6 mt-6 md:mt-0 md:px-8 md:pt-12">
+        {/* ── Video ── */}
+        <div className="mt-3 md:mt-0 md:px-8 md:pt-14">
           <VimeoEmbed />
         </div>
       </main>
