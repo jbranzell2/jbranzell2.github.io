@@ -18,13 +18,6 @@ function VimeoEmbed({ className }: { className?: string }) {
   );
 }
 
-const bullets = [
-  "– Developing the concept",
-  "– Writing parts of the script.",
-  "– Create graphics.",
-  "– Animation in after effects.",
-];
-
 export default function Oden() {
   return (
     <div className="bg-white min-h-screen flex flex-col page-enter max-w-[1400px] mx-auto">
@@ -40,16 +33,16 @@ export default function Oden() {
           imageAlt="Oden Business Intelligence"
           intro={
             <div className="px-6 pt-2 md:px-0 md:pt-8">
-              <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">Animated a introduction movie to Oden Bussiness Intelligence. The work included</p>
+              <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">Animated an introduction movie to Oden Business Intelligence.</p>
             </div>
           }
         />
 
         {/* ── Tinted section ── */}
         <TintedSection className="bg-[#fafafa] py-8 md:py-12">
-          {bullets.map((text, i) => (
-            <p key={text} className={`[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full ${i === 0 ? "" : "mt-4"}`}>{text}</p>
-          ))}
+          <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full">
+            {`Johan developed the concept and wrote parts of the script, then created the graphics and animated the movie in After Effects.`}
+          </p>
         </TintedSection>
 
         {/* ── Video ── */}
