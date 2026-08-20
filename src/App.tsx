@@ -12,6 +12,7 @@ import Oden from "./pages/Oden";
 import Myndigheten from "./pages/Myndigheten";
 import FunLight from "./pages/FunLight";
 import Alster from "./pages/Alster";
+import Elements from "./pages/Elements";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/myndigheten" element={<Myndigheten />} />
         <Route path="/funlight" element={<FunLight />} />
         <Route path="/alster" element={<Alster />} />
+        <Route path="/elements" element={<Elements />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
