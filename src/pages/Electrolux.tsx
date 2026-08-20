@@ -3,7 +3,7 @@ import imgElectrolux11 from "@/imports/DesktopElectrolux/5edaf8e63575d5d52f3716b
 import imgElectrolux4 from "@/imports/DesktopElectrolux/5fde9e8e6ff3864f31bf59ec5901406b54a9c284.avif";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import HeroImage from "@/components/HeroImage";
+import Hero from "@/components/Hero";
 import TintedSection from "@/components/TintedSection";
 
 export default function Electrolux() {
@@ -13,38 +13,21 @@ export default function Electrolux() {
 
       {/* Content */}
       <main className="flex-1 w-full">
-        {/* Hero section */}
-        <div className="relative">
-          {/* Mobile */}
-          <div className="md:hidden">
-            <div className="px-6 pt-9">
-              <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[3.99375rem] not-italic text-[3.025rem] text-black w-full">
-                Senior Product Designer at Electrolux
-              </p>
-              <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black mt-8 w-full">
+        {/* ── Hero ── */}
+        <Hero
+          title="Senior Product Designer at Electrolux"
+          image={imgElectrolux2}
+          imageAlt="Electrolux app"
+          order="intro-first"
+          mobileImageClass="mt-8"
+          intro={
+            <div className="px-6 pt-8 md:px-0 md:pt-0">
+              <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black w-full max-w-[453px]">
                 {`Electrolux was in need for a senior product designer to maintain and further develop their Europe apps. As the responsible designer, Johan provided new design, as well as managing the conversation between product owners, developers and architects for both Electrolux and AEG's teams.`}
               </p>
             </div>
-            <div className="w-full mt-8">
-              <HeroImage variant="mobile" src={imgElectrolux2} alt="Electrolux app" />
-            </div>
-          </div>
-
-          {/* Desktop */}
-          <div className="hidden md:block">
-            <div className="flex items-center gap-[180px] w-full overflow-hidden min-h-[600px]">
-              <div className="flex flex-col justify-center py-16 pl-7 w-[455px] shrink-0">
-                <p className="[word-break:break-word] font-['Poppins:Medium',sans-serif] leading-[5.475rem] not-italic text-[4.15rem] text-black max-w-[455px]">
-                  Senior Product Designer at Electrolux
-                </p>
-                <p className="[word-break:break-word] font-['Poppins:Light',sans-serif] leading-[1.8rem] not-italic text-base text-black max-w-[455px]">
-                  {`Electrolux was in need for a senior product designer to maintain and further develop their Europe apps. As the responsible designer, Johan provided new design, as well as managing the conversation between product owners, developers and architects for both Electrolux and AEG's teams.`}
-                </p>
-              </div>
-              <HeroImage variant="desktop" src={imgElectrolux2} alt="Electrolux app" />
-            </div>
-          </div>
-        </div>
+          }
+        />
 
         {/* Tinted section */}
         <TintedSection className="bg-[#fafafa] py-[52px] md:py-0 md:h-[256px]">

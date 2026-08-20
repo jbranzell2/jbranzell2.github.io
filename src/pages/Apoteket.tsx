@@ -21,7 +21,6 @@ export default function Apoteket() {
 
         {/* ── Hero ── */}
         <Hero
-          size="large"
           title="UI/UX Designer at Apoteket"
           image={imgHero}
           imageAlt=""
