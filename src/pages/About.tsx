@@ -15,10 +15,10 @@ export default function About() {
             <img src={imgJagcool} alt="Johan Branzell" className="w-full md:w-full md:max-w-[628px] md:aspect-[628/786] object-cover" fetchPriority="high" />
           </div>
           <div className="md:order-1 md:max-w-[630px] md:min-w-0">
-            <p className="font-['Poppins:Medium',sans-serif] text-black text-[3.025rem] md:text-[4.15rem] leading-[3.99375rem] md:leading-[5.475rem] not-italic mt-6 md:mt-[70px] whitespace-pre-wrap">
+            <h1 className="font-['Poppins:Medium',sans-serif] text-black text-[2.2125rem] md:text-[2.8875rem] leading-[3.08125rem] md:leading-[4.025rem] not-italic mt-6 md:mt-[70px] whitespace-pre-wrap">
               {"My name is "}
               <span className="min-[1348px]:whitespace-nowrap">Johan Branzell</span>
-            </p>
+            </h1>
             <p className="font-['Poppins:Light',sans-serif] text-black text-[1.26875rem] md:text-[1.41875rem] leading-[2.2875rem] md:leading-[2.55625rem] not-italic mt-6 md:mt-8 max-w-[630px]">
               {"I'm from Karlstad, currently living in Stockholm, Sweden. Here I work as a Product Designer who strives to deliver thought through, user driven and detailed design. I love working on websites, apps, doing animations or print. Or working on anything design related really."}
             </p>
